@@ -31,15 +31,15 @@ U ovom projektu napravit ćeš svoju prvu igru! To će biti igra hvatanja duhova
 
 + Zatim dodaj sljedeće naredbe liku duha tako da se on neprestano pojavljuje i nestaje.
 
-	```blocks
+```blocks
 	kada je ⚑ kliknut
-ponavljaj
-   sakrij
-   čekaj (1) sekundi
-   prikaži
-   čekaj (1) sekundi
-end
-	```
+	ponavljaj
+   	sakrij
+   	čekaj (1) sekundi
+   	prikaži
+   	čekaj (1) sekundi
+	end
+```
 
 + Testiraj program klikom na zelenu zastavicu.
 
@@ -78,17 +78,17 @@ Možeš li napraviti promjene u naredbi `čekaj` {.blockcontrol} tako da duh če
 
 Dopustimo igraču da hvata duhove!
 
-## Lista aktivnosti { .check }
+## Zadatci { .check }
 
 + Kako bi dopustili igraču da uhvati duha, dodaj sljedeći kod:
 
-	```blocks
-		kada je lik kliknut
-sakrij
+```blocks
+	kada je lik kliknut
+	sakrij
 
 	```
 
-+ TProvjeri rezultata. Možeš li uhvatiti duha kada se pojavi? Ako ti je teško hvatati duhove možeš igrati igru na cijelom zaslonu klikom na ovaj gumb:
++ Provjeri rezultat. Možeš li uhvatiti duha kada se pojavi? Ako ti je teško hvatati duhove možeš igrati igru na cijelom zaslonu klikom na ovaj gumb:
 
 	![screenshot](ghost-fullscreen.png)
 
@@ -121,9 +121,9 @@ Napravimo igru zanimljivijom tako što ćemo dodati rezultat.
 
 + Sada je potrebno postaviti rezultat na nulu svaki puta kada program krene od početka:
 
-	```blocks
+```blocks
 	kada je ⚑ kliknut
-postavi [rezultat v] na [0]
+	postavi [rezultat v] na [0]
 	```
 
 + Svaki puta kada je duh uhvaćen, potrebno je povećati rezultat za jedan bod:
