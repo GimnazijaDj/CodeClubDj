@@ -1,0 +1,249 @@
+---
+title: Recipe
+level: HTML & CSS 1
+language: hr-HR
+embeds: "*.png"
+materials: ["Club Leader Resources/*.*","Project Resources/*.*"]
+stylesheet: web
+...
+
+# Introduction { .intro}
+
+U ovom projektu ćeš nauciti kako napraviti stranic za tvoje najdraže recepte.
+
+![screenshot](recipe-final.png)
+
+# Korak 1: Odluči o izboru recepta { .activity}
+
+Prije nego što počneš kodirati morat češ odlučiti o izboru recepta.
+
+## Provjera aktivnosti { .check}
+
++ Razmisli o receptu koji želiš podjelit sa svojim prijateljima. To može biti:
+	+ Recept koji si pronašao na internetu;
+	+ Tvoje omiljeno jelo;
+	+ Nešto što si izmislio!
+
+Primjer recepta koji ćeš vidjeti u ovom projektu je za frape od banane. Možeš kopirati ovaj recept ako sam ne možeš naći drugi.
+
+# Korak 2: Sastojci { .activity}
+
+Idemo popisati sve sastojke koji ti trebaju za tvoj recept.
+
+## Provjera aktivnosti { .check}
+
++ Otvori ovaj predložak: [jumpto.cc/trinket-template](http://jumpto.cc/trinket-template). Ako čitaš ovo na internetu također možeš koristiti ponuđenu verziju ovog predloška.
+
+<div class="trinket">
+  <iframe src="https://trinket.io/embed/html/ef4c882ae6" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  </iframe>
+</div>
+
++ Za tvoj popis sastojaka korsitit ćeš neporedanu listu, koristeći oznake "<ul>". Idi na osmi red predloška i dodaj ovaj HTMLtako da zamjeniš tekst u "<hl>" naslovu s imenom tvog recepta:
+```
+<h1>Frape od banane</h1>
+
+<h3>Sastojci:</h3>
+
+<ul>
+
+</ul>
+```
+
++ Pogledaj svoju stranicu i trebao bi vidjeti svoja 2 naslova.
+
+![screenshot](recipe-headings.png)
+
+Nećeš još vidjeti svoju listu jer nisi ništa na nju dodao!
+
++ Sljedeći korak je da dodaš sastojke na svoju listu, koristeći `<li>` oznaku. Dodaj sljedeći kod unutar `<ul>` oznake:
+
+```
+<li>1 banana</li>
+```
+![screenshot](recipe-ul.png)
+
+Budući da je tvoja lista neporedana, sastojci nisu označeni brojevima nego točkama.
+
+##Izazov: Više sastojaka {.challenge}
+Možeš li dodati sve sastojke svog recepta?
+
+Tvoja web stranica bi trebala izgledati poput ovoga:
+
+![screenshot](recipe-more-ingridiens.png)
+
+## Spremi svoj projekt {.save}
+
+# Korak 3: način { .activity }
+
+Sljedeće, idemo objasniti kako napravit tvoj recept.
+
+## Provjera aktivnosti { .check}
+
++ Koristit ćeš drugu listu da napišeš način, ali ovaj puta koristit ćeš poredanu listu, koristeći `<ol>` oznaku.
+
+Poredana lista je brojčana lista koju trebas koristit kada je redosljed koraka bitan.
+
+Dodaj ovaj kod ispod svoje liste sastojaka, ali provjeri da je unutar `<body>` oznake:
+
+```
+<h3>Način:</h3>
+
+<ol>
+
+</ol>
+```
+
+![screenshot](recipe-method.png)
+
++ Sad trebaš dodati korake na svoju poredanu listu:
+
+```
+<li>Oguli bananu i stavi ju u blender</li>
+```
+
+![screenshot](recipe-ol.png)
+
+Primjeti da su koraci na listi automatski numerirani!
+
+##Izazov: više koraka {.challenge}
+Možeš li dodati na listu sve korake za svoj recept?
+
+Tvoj način bit trebao izgledati poput ovoga:
+
+![screenshot](recipe-more-method.png)
+
+## Spremi svoj projekt {.save}
+
+# Korak 4: Boje! { .activity}
+
+Idemo dodati malo boja na tvoju web stranicu.
+
+## Provjera aktivnosti { .check}
+
++ Već si naučio kako dodati obojeni tekst na web stranicu.Dodaj ovaj kod u svoju `style.css` datoteku, da bi obojao sav tekst na web stranici u plavo:
+
+```
+body {
+    color: blue;
+}
+```
+
+![screenshot](recipe-blue.png)
+
++ Tvoj pretraživač poznaje boje kao `blue`(plava), `yellow`(žuta) i čak `lightgreen`(svijetlo zelena), ali jesi li znao da tvoj pretraživač ustvari poznaje više od 500 imena različitih boja?
+
+Ovdje je lista svih boja koje možeš koristiti: [jumpto.cc/web-colours](http://jumpto.cc/web-colours), koje uključuju imena kao `tomato`(rajčica), `firebrick`(cigla) i `peachpuff`(breskva).
+
+Promjeni boju teksta iz `blue` u `tomato`.
+
+![screenshot](recipe-tomato.png)
+
++ Tvoj pretraživač zna 140 imena boja, ali zapravo zna šifre (vrijednosti) više od 16 milijuna boja!
+
+
+Kao što možda znaš, sve boje se mogu napraviti od 3 osnovne boje: crvene, zelene i plave. Da bi naredio pretraživaču koju boju da prikaže, moraš samo odrediti koliko će koje osnovne boje koristiti.
+
+Količina crvene, zelene i plave su određene brojem imeđu `0` i `255`.
+
+![screenshot](recipe-rgb-img.png)
+
+Dodaj ovaj kod u CSS za tijelo web stranice, da bi prikazao žutu pozadinu:
+
+```
+background: rgb(250,250,210);
+```
+
+![screenshot](recipe-rgb.png)
+
++ Ako ti se više sviđa, možeš svom pretraživaču narediti da prikaže boju koristeći heksadecimalni kod (ili hex code). Ovo funkcionira na sličan način kao rgb() kod iznad, osim što svaki hex code počinje s '#', i koristi heksadecimalne brojeve između '00' i 'ff' za količinu crvene, zelene i plave.
+
+![screenshot](recipe-hex-img.png)
+
+Zamijeni 'rgb()' kod u tvom CSS sa hex kodom:
+
+```
+background: #fafad2;
+```
+
+![screenshot](recipe-hex.png)
+
+Trebao bi vidjeti jednaku svijetlo žutu boju kao i prije!
+
+## Spremi svoj projekt! {.save}
+
+# Korak 5: Završni detalji { .activity}
+
+Dodajmo još malo HTML-a i CSS-a da poboljšamo tvoju web stranicu! 
+
+## Provjera aktivnosti { .check}
+
++ Možeš dodati vodoravnu liniju na kraju svog recepta koristeći <hr> tag.
+
+![screenshot](recipe-hr.png)
+
+Primjeti da ovaj tag nema zavrsni tag kao '<img>.
+
++Linija koji su dodao ne podudara se sa stilom ostatka web stranice. Popravit ćemo ga tako da dodamo CSS kod:
+
+```
+hr {
+    height: 2px;
+    border: none;
+    background-color: tomato;
+}
+```
+
+![screenshot](recipe-hr-css.png)
+
++Možeš ćak promjeniti i izgled natuknica ovim CSS kodom:
+
+```
+ul {
+    list-style-type: square;
+}
+```
+
+![screenshot](recipe-ul-css.png)
+
+##Izazov: Još boja!{.challenge}
+Promjeni boje u svom kodu koristeći imena boja, `rgb()` vrijednosti i hex kodovi. Ovdje je lista puno boja: <a href="http://jumpto.cc/web-colours" target="_blank">jumpto.cc/web-colours</a>.
+Evo nekih primjera boja:
+
++ Crvena može biti napisana:
+	+ `red` (očito!)
+	+ `rgb(255,0,0)` (puno crvene, bez plave i zelene)
+	+ `#ff0000`
+
++ Maslinasto zelena moze biti napisana:
+	+ `olive`
+	+ `rgb(128, 128, 0)` (malo crvene, malo zelene, bez plave)
+	+ `#808000`
+
+Pokušaj koristiti boje koje se slažu s tvojim receptom.
+
+## Spremi projekt!{.save}
+
+##Izazov: Osvrti {.challenge}
+Pitaj nekoliko prijatelja da ostave svoj osvrt i ocjenu tvog recepta. Trebat ćeš još jednu listu.
+
+![screenshot](recipe-reviews.png)
+
+## Spremi projekt!{.save}
+
+##Izazov: Više uređivanja {.challenge}
+Možeš li dodati sliku na svoju web stranicu? Ili promjeniti font? Evo kako bi tvoja web stranica mogla izgledati:
+
+![screenshot](recipe-final.png)
+
+Evo malo koda koji će ti pomoći:
+
+```
+font-family: Arial / Comic Sans MS / Courier / Impact / Tahoma;
+font-size: 12pt;
+font-weight: bold;
+
+<img src="image-link-goes-here">
+```
+
+## Spremi projekt{.save}
