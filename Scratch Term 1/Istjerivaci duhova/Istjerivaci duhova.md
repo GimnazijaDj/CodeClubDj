@@ -85,8 +85,7 @@ Dopustimo igraču da hvata duhove!
 ```blocks
 	kada je lik kliknut
 	sakrij
-
-	```
+```
 
 + Provjeri rezultat. Možeš li uhvatiti duha kada se pojavi? Ako ti je teško hvatati duhove možeš igrati igru na cijelom zaslonu klikom na ovaj gumb:
 
@@ -124,7 +123,7 @@ Napravimo igru zanimljivijom tako što ćemo dodati rezultat.
 ```blocks
 	kada je ⚑ kliknut
 	postavi [rezultat v] na [0]
-	```
+```
 
 + Svaki puta kada je duh uhvaćen, potrebno je povećati rezultat za jedan bod:
 
