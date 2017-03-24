@@ -154,12 +154,11 @@ Igra može biti još zanimljivija ograničavanjem vremena u kojem igrač može h
 
 	```blocks
 		kada je ⚑ kliknut
-postavi [vrijeme v] na [10]
-ponavljaj dok nije <(vrijeme) = [0]>
-   čekaj (1) sekundi
-   promijeni [vrijeme v] za (-1)
-end
-zaustavi [sve v]
+		postavi [vrijeme v] na [10]
+		ponavljaj dok nije <(vrijeme) = [0]>
+   		čekaj (1) sekundi
+   		promijeni [vrijeme v] za (-1)
+		zaustavi [sve v]
 	```
 
 	Ovako ćeš dodati  `ponavljaj do`{.blockcontrol}`vremena`{.blockdata}`= 0`{.blockoperators} kôd:
