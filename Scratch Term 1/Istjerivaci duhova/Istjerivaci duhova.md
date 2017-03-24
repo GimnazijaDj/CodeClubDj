@@ -19,7 +19,7 @@ U ovom projektu napravit ćeš svoju prvu igru! To će biti igra hvatanja duhova
   <img src="ghost-final.png">
 </div>
 
-# Prvi korak: Animacija duha. { .activity }
+# Korak 1: Animacija duha. { .activity }
 
 ## Zadatci { .check }
 
@@ -45,7 +45,7 @@ U ovom projektu napravit ćeš svoju prvu igru! To će biti igra hvatanja duhova
 
 ## Spremi projekt { .save }
 
-# Drugi korak: Duh se pojavljuje na različitim mjestima { .activity }
+# Korak 2: Duh se pojavljuje na različitim mjestima { .activity }
 
 Ovog duha je jako lako uhvatiti jer je nepomičan.
 
@@ -53,17 +53,16 @@ Ovog duha je jako lako uhvatiti jer je nepomičan.
 
 + Umjesto stajanja na istom mjestu, dopustit ćemo da Scratch sam odabere naumične koordinate x i y na kojima će se pojavljivati lik duha. Duhu dodaj 'idi na' { .blockmotion } naredbu, tako da blok naredbi izgleda ovako:
 
-	```blocks
-		kada je ⚑ kliknut
-ponavljaj
-   sakrij
-   čekaj (1) sekundi
-   idi na x:(slučajni broj od (-150) do (150)) y:(slučajni broj od (-150) do (150))
-   prikaži
-   čekaj (1) sekundi
-end
-		end
-	```
+```blocks
+	kada je ⚑ kliknut
+	ponavljaj
+   		sakrij
+   		čekaj (1) sekundi
+   		idi na x:(slučajni broj od (-150) do (150)) y:(slučajni broj od (-150) do (150))
+   		prikaži
+   		čekaj (1) sekundi
+	end
+```
 
 + Provjeri rezultat klikom na zastavicu. Sada se svaki puta pojavljuje na drugačijem mjestu.
 
@@ -74,7 +73,7 @@ Možeš li napraviti promjene u naredbi `čekaj` {.blockcontrol} tako da duh če
 
 ## Spremi promjene u projektu. { .save }
 
-# Treći korak: Hvatanje duha { .activity }
+# Korak 3: Hvatanje duha { .activity }
 
 Dopustimo igraču da hvata duhove!
 
@@ -96,7 +95,7 @@ Možeš li dodati zvuk svaki puta kada je duh uhvaćen?
 
 ## Spremi promjene u projektu. { .save }
 
-# Četvrti korak: Dodavanje rezultata { .activity .new-page }
+# Korak 4: Dodavanje rezultata { .activity .new-page }
 
 Napravimo igru zanimljivijom tako što ćemo dodati rezultat.
 
@@ -129,11 +128,11 @@ Napravimo igru zanimljivijom tako što ćemo dodati rezultat.
 
 	![screenshot](ghost-change-score.png)
 
-+ PPokreni program i hvataj duhove. Mijenja li se rezultat?
++ Pokreni program i hvataj duhove. Mijenja li se rezultat?
 
 ## Spremi promjene u projektu. { .save }
 
-# Peti korak: Dodavanje mjerača vremena. { .activity }
+# Korak 5: Dodavanje mjerača vremena. { .activity }
 
 Igra može biti još zanimljivija ograničavanjem vremena u kojem igrač može hvatati duhove.
 
