@@ -154,11 +154,10 @@ Dodajmo bendu i pjevačicu!
 
 + Nakon dodavanja zvuka na kartici 'Skripte' dodaj sljedeći kôd:
 
-	```blocks
-		kada je lik kliknut
-sviraj zvuk [singer1 v] do kraja
-
-	```
+```blocks
+	kada je lik kliknut
+	sviraj zvuk [singer1 v] do kraja
+```
 
 + Klikni na pjevačicu i provjeri pjeva li.
 
