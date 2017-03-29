@@ -95,7 +95,7 @@ Dodajmo sada olovke različitih boja u projekt i dopustimo korisniku da odabere 
 
 	```blocks
 		kada je lik kliknut
-pošalji [green v]
+		pošalji [green v]
 	```
 
 	Za promjenu početne poruke klikni strelicu prema dolje u bloku `pošalji` {.blockevents} i odaberi 'nova poruka...'.
@@ -110,8 +110,8 @@ pošalji [green v]
 
 	```blocks
 		kada primim [zelena v]
-promijeni kostim u [olovka-zelena v]
-postavi boju olovke na [#00ff00]
+		promijeni kostim u [olovka-zelena v]
+		postavi boju olovke na [#00ff00]
 	```
 
 	Da bi postavili da bojica piše zelenom bojom potrebno je kliknuti na obojano polje u bloku `postavi boju olovke na {.blockpen} i kliknuti na zelenu ikonu.
@@ -120,23 +120,23 @@ postavi boju olovke na [#00ff00]
 
 	```blocks
 		kada je lik kliknut
-pošalji [plava v]
+		pošalji [plava v]
 	```
 
 	...i dodaj ove naredbe liku olovke:
 
 	```blocks
 		kada primim [plava v]
-promijeni kostim u [olovka-plava v]
-postavi boju olovke na [#0000ff]
+		promijeni kostim u [olovka-plava v]
+		postavi boju olovke na [#0000ff]
 	```
 
 + Na kraju, potrebno je odrediti početni kostim i boju olovke, te očistiti zaslon kako bi dobili čistu pozadinu kada pokrenemo program. Dodaj ove naredbe na početak bloka `kada je zastavica kliknuta` {.blockevents} (prije petlje `ponavljaj` {.blockcontrol}):
 
 	```blocks
 		obriši
-promijeni kostim u [olovka-plava v]
-postavi boju olovke na [#0000ff]
+		promijeni kostim u [olovka-plava v]
+		postavi boju olovke na [#0000ff]
 	```
 
 	Ako ti se više sviđa neka druga boja, postavi nju za početnu!
@@ -161,7 +161,7 @@ Ponekad u crtanju pogriješimo, pa nam treba gumica. Dodajmo gumb za brisanje i 
 
 	```blocks
 		kada je lik kliknut
-obriši
+		obriši
 	```
 
 	Primjeti da nije potrebno slati poruku za brisanje pozornice. Bilo koji lik može ju obrisati.
@@ -180,15 +180,15 @@ obriši
 
 	```blocks
 		kada je lik kliknut
-pošalji [gumica v]
+		pošalji [gumica v]
 	```
 	
 + Kada olovka primi poruku, možeš kreirati gumicu tako što ćeš promijeniti kostim olovke i postavniti boju crtanja jednaku boji pozadine. 
 
 	```blocks
 		kada primim [gumica v]
-promijeni kostim u [gumica v]
-postavi boju olovke na [#FFFFFF]
+		promijeni kostim u [gumica v]
+		postavi boju olovke na [#FFFFFF]
 	```
 
 + Isprobaj projekt i provjeri možeš li brisati. 
