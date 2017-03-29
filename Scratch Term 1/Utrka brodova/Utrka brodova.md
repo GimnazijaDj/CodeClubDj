@@ -44,13 +44,12 @@ U ovom projektu naučit ćeš napraviti igricu u kojoj ćeš mišem dovesti brod
 
 	```blocks
 		kada je ⚑ kliknut
-okreni se u smjeru (0 v)
-idi na x:(-190) y:(-150)
-ponavljaj
-   okreni se k [strelica miša v]
-   idi (1) koraka
-end
-
+		okreni se u smjeru (0 v)
+		idi na x:(-190) y:(-150)
+		ponavljaj
+  			okreni se k [strelica miša v]
+   			idi (1) koraka
+		end
 	```
 
 + Testiraj program. Klikni na zelenu zastavicu i pomiči strelicu miša. Plovi li brod prema mišu?
