@@ -81,14 +81,14 @@ Za sada brod može ploviti kroz drvene prepreke. Popravimo to!
 + Unutar bloka `ponavljaj` {.blockcontrol} dodaj sljedeće naredbe, tako da se sudari kada dotakne prepreku:
 
 	```blocks
-ako <dodiruje boju [#603C15]?> onda
-   promijeni kostim u [udaren v]
-   govori [Neeeeeeee!] (1) sekundi
-   promijeni kostim u [normalan v]
-   okreni se u smjeru (0 v)
-   idi na x:(-200) y:(-160)
-end
-```
+		ako <dodiruje boju [#603C15]?> onda
+   		promijeni kostim u [udaren v]
+   		govori [Neeeeeeee!] (1) sekundi
+   		promijeni kostim u [normalan v]
+   		okreni se u smjeru (0 v)
+   		idi na x:(-200) y:(-160)
+		end
+	```
 
 
 	Kako se ove naredbe nalaze unutar bloka `ponavljaj` {.blockcontrol}, stalno će se provjeravati je li se brod sudario.
