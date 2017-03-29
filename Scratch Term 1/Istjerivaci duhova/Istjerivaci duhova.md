@@ -23,7 +23,7 @@ U ovom projektu napravit ćeš svoju prvu igru! To će biti igra hvatanja duhova
 
 ## Zadatci { .check }
 
-+ Započni novi Scratch projekt i obriši lika mačke tako da projekt ostane prazan. Online Scratch nalazi se na linku <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Započni novi Scratch projekt i obriši lik mačke tako da projekt ostane prazan. Online Scratch nalazi se na linku <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
 + Dodaj novog lika duha i prikladnu pozadinu.
 
