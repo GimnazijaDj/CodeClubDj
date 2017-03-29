@@ -103,9 +103,9 @@ Za sada brod može ploviti kroz drvene prepreke. Popravimo to!
 
 ## Izazov: Pobjedi! {.challenge}
 
-Možeš li brodu dodati još jednu `ako ... onda` {.blockcontrol} naredbu, tako da igrač pobjedi kada dođe do napuštenog otoka?
++ Možeš li brodu dodati još jednu `ako ... onda` {.blockcontrol} naredbu, tako da igrač pobjedi kada dođe do napuštenog otoka?
 
-Kada brod dođe do žutog napuštenog otoka, trabao bi reći 'Toooo!' i tada igra završava. Koristi naredbe:
+ Kada brod dođe do žutog napuštenog otoka, trabao bi reći 'Toooo!' i tada igra završava. Koristi naredbe:
 
 	```blocks
 		govori [Toooo!] (1) sekundi
