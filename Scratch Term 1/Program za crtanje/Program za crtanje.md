@@ -38,11 +38,11 @@ Počnimo izradom olovke koju ćemo kasnije koristiti za crtanje na pozornici.
 
 + Kako ćemo za crtanje koristiti miša, potrebno je isprogramirati olovku da slijedi kretanje strelice miša. Za to ćemo koristiti blok  `ponavljaj` {.blockcontrol}. Dodaj ove naredbe liku olovke:
 
-	```blocks
-		kada je ⚑ kliknut
-ponavljaj
-   idi do [strelica miša v]
-end
+```blocks
+	kada je ⚑ kliknut
+	ponavljaj
+	   idi do [strelica miša v]
+	end
 	```
 
 + Isprobaj program. Klikni zastavicu i pomiči miša po pozornici. Radi li kako smo zamislili? 
