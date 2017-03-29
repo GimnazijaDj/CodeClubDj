@@ -107,11 +107,10 @@ Možeš li brodu dodati još jednu `ako ... onda` {.blockcontrol} naredbu, tako 
 
 Kada brod dođe do žutog napuštenog otoka, trabao bi reći 'Toooo!' i tada igra završava. Koristi naredbe:
 
-```blocks
-govori [Toooo!] (1) sekundi
-zaustavi [sve v]
-
-```
+	```blocks
+		govori [Toooo!] (1) sekundi
+		zaustavi [sve v]
+	```
 
 ![screenshot](boat-win.png)
 
@@ -193,9 +192,9 @@ Možeš li dodati više prepreka u ovu igru? Evo nekoliko ideja:
 
 + Možeš dodati zeleni mulj u pozadinu, koji će usporiti igrača kada ga dodirne. Za to ćeš trebati naredbu `čekaj` {.blockcontrol}:
 
-```blocks
-čekaj (0.01) sekundi
-````
+	```blocks
+		čekaj (0.01) sekundi
+	```
 
 
 ![screenshot](boat-algae.png)
@@ -206,18 +205,18 @@ Možeš li dodati više prepreka u ovu igru? Evo nekoliko ideja:
 
 Ovi blokovi ti mogu pomoći:
 
-```blocks
-idi (1) koraka
-ako si na rubu, okreni se
-````
+	```blocks
+		idi (1) koraka
+		ako si na rubu, okreni se
+	```
 
 
 Ako tvoj novi objekt nije smeđe boje, morat ćeš dodati novu naredbu:
 
-```blocks
-ako <<dodiruje boju [#603C15]?> ili <dodiruje [morski pas v]?>> onda
-end
-```
+	```blocks
+		ako <<dodiruje boju [#603C15]?> ili <dodiruje [morski pas v]?>> onda
+		end
+	```
 
 
 ## Spremi promjene u projektu{ .save }
@@ -232,29 +231,28 @@ Možeš li pretvoriti svoju igru u utrku između dva igrača?
 
 + Promijeni početnu poziciju drugog igrača izmjenom sljedećeg kôda:
 
-```blocks
-	go to x: (-190) y: (-150)
-```
+	```blocks
+		go to x: (-190) y: (-150)
+	```
 
 + Obriši naredbe koje koriste miša za kretanje broda:
 
-```blocks
-	ako <(daljina do [strelica miša v]) > [5]> onda
-   okreni se k [strelica miša v]
-   idi (1) koraka
-end
-
-```
+	```blocks
+		ako <(daljina do [strelica miša v]) > [5]> onda
+  			okreni se k [strelica miša v]
+   			idi (1) koraka
+		end
+	```
 
 ...i zamijeni ga s naredbama kojima će se kretanje broda kontrolirati strelicama.
 
 Ovo su naredbe kojima će se brod kretati naprijed:
 
-```blocks
-ako <tipka [strelica gore v] pritisnuta?> onda
-   idi (1) koraka
-end
-```
+	```blocks
+		ako <tipka [strelica gore v] pritisnuta?> onda
+   			idi (1) koraka
+		end
+	```
 
 
 Također ćeš trebati kod za `okretanje` {.blockmotion} broda kada se pritisne lijeva ili desnu strelica.
@@ -264,10 +262,9 @@ Također ćeš trebati kod za `okretanje` {.blockmotion} broda kada se pritisne 
 ## Izazov: Više razina! {.challenge .new-page}
 Možeš li napraviti dodatne pozadine tako da igrač može birati različite nivoe igre?
 
-```blocks
-
-kada je tipka [razmaknica v] pritisnuta
-sljedeća pozadina
-```
+	```blocks
+		kada je tipka [razmaknica v] pritisnuta
+		sljedeća pozadina
+	```
 
 ## Spremi promjene u projektu{ .save }
