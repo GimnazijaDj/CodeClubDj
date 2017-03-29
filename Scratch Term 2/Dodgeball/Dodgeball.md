@@ -77,31 +77,31 @@ Možeš li dodati više naredbi svom igraču, tako da on kaže nešto `ako` {.bl
 
 ## Spremi promjene u projektu { .save }
 
-# Step 2: Gravity and jumping { .activity }
+# Korak 2: Gravitacija i skakanje { .activity }
 
-Let's make your character move more realistically, by adding gravity and allowing them to jump.
+Dodavanjem gravitacije i omogućavanjem skakanja napravit ćemo da igrač bude još realističniji. 
 
-## Activity Checklist { .check }
+## Zadatci { .check }
 
-+ You may have noticed that your character can walk off a platform into mid-air. Try to walk off of a platform and see what happens.
++ Primjeti da se igrač može kretati i po "praznim" dijelovima platforme za igru. Pokušaj ga pokretati po crnim dijelovima i provjeri što se događa. 
 
 	![screenshot](dodge-no-gravity.png)
 
-+ To fix this, let's add gravity to your game. Create a new variable called `gravity` {.blockdata}. You can hide this variable from your stage if you want to.
++ Da bi to popravili, dodajmo u igru gravitaciju. Kreiraj novu varujablu, nazovi ju `gravitacija` {.blockdata}. Slobodno ju sakrij da se ne prikazuje na pozornici. 
 
 	![screenshot](dodge-gravity.png)
 
-+ Add this new code block, which sets the gravity to a negative number, and then uses this to repeatedly change your character's y-coordinate.
++ Dodaj sljedeći blok naredbi. Njime ćeš postaviti vrijednost varijable `gravitacija` na negativan broj i to ponavljati kako bi se mijenjala koordinata y igrača.  
 
 	```blocks
-		when flag clicked
-		set [gravity v] to [-4]
-		forever
-			change y by (gravity)
+		kada je ⚑ kliknut
+		postavi [gravitacija v] na [-4]
+		ponavljaj
+   			promijeni y za (gravitacija)
 		end
 	```
 
-+ Click the flag, and then drag your character to the top of the stage. What happens? Does the gravity work as you expected?
++ Klikni zastavicu i odvuci igrača na vrh pozornice. Što se događa? Radi li gravitacija očekivano? 
 
 	![screenshot](dodge-gravity-drag.png)
 
