@@ -1,80 +1,81 @@
 ---
 title: Dodgeball
 level: Scratch 2
-language: en-GB
+language: hr-HR
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*","Project Resources/*"]
 ...
 
-# Introduction { .intro }
+# Uvod { .intro }
 
-In this project you'll learn how to create a platform game, in which you have to dodge the moving balls and reach the end of the level.
+U ovom projektu ćeš naučiti kako kreirati igru u kojoj igrač treba izbjegavati lopte koje se kreću i stići do kraja nivoa.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0"></iframe>
   <img src="dodge-final.png">
 </div>
 
-# Step 1: Character movement { .activity }
+# Korak 1: Kretanje lika { .activity }
 
-Let's start by creating a character that can move left and right, as well as climb up poles.
+Krenimo kreiranjem lika koji se može kretati lijevo i desno i penjati po preprekama. 
 
-## Activity Checklist { .check }
+## Zadatci { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Otvori novi Scratch projekt i obriši mačku tako da projekt bude prazan. Online Scratch nalazi se na linku: <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ For this project, you should have a 'Project Resources' folder, containing the background image you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
++ Za ovaj projekt potrebna ti je mapa 'Project Resources' koja sadrži sliku za pozadinu. Ukoliko ju nemaš, zamoli svog volontera da ti pomogne. 
 
 	![screenshot](dodge-resources.png)
 
-+ Add the image 'background.png' as a new stage backdrop, or draw your own! If you're drawing your own level, just make sure that the poles and the floors are different colours, and that there's a door (or something similar) that your player has to reach. Here's how your project should look:
++ Učitaj sliku 'background.png' za pozadinu pozornice (a možeš nacrtati i svoju). Crtaš li svoj nivo, vodi računa o tome da razine i stupovi budu različitih boja, te da su ti potrebna vrata (ili nešto slično) do kojih igrač treba stići. Projekt će izgledati otprilike ovako: 
 
 	![screenshot](dodge-background.png)
 
-+ Add a new sprite, which will be your character. It's better if you choose a sprite with multiple costumes, so that you can make it look as though it's walking.
++ Dodaj novog lika. Najbolje bi bilo da odabrani lik ima više kostima, tako da možeš napraviti da izgleda kao da hoda. 
 
 	![screenshot](dodge-characters.png)
 
-+ Let's use the arrow keys to move your character around. When the player presses the right arrow, you want your character to point right, move a few steps and change to the next costume:
++ Upotrijebimo strelice za pomicanje lika po pozornici. Kada igrač pritisne desnu strelicu tvoj lik se treba okrenuti u desno, napraviti nekoliko koraka i promijeniti kostim: 
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [right arrow v] pressed? > then
-				point in direction (90 v)
-				move (3) steps
-				next costume
-			end
+		kada je ⚑ kliknut
+		ponavljaj
+   			ako <tipka [strelica desno v] pritisnuta?> onda
+      			okreni se u smjeru (90 v)
+      			idi (3) koraka
+      			sljedeći kostim
+   		end
 		end
 	```
 
-+ Test out your character by clicking the flag and then holding down the right arrow key. Does your player move to the right? Does your character look like they are walking?
++ Provjeri kreće li se lik tako što ćeš kliknuti na zastavicu i držati pritisnutu desnu strelicu na tipkovnici. Kreće li se tvoj igrač u desno? Izgleda li kao da hoda?
 
 	![screenshot](dodge-walking.png)
 
-+ To move your character to the left, you'll need to add another `if` {.blockcontrol} block inside your `forever` {.blockcontrol} loop, which moves your character to the left. Remember to test your new code, to make sure that it works!
++ Za pomicanje lika u lijevo potrebno je unutar petlje `ponavljaj` {.blockcontrol} dodati još jednu naredbu `ako je` {.blockcontrol}. Njome ćeš pokretati lika u lijevo. Ne zaboravi testirati projekt, da se uvjeriš da radi ispravno!  
 
-+ To climb a pole, your character should move up slightly whenever the up arrow is pressed and they're touching the correct colour. Add this code inside your character's `forever` {.blockcontrol} loop:
++ Da se popne na stup, igrač se treba polako pomicati prema gore ako je pritisnuta strelica prema gore, te ako igrač dodiruje ispravnu boju. Dodaj ove naredbe unutar petlje `ponavljaj` {.blockcontrol} :
 
 	```blocks
-		if < <key [up arrow v] pressed?> and <touching color [#FFFF00]?> > then
-			change y by (4)
+		ako <<tipka [strelica gore v] pritisnuta?> i <dodiruje boju [#FFFF00]?>> onda
+   			promijeni y za (4)
 		end
+
 	```
 
-+ Test your character - can you climb the yellow poles and get to the end of your level?
++ Isprobaj penje li se tvoj igrač uz žute stupove i može li doći do kraja razine? 
 
 	![screenshot](dodge-test-character.png)
 
-## Save your project { .save }
+## Spremi projekt { .save }
 
-## Challenge: Completing the level {.challenge}
-Can you add more code to your character, so that they say something `if` {.blockcontrol} they get to the brown door?
+## Izazov: Dovršavanje nivoa {.challenge}
+Možeš li dodati više naredbi svom igraču, tako da on kaže nešto `ako` {.blockcontrol} stigne do smeđih vrata?
 
 ![screenshot](dodge-win.png)
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
 # Step 2: Gravity and jumping { .activity }
 
