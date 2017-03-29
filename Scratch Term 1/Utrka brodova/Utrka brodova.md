@@ -133,17 +133,16 @@ Dodajmo vremensko ograničenje u ovu igru tako da igrač treba doći do pustog o
 
 	![screenshot](boat-variable.png)
 
-+ Dodaj sljedeće naredbena __pozornicu__, tako da brojač odbrojava vrijeme dok brod ne stigne do pustog otoka:
++ Dodaj sljedeće naredbe na __pozornicu__, tako da brojač odbrojava vrijeme dok brod ne stigne do pustog otoka:
 
 	```blocks
-
-kada je ⚑ kliknut
-postavi [vrijeme v] na [0]
-ponavljaj
-   čekaj (0.1) sekundi
-   promijeni [vrijeme v] za (0.1)
-end
-```
+		kada je ⚑ kliknut
+		postavi [vrijeme v] na [0]
+		ponavljaj
+   			čekaj (0.1) sekundi
+   			promijeni [vrijeme v] za (0.1)
+		end
+	```
 
 
 + To je to! Isprobaj svoju igru i vidi koliko brzo možeš doći do pustog otoka!
@@ -165,10 +164,10 @@ Ova igra je prelagana - dodajmo nešto da bude zanimljivija.
 + Sada možeš dodati nekoliko naredbi u blok `ponavljaj` {.blockcontrol}, tako da se brod pomakne za 2 _dodatna_ koraka kada  dotakne bijelu strelicu.
 
 	```blocks
-ako <dodiruje boju [#FFFFFF]?> onda
-   idi (3) koraka
-end
-```
+		ako <dodiruje boju [#FFFFFF]?> onda
+   			idi (3) koraka
+		end
+	```
 
 + Možeš dodati i vrata koja se okreću i koja brod treba izbjeći. Dodaj novi lik 'vrata' koji izgleda ovako:
 
