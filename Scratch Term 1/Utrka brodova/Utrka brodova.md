@@ -203,15 +203,15 @@ Možeš li dodati više prepreka u ovu igru? Evo nekoliko ideja:
 
 ![screenshot](boat-obstacles.png)
 
-Ovi blokovi ti mogu pomoći:
++ Ovi blokovi ti mogu pomoći:
+
 
 	```blocks
 		idi (1) koraka
 		ako si na rubu, okreni se
 	```
 
-
-Ako tvoj novi objekt nije smeđe boje, morat ćeš dodati novu naredbu:
++ Ako tvoj novi objekt nije smeđe boje, morat ćeš dodati novu naredbu:
 
 	```blocks
 		ako <<dodiruje boju [#603C15]?> ili <dodiruje [morski pas v]?>> onda
@@ -246,7 +246,7 @@ Možeš li pretvoriti svoju igru u utrku između dva igrača?
 
 ...i zamijeni ga s naredbama kojima će se kretanje broda kontrolirati strelicama.
 
-Ovo su naredbe kojima će se brod kretati naprijed:
++ Ovo su naredbe kojima će se brod kretati naprijed:
 
 	```blocks
 		ako <tipka [strelica gore v] pritisnuta?> onda
@@ -260,7 +260,7 @@ Također ćeš trebati kod za `okretanje` {.blockmotion} broda kada se pritisne 
 ## Spremi promjene u projektu { .save }
 
 ## Izazov: Više razina! {.challenge .new-page}
-Možeš li napraviti dodatne pozadine tako da igrač može birati različite nivoe igre?
++ Možeš li napraviti dodatne pozadine tako da igrač može birati različite nivoe igre?
 
 	```blocks
 		kada je tipka [razmaknica v] pritisnuta
