@@ -265,4 +265,4 @@ Također ćeš trebati kod za `okretanje` {.blockmotion} broda kada se pritisne 
 		sljedeća pozadina
 	```
 
-## Spremi promjene u projektu{ .save }
+## Spremi projekt { .save }
