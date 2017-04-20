@@ -12,7 +12,7 @@ materials: ["Club Leader Resources/*"]
 
 # Uvod { .intro }
 
-U ovom projektu naučiti ćeš kako programirati vlastite glazbene instrumente!
+U ovom projektu naučit ćeš kako programirati vlastite glazbene instrumente!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26741186/?autostart=false" frameborder="0"></iframe>
@@ -175,7 +175,7 @@ Dodajmo bendu i pjevačicu!
 Sjeti se testirati kako tvoj novi kod radi!
 
 
-## Spremi svoj projekt { .save }
+## Spremi promjene u projektu { .save }
 
 
 ##Izazov: Napravi svoj vlastiti bend { .challenge }
