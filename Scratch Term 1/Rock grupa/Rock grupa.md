@@ -50,7 +50,7 @@ Prije samog dodavanja naredbi potrebno je dodati objekt na koji će se one odnos
 	![screenshot](band-shrink.png)
 
 
-## Spremanje projekta. { .save }
+## Spremi projekt { .save }
 
 Daj svom programu ime tako što ćeš ga upisati u okvir za tekst u gornjem lijevom kutu. Zatim iz izbornika 'Datoteka' odaberi naredbu 'Spremi'.
 
@@ -110,7 +110,7 @@ Sada ćemo programirati bubanj tako da proizvede zvuk svaki puta kada ga se udar
 + Isprobaj svoj bubanj. Kada se na njega klikne, trebao bi izgledati kao da je udaren!
 
 
-## Spremi promjene napravljene u projektu { .save }
+## Spremi promjene u projektu { .save }
 
 
 ##Izazov: Poboljšaj svoj bubanj. { .challenge }
@@ -196,4 +196,4 @@ Imaš li mikrofon, možeš snimiti svoje vlastite zvukove. Također možeš kori
 ![screenshot](band-io.png)
 
 
-## Spremi svoj projekt { .save }
+## Spremi projekt { .save }
