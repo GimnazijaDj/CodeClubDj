@@ -9,7 +9,7 @@ materials: ["Club Leader Resources/*"]
 
 # Uvod { .intro }
 
-U ovom projektu naučit ćeš kako programirati svog vlastitiog robota koji razgovara s korisnikom!
+U ovom projektu naučit ćeš programirati robota koji razgovara s korisnikom!
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/26762091/?autostart=false" frameborder="0"></iframe>

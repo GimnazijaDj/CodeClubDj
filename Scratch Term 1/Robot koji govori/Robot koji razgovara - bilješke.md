@@ -5,7 +5,7 @@ embeds: "*.png"
 ...
 
 #Uvod:
-U ovom projektu djeca će naučiti kako koristiti naredbu 'ako ... onda 'da bi mogli donositi odluke.
+U ovom projektu djeca će naučiti kako koristiti naredbu 'ako ... onda' da bi mogli donositi odluke.
 
 #Izvori
 Za ovaj projekt koristite Scratch 2. Možete ga koristiti online na [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ili preuzeti sa [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) i koristiti na računalu.

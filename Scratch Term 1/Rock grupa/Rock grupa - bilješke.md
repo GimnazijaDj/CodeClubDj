@@ -1,5 +1,5 @@
 ﻿---
-title: Rock Band — Bilješke za voditelje radionica
+title: Rock grupa — Bilješke za voditelje radionica
 language: hr-HR
 
 embeds: "*.png"
