@@ -103,7 +103,7 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 
 	![screenshot](brain-start.png)
 
-+ Klikni na zelenu zastavicu, a zatim na gumb play i isprobaj program. Možeš vidjeti da igra ne počinje sve dok igrač ne pritisne play gumb.
++ Klikni na zelenu zastavicu, a zatim na gumb Play i isprobaj program. Vidjet ćeš da igra ne počinje sve dok igrač ne pritisne gumb.
 
 + Primjećuješ li da odbrojavanje počinje kada se klikne zelena zastavica, a ne kada počne igra?
 
@@ -111,7 +111,7 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 
 	Možeš li to popraviti?
 
-+ Klikni na pozornicu i zamijeni `zaustavi sve` {.blockcontrol} naredbu s porukom `kraj` {.blockevents}.
++ Klikni na pozornicu i zamijeni naredbu `zaustavi sve` {.blockcontrol} porukom `kraj` {.blockevents}.
 
 	![screenshot](brain-end.png)
 
@@ -129,7 +129,7 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 		zaustavi [ostale skripte lika v]
 	```
 
-+ Testiraj gumb play tako što ćeš odigrati igricu nekoliko puta. Primjeti da se nakon svake igre pojavi gumb play. Kako bi ti testiranje bile lakše, možeš skratiti trajanje igre.
++ Isprobaj gumb Play tako što ćeš odigrati igricu nekoliko puta. Primjeti da se ponovno pojavi nakon svake igre. Kako bi ti testiranje bilo lakše, možeš skratiti trajanje igre.
 
 	```blocks
 		postavi [vrijeme v] na [10]
@@ -141,7 +141,7 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 		kada je ⚑ kliknut
 		prikaži
 		ponavljaj
-   		ako <dodiruje [mišja strelica v]?> onda
+   		ako <dodiruje [strelica miša v]?> onda
       			postavi efekt [riblje oko v] na (30)
    		inače
       			postavi efekt [riblje oko v] na (0)
