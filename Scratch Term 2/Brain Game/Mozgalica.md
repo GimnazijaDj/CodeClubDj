@@ -9,7 +9,7 @@ materials: ["Club Leader Resources/*"]
 
 # Uvod { .intro }
 
-U ovome projektu ćeš naučiti kako napraviti kviz u kojemu trebaš odgovoriti na koliko god pitanja možeš u 30 sekundi. 
+U ovome projektu ćeš naučiti kako napraviti kviz u kojemu trebaš odgovoriti na što više pitanja u 30 sekundi. 
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/42225768/?autostart=false" frameborder="0"></iframe>
@@ -18,48 +18,49 @@ U ovome projektu ćeš naučiti kako napraviti kviz u kojemu trebaš odgovoriti 
 
 # Korak 1: Izrada pitanja { .activity }
 
-Krenimo sa izradom nasumičnih pitanja na koje će igrači odgovarati.
+Krenimo s izradom nasumičnih pitanja na koje će igrači odgovarati.
 
-## Zadaci { .check }
+## Zadatci { .check }
 
-+ Otvori novu Scratch projekt i obriši lik mačke da dobiješ prazan projekt. Možeš koristiti online Scratch editor koji se nalazi na adresi <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Otvori novi Scratch projekt i obriši lik mačke da dobiješ prazan projekt. Možeš koristiti online Scratch editor koji se nalazi na adresi <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Odaberi lika i pozadinu za igru. Možeš odabrati bilo kojeg. Evo primjera:
++ Odaberi lika i pozadinu za igru po vlastitom odabiru. Pogledaj primjer:
 
 	![screenshot](brain-setting.png)	
 
-+ Kreiraj dvije nove varijable koje se zovu 'broj 1' {.blockdata} i broj 2 {.blockdata}. Te varijable će spremiti 2 broja koja će se pomnožiti.
++ Kreiraj dvije nove varijable koje se zovu 'broj 1' {.blockdata} i broj 2 {.blockdata}. U njih će se spremiti dva broja koja će se pomnožiti.
 	![screenshot](brain-variables.png)
 
-+ Dodaj kod odabranom liku kako bi postavio obje varijable na 'random'{.blockoperators} broj između 2 i 12.
++ Za postavljnje varijabli na 'slučajan'{.blockoperators} broj između 2 i 12 dodaj svom liku sljedeće naredbe:
 
 	```blocks
-		when flag clicked
-		set [number 1 v] to (pick random (2) to (12))
-		set [number 2 v] to (pick random (2) to (12))
+		kada je ⚑ kliknut
+		postavi [broj 1 v] na (slučajni broj od (2) do (12))
+		postavi [broj 2 v] na (slučajni broj od (2) do (12))
+
 	```
 
-+ Tada možeš pitati igrača za odgovor i pustiti ga da vidi je li odgovorio točno ili ne.
++ Sada možeš pitati igrača za odgovor i pustiti ga da provjeri je li odgovorio točno.
 
 	```blocks
-		when flag clicked
-		set [number 1 v] to (pick random (2) to (12))
-		set [number 2 v] to (pick random (2) to (12))
-		ask (join (number 1)(join [ x ] (number 2))) and wait
-		if <(answer) = ((number 1)*(number 2))> then
-			say [yes! :)] for (2) secs
-		else
-			say [nope :(] for (2) secs
+		kada je ⚑ kliknut
+		postavi [broj 1 v] na (slučajni broj od (2) do (12))
+		postavi [broj 2 v] na (slučajni broj od (2) do (12))
+		pitaj (spoji (broj 1) (spoji [x] (broj 2))) i čekaj
+		ako <(odgovor) = ((broj 1) * (broj 2))> onda
+   			govori [Točno! :)] (2) sekundi
+		inače
+   			govori [Netočno :(] (2) sekundi
 		end
 	```
 
-+ Testiraj projekt odgovarajući na jedno pitanje točno, a na jedno pogrešno.
++ Testiraj projekt odgovarajući na jedno pitanje točno, a na drugo pogrešno.
 
-+ Dodaj `forever` {.blockcontrol} petlju oko svog koda, tako da će igraču biti postavljeno puno pitanja.
++ Dodaj petlju `ponavljaj` {.blockcontrol} oko svoga kôda. Na taj način će igraču biti postavljeno više pitanja.
 
-+ Napravi odbrojavanje na pozornici koristeći varijablu koja se zove 'time' {.blockdata}. Projekt 'Balloons' sadrži instrukcije koje će napraviti odbrojavanje (u koraku 6) ako trebaš pomoć.
++ Napravi odbrojavanje na pozornici koristeći varijablu koja se zove 'vrijeme' {.blockdata}. Ako trebaš pomoć, potraži projekt  'Balloons'. On sadrži naredbe kojima će se napraviti odbrojavanje (u koraku 6).
 
-+ Ponovo testiraj projekt - pitanja bi se trebala pojavljivati dok vrijeme ne istekne.
++ Ponovo testiraj projekt - pitanja bi se trebala pojavljivati sve dok vrijeme ne istekne.
 
 ## Spremi projekt. { .save }
 
@@ -69,7 +70,7 @@ Možeš li promijeniti kostim lika tako da odgovara igračevu odgovoru?
 ![screenshot](brain-costume.png)
 
 ## Izazov: Dodavanje rezultata {.challenge}
-Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgovor. Želiš li otežati igru, možeš resetirati igračev rezultat na nulu čim odgovore pogrešno.
+Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgovor. Želiš li otežati igru, možeš resetirati igračev rezultat na nulu čim odgovori pogrešno.
 
 ## Spremi promjene u projektu. { .save }
 
@@ -77,74 +78,74 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 
 Želiš li igrati igru više puta, možeš dodati gumb 'play'.
 
-## Zadaci { .check }
+## Zadatci { .check }
 
 + Dodaj gumb 'play' iz biblioteke likova (možeš ga i nacrtati) na kojeg će igrač kliknuti kako bi pokrenuo novu igru.
 
 	![screenshot](brain-play.png)
 
-+ Dodaj ovaj kod tvome gumbu.
++ Gumbu dodaj sljedeće naredbe:
 
 	```blocks
-		when flag clicked
-		show
+		kada je ⚑ kliknut
+		prikaži
 
-		when this sprite clicked
-		hide
-		broadcast [start v]
+		kada je lik kliknut
+		sakrij
+		pošalji [kreni v]
 	```
 
-	Ovaj kod će pokazati gumb play kada se projekt upali. Kada igrač klikne gumb, on nesgtaje i prikazuje poruku koja će pokrenuti igru.
+	Ovaj kôd će prikazati gumb play kada se projekt pokrene. Kada igrač klikne na njega, gumb nestaje i prikazuje poruku koja će pokrenuti igru.
 
-+ Trebat ćeš urediti kod tvoga lika tako da igra počne kada dobiju 'start' poruuku {.blockevents}, a ne kada je kliknuta zastava.
++ Promijeni kôd svoga lika tako da igra počne kada on dobije poruku 'kreni' {.blockevents}, a ne kada je kliknuta zastavica.
 
-	Zamijeni `when flag clicked` {.blockevents} kod sa `when I receive start` {.blockevents}.
+	Zamijeni `kada je ⚑ kliknut` {.blockevents} kod s `Kada primim kreni` {.blockevents}.
 
 	![screenshot](brain-start.png)
 
-+ Klikni na zelenu zastavu i tada klikni novi play gumb i testiraj program. Možeš vidjeti da igra ne počinnje dok igrač ne stisne start gumb.
++ Klikni na zelenu zastavicu, a zatim na gumb play i testiraj program. Možeš vidjeti da igra ne počinje sve dok igrač ne pritisne play gumb.
 
-+ Jesi li primjetio da odbrojavanje počinje kada se klikne zelena zastava, a ne kada počne igra?
++ Primjećuješ li da odbrojavanje počinje kada se klikne zelena zastavica, a ne kada počne igra?
 
 	![screenshot](brain-timer-bug.png)
 
-	Možeš li popraviti problem?
+	Možeš li to popraviti?
 
-+ Klikni na pozornicu i zamijeni `stop all` {.blockcontrol} naredbu sa `end` {.blockevents} porukom.
++ Klikni na pozornicu i zamijeni `zaustavi sve` {.blockcontrol} naredbu s porukom `kraj` {.blockevents}.
 
 	![screenshot](brain-end.png)
 
-+ Sada možeš dodati kod svome gumbu kako bi se ponovo pokazao na kraju svake igre.
++ Dodaj sljedeće naredbe svome gumbu kako bi se na kraju igre ponovo prikazao.
 
 	```blocks
-		when I receive [end v]
-		show
+		kada primim [kraj v]
+		prikaži
 	```
 
-+ Također trebaš napraviti da lik prestane ispitivati pitanja na kraju svake igre:
++ Sljedećim naredbama ćeš postići to da lik na kraju igre prestane postavljati pitanja:
 
 	```blocks
-		when I receive [end v]
-		stop [other scripts in sprite v]
+		kada primim [kraj v]
+		zaustavi [ostale skripte lika v]
 	```
 
-+ Testiraj gumb play tako što ćeš igrati nekoliko puta. Trebaš primjetiti da se nakon svake igre pojavi gumb play. Kako bi ti testiranje bile lakše, možeš skratiti svaku igru tako da traje samo nekoliko sekundi.
++ Testiraj gumb play tako što ćeš odigrati igricu nekoliko puta. Primjeti da se nakon svake igre pojavi gumb play. Kako bi ti testiranje bile lakše, možeš skratiti trajanje igre.
 
 	```blocks
-		set [time v] to [10]
+		postavi [vrijeme v] na [10]
 	```
 
 + Možeš čak i promijeniti izgled gumba kada miš prijeđe preko njega. 
 
 	```blocks
-		when flag clicked
-		show
-		forever
-		if <touching [mouse-pointer v]?> then
-			set [fisheye v] effect to (30)
-		else
-			set [fisheye v] effect to (0)
-		end
+		kada je ⚑ kliknut
+		prikaži
+		ponavljaj
+   		ako <dodiruje [mišja strelica v]?> onda
+      			postavi efekt [riblje oko v] na (30)
+   		inače
+      			postavi efekt [riblje oko v] na (0)
+   		end
 		end
 	```
 
@@ -153,16 +154,17 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 ## Spremi promjene u projektu. { .save }
 
 ## Izazov: Početni zaslon {.challenge}
-Možeš li dodati još jednu pozadinu na pozornicu? Ona bi trebala biti početni zaslon tvoje igre. Možeš koristiti `when I receive start` {.blockevents} i `when I receive end` {.blockevents} naredbe kako bi mjenjao pozadine.
+Možeš li dodati još jednu pozadinu na pozornicu? Ona bi trebala biti početni zaslon tvoje igre. Za promjenu pozadina koristiti naredbe `kada primim kreni` {.blockevents} i `kada primim kraj` {.blockevents}.
 
-Također možeš prikazati i sakriti svoga lika i odbrojavanje koristeći ove naredbe:
++ Također možeš prikazati i sakriti svoga lika i odbrojavanje koristeći ove naredbe:
 
-```blocks
-show variable [time v]
-```
-```blocks
-hide variable [time v]
-```
+	```blocks
+		prikaži varijablu [vrijeme v]
+	```
+
+	```blocks
+		sakrij varijablu [vrijeme v]
+	```
 
 ![screenshot](brain-startscreen.png)
 
@@ -170,52 +172,52 @@ hide variable [time v]
 
 # Korak 3: Dodavanje grafike { .activity .new-page}
 
-Umjesto da tvoj lik samo govori 'yes! :)' ili 'nope :(' igraču, možeš dodati neku grafiku koja će pokazati igraču kako mu ide.
+Umjesto da tvoj lik igraču samo govori 'Točno! :)' ili 'Netočno :(', možeš dodati i neku grafiku koja će mu pokazivati kako mu ide.
 
-+ Dodaj novog lika koji se zove 'Result' i koji sadrži i 'tick' i 'cross' kostim.
++ Dodaj novog lika 'Result' koji sadrži kostime 'tick' i 'cross'.
 
 	![screenshot](brain-result.png)
 
-+ Promijeni kod svoga lika tako da umijesto da samo govori igraču kako mu ide, pokazuje 'correct' `correct` {.blockevents} i `wrong` {.blockevents} poruke. 
++ Promijeni kôd svoga lika tako da umijesto da samo govori igraču kako mu ide, šalje poruke `točno` {.blockevents} i `pogrešno` {.blockevents}. 
 
 	![screenshot](brain-broadcast-answer.png)
 
-+ Sada možeš upotrijebiti ove poruke kako bi prikazao 'tick' ili 'cross' kostime. Dodaj taj kod tvom novom 'Result' liku:
++ Sada možeš upotrijebiti ove poruke za prikazivanje 'tick' ili 'cross' kostima. Dodaj sljedeći kôd svom novom liku 'Result':
 
 	![screenshot](brain-show-answer.png)	
 
-+ Ponovo testiraj igru. Trebaš vidjeti kvačicu svaki put kada je odgovor točan, a križić svaki put kada je pogrešan.
++ Ponovo isprobaj igru. Trebaš vidjeti kvačicu svaki put kada je odgovor točan, a križić svaki put kada je pogrešan.
 
 	![screenshot](brain-test-answer.png)
 
-+ Primječuješ li da su kodovi za `when I receive correct` {.blockevents} i `when I receive wrong` {.blockevents} gotovo identični? Napravimo funkciju koja će olakšati promjene u kodu.
++ Primjećuješ li da su kôdovi za `kada primim točno` {.blockevents} i `kada primim pogrešno` {.blockevents} gotovo identični? Napravimo funkciju koja će olakšati promjene u kôdu.
 
-	Na 'Result' liku, klikni `More Blocks` {.blockmoreblocks}, pa onda 'Make a Block'. Napravi novu funkciju koja se zove `animate` {.blockmoreblocks}.
+	Odaberi lik 'Result' i grupu naredbi `Više blokova` {.blockmoreblocks}. Klikni na gumb 'Napravi blok' i kreiraj novu funkciju koju ćeš nazvati `animiraj` {.blockmoreblocks}.
 
 	![screenshot](brain-animate-function.png)
 
-+ Tada možeš dodati kod animacije u svoju novu funkciju nanimacije, i onda samo dva puta iskoristi funkciju:
++ Dodaj sljedeće naredbe u svoju novu funkciju `animiraj` {.blockmoreblocks}, a zatim ju dva puta iskoristi:
 
 	![screenshot](brain-use-function.png)
 
-+ Sada, ako želiš da se kvačica i križić prikazuju na dulje ili kraće vrijeme, trebaš napraviti samo jednu promijenu. Pokušaj!
++ Želiš li da se kvačica i križić prikazuju dulje ili kraće vrijeme u svom kôdu trebaš napraviti samo jednu promjenu. Pokušaj!
 
-+ Umijesto da se križić i kvaćica samo prokazuju, trebaš promijeniti funkciju animacije tako da se grafika polako pojavljuje i nestaje.
++ Umjesto da se križić i kvaćica samo pokazuju, možeš promijeniti funkciju animacije tako da se grafika polako pojavljuje i nestaje.
 
 	```blocks
-		define [animate]
-		set [ghost v] effect to (100)		
-		show
-		repeat (25)
-			change [ghost v] effect by (-4)
+		definiraj [animiraj]
+		postavi efekt [duh v] na (100)
+		prikaži
+		ponovi (25)
+   		promijeni efekt [duh v] za (-4)
 		end
-		hide
+		sakrij
 	```
 
 ## Spremi promijene u projektu. { .save }
 
 ## Izazov: Poboljšavanje animacije {.challenge}
-Možeš li poboljšati animaciju svoje grafike? Možeš staviti kod na kvaćicu i križić tako da oni polako nestaju i pojavljuju se. A možeš i koristiti druge super efekte:
+Možeš li poboljšati animaciju svoje grafike? Možeš napraviti kôd za kvaćicu i križić tako da oni polako nestaju i pojavljuju se. A možeš koristiti i druge super efekte:
 
 ![screenshot](brain-effects.png)
 
@@ -225,43 +227,43 @@ Možeš li poboljšati animaciju svoje grafike? Možeš staviti kod na kvaćicu 
 Možeš li dodati zvučne efekte i glazbu svojoj igrici? Na primjer:
 
 + Pojavljivanje zvuka kada igrač odgovori točno ili pogrešno;
-+ Dodavanje ticking sound to your countdown timer;
++ Dodavanje zvuka odbrojavanja vremenu;
 + Puštanje zvuka kada vrijeme istekne;
 
 	```blocks
-		play drum (10 v) for (0.1) beats
+		bubnjaj po (10 v) (0.1) puta
 	```
 
-+ Također možeš konstantno ponavljati glazbu (ako ne znaš kako to napraviti, korak 4 projekta 'Rock Band' će ti pomoći).
++ Također možeš konstantno ponavljati glazbu (ako ne znaš kako to napraviti, korak 4 projekta 'Rock grupa' će ti pomoći).
 
 ## Spremi promjene u projektu. { .save }
 
 ## Izazov: Utrka do 10 bodova {.challenge}
-Možeš li promijeniti igru tako da umijesto odgovaranja na koliko god pitanja se stigne u 30 sekundi, igrač će vidjeti koliko brzo može odgovoriti točno na 10 pitanja?
+Možeš li promijeniti igru tako da umijesto odgovaranja na što veći broj pitanja u 30 sekundi, igrač provjeri koliko brzo može točno odgovoriti točno 10 pitanja?
 
-To možeš napraviti mjenjanjem koda odbrojavanja. Možeš li vidjeti što se treba promijeniti?
+To možeš napraviti mjenjanjem kôda odbrojavanja. Možeš li vidjeti što se treba promijeniti?
 
 ```blocks
-	when I receive [start v]
-	set [time v] to (30)
-	repeat until <(time) = [0]>
-		wait (1) secs
-		change [time v] by (-1)
+	kada primim [kreni v]
+	postavi [vrijeme v] na (30)
+	ponavljaj dok nije <(vrijeme) = [0]>
+   		čekaj (1) sekundi
+   		promijeni [vrijemev] za (-1)
 	end
-	broadcast [end v]
+	pošalji [kraj v]
 ```
 
 ## Spremi promjene u projektu. { .save }
 
 ## Izazov: Ekran s instrukcijama {.challenge}
-Možeš li dodati ekran s instrukcijama tvojoj igrici? On će reći tvom igraču kako da se igra igrica. Trebat će ti gumb 'Instructions' i još jedna pozadina za pozornicu.
+Možeš li dodati ekran s uputama za igricu? Na njemu će biti upute za igrača. Trebat će ti gumb 'Instructions' i još jedna pozadina za pozornicu.
 
 ![screenshot](brain-instructions.png)
 
 Također će ti trebati gumb 'Back' kako bi odveo igrača na glavni izbornik.
 
 ```blocks
-	broadcast [main menu v]
+	pošalji [main menu v]
 ```
 
 ## Spremi projekt. { .save }
