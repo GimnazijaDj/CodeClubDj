@@ -9,7 +9,7 @@ materials: ["Club Leader Resources/*"]
 
 # Uvod { .intro }
 
-U ovome projektu ćeš naučiti kako napraviti kviz u kojemu trebaš odgovoriti na što više pitanja u 30 sekundi. 
+U ovome projektu ćeš naučiti kako napraviti kviz u kojemu igrač treba odgovoriti na što više pitanja u 30 sekundi. 
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/42225768/?autostart=false" frameborder="0"></iframe>
@@ -18,20 +18,20 @@ U ovome projektu ćeš naučiti kako napraviti kviz u kojemu trebaš odgovoriti 
 
 # Korak 1: Izrada pitanja { .activity }
 
-Krenimo s izradom nasumičnih pitanja na koje će igrači odgovarati.
+Krenimo s izradom pitanja.
 
 ## Zadatci { .check }
 
-+ Otvori novi Scratch projekt i obriši lik mačke da dobiješ prazan projekt. Možeš koristiti online Scratch editor koji se nalazi na adresi <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Otvori novi Scratch projekt i obriši lik mačke da dobiješ prazan projekt. Online Scratch nalazi se na adresi <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Odaberi lika i pozadinu za igru po vlastitom odabiru. Pogledaj primjer:
++ Odaberi lika i pozadinu za igru. Na primjer:
 
 	![screenshot](brain-setting.png)	
 
 + Kreiraj dvije nove varijable koje se zovu 'broj 1' {.blockdata} i broj 2 {.blockdata}. U njih će se spremiti dva broja koja će se pomnožiti.
 	![screenshot](brain-variables.png)
 
-+ Za postavljnje varijabli na 'slučajan'{.blockoperators} broj između 2 i 12 dodaj svom liku sljedeće naredbe:
++ Za postavljnje varijabli na 'slučajan' {.blockoperators} broj između 2 i 12 dodaj svom liku sljedeće naredbe:
 
 	```blocks
 		kada je ⚑ kliknut
@@ -40,7 +40,7 @@ Krenimo s izradom nasumičnih pitanja na koje će igrači odgovarati.
 
 	```
 
-+ Sada možeš pitati igrača za odgovor i pustiti ga da provjeri je li odgovorio točno.
++ Dodaj naredbe kojima ćeš igraču postaviti pitanje, omogućiti mu da upiše odgovor i provjeri je li odgovor točan:
 
 	```blocks
 		kada je ⚑ kliknut
@@ -54,13 +54,13 @@ Krenimo s izradom nasumičnih pitanja na koje će igrači odgovarati.
 		end
 	```
 
-+ Testiraj projekt odgovarajući na jedno pitanje točno, a na drugo pogrešno.
++ Isprobaj projekt odgovarajući na jedno pitanje točno, a na drugo pogrešno.
 
 + Dodaj petlju `ponavljaj` {.blockcontrol} oko svoga kôda. Na taj način će igraču biti postavljeno više pitanja.
 
-+ Napravi odbrojavanje na pozornici koristeći varijablu koja se zove 'vrijeme' {.blockdata}. Ako trebaš pomoć, potraži projekt  'Balloons'. On sadrži naredbe kojima će se napraviti odbrojavanje (u koraku 6).
++ Koristeći varijablu 'vrijeme' {.blockdata} na pozornici napravi odbrojavanje vremena. Ako trebaš pomoć, potraži projekt  'Istjerivači duhova'. On sadrži naredbe kojima će se napraviti odbrojavanje (u koraku 5).
 
-+ Ponovo testiraj projekt - pitanja bi se trebala pojavljivati sve dok vrijeme ne istekne.
++ Ponovo isprobaj projekt - pitanja bi se trebala pojavljivati sve dok vrijeme ne istekne.
 
 ## Spremi projekt. { .save }
 
@@ -80,7 +80,7 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 
 ## Zadatci { .check }
 
-+ Dodaj gumb 'play' iz biblioteke likova (možeš ga i nacrtati) na kojeg će igrač kliknuti kako bi pokrenuo novu igru.
++ Dodaj lik gumba iz biblioteke likova (možeš ga i nacrtati) na kojeg će igrač kliknuti kako bi pokrenuo novu igru. U kostimima dodaj na gumb tekst 'Play' (ili 'Pokreni', kako želiš)
 
 	![screenshot](brain-play.png)
 
@@ -95,7 +95,7 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 		pošalji [kreni v]
 	```
 
-	Ovaj kôd će prikazati gumb play kada se projekt pokrene. Kada igrač klikne na njega, gumb nestaje i prikazuje poruku koja će pokrenuti igru.
+	Ovaj kôd će prikazati gumb Play kada se projekt pokrene. Kada igrač klikne na njega, gumb nestaje i šalje se poruka koja će pokrenuti igru.
 
 + Promijeni kôd svoga lika tako da igra počne kada on dobije poruku 'kreni' {.blockevents}, a ne kada je kliknuta zastavica.
 
@@ -103,7 +103,7 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 
 	![screenshot](brain-start.png)
 
-+ Klikni na zelenu zastavicu, a zatim na gumb play i testiraj program. Možeš vidjeti da igra ne počinje sve dok igrač ne pritisne play gumb.
++ Klikni na zelenu zastavicu, a zatim na gumb play i isprobaj program. Možeš vidjeti da igra ne počinje sve dok igrač ne pritisne play gumb.
 
 + Primjećuješ li da odbrojavanje počinje kada se klikne zelena zastavica, a ne kada počne igra?
 
