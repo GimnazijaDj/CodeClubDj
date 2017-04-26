@@ -174,15 +174,15 @@ Možeš li dodati još jednu pozadinu na pozornicu? Ona bi trebala biti početni
 
 Umjesto da tvoj lik igraču samo govori 'Točno! :)' ili 'Netočno :(', možeš dodati i neku grafiku koja će mu pokazivati kako mu ide.
 
-+ Dodaj novog lika 'Result' koji sadrži kostime 'tick' i 'cross'.
++ Dodaj novi lik iz knjižnice koji ima dva prikladna kostima - jedan za točan, a jedan za netočan rezultat. Možeš i dodati lik 'Button4', pa mu dodati još jedan kostim (na primjer Button 5-b). Promijeni ime lika u 'Rezultat'
 
 	![screenshot](brain-result.png)
 
-+ Promijeni kôd svoga lika tako da umijesto da samo govori igraču kako mu ide, šalje poruke `točno` {.blockevents} i `pogrešno` {.blockevents}. 
++ Promijeni kôd lika 'Rezultat' tako da umijesto da samo govori igraču kako mu ide, šalje poruke `točno` {.blockevents} i `pogrešno` {.blockevents}. 
 
 	![screenshot](brain-broadcast-answer.png)
 
-+ Sada možeš upotrijebiti ove poruke za prikazivanje 'tick' ili 'cross' kostima. Dodaj sljedeći kôd svom novom liku 'Result':
++ Sada možeš upotrijebiti ove poruke za prikazivanje 'kvačica' ili 'križić' kostima. Dodaj sljedeći kôd svom novom liku:
 
 	![screenshot](brain-show-answer.png)	
 
@@ -192,7 +192,7 @@ Umjesto da tvoj lik igraču samo govori 'Točno! :)' ili 'Netočno :(', možeš 
 
 + Primjećuješ li da su kôdovi za `kada primim točno` {.blockevents} i `kada primim pogrešno` {.blockevents} gotovo identični? Napravimo funkciju koja će olakšati promjene u kôdu.
 
-	Odaberi lik 'Result' i grupu naredbi `Više blokova` {.blockmoreblocks}. Klikni na gumb 'Napravi blok' i kreiraj novu funkciju koju ćeš nazvati `animiraj` {.blockmoreblocks}.
+	Odaberi lik 'Rezultat' i grupu naredbi `Više blokova` {.blockmoreblocks}. Klikni na gumb 'Napravi blok' i kreiraj novu funkciju koju ćeš nazvati `animiraj` {.blockmoreblocks}.
 
 	![screenshot](brain-animate-function.png)
 
@@ -227,7 +227,7 @@ Možeš li poboljšati animaciju svoje grafike? Možeš napraviti kôd za kvaći
 Možeš li dodati zvučne efekte i glazbu svojoj igrici? Na primjer:
 
 + Pojavljivanje zvuka kada igrač odgovori točno ili pogrešno;
-+ Dodavanje zvuka odbrojavanja vremenu;
++ Dodavanje zvuka odbrojavanju;
 + Puštanje zvuka kada vrijeme istekne;
 
 	```blocks
@@ -239,7 +239,7 @@ Možeš li dodati zvučne efekte i glazbu svojoj igrici? Na primjer:
 ## Spremi promjene u projektu. { .save }
 
 ## Izazov: Utrka do 10 bodova {.challenge}
-Možeš li promijeniti igru tako da umijesto odgovaranja na što veći broj pitanja u 30 sekundi, igrač provjeri koliko brzo može točno odgovoriti točno 10 pitanja?
+Možeš li promijeniti igru tako da umjesto odgovaranja na što veći broj pitanja u 30 sekundi, igrač provjeri koliko brzo može odgovoriti točno na 10 pitanja?
 
 To možeš napraviti mjenjanjem kôda odbrojavanja. Možeš li vidjeti što se treba promijeniti?
 
@@ -248,19 +248,19 @@ To možeš napraviti mjenjanjem kôda odbrojavanja. Možeš li vidjeti što se t
 	postavi [vrijeme v] na (30)
 	ponavljaj dok nije <(vrijeme) = [0]>
    		čekaj (1) sekundi
-   		promijeni [vrijemev] za (-1)
+   		promijeni [vrijeme v] za (-1)
 	end
 	pošalji [kraj v]
 ```
 
 ## Spremi promjene u projektu. { .save }
 
-## Izazov: Ekran s instrukcijama {.challenge}
-Možeš li dodati ekran s uputama za igricu? Na njemu će biti upute za igrača. Trebat će ti gumb 'Instructions' i još jedna pozadina za pozornicu.
+## Izazov: Ekran s uputama {.challenge}
+Možeš li dodati ekran s uputama za igrače? Trebat će ti gumb 'Upute' i još jedna pozadina za pozornicu.
 
 ![screenshot](brain-instructions.png)
 
-Također će ti trebati gumb 'Back' kako bi odveo igrača na glavni izbornik.
+Također će ti trebati gumb 'Povratak' kako bi odveo igrača na glavni izbornik.
 
 ```blocks
 	pošalji [main menu v]
