@@ -12,7 +12,7 @@ This project was created with Erik and his daughter Ruth. If you'd like to contr
 
 # Uvod { .intro }
 
-U ovom projektu kreirat ćemo igru pamćenja (memory) u kojoj ćeš trebati upamtiti i ponoviti niz slučajnih boja. 
+U ovom projektu kreirat ćeš igru pamćenja (memory) u kojoj ćeš trebati upamtiti i ponoviti niz slučajnih boja. 
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34874510/?autostart=false" frameborder="0"></iframe>
@@ -21,7 +21,7 @@ U ovom projektu kreirat ćemo igru pamćenja (memory) u kojoj ćeš trebati upam
 
 # Korak 1: Slučajne boje { .activity }
 
-Najprije kreirajmo lika koji će mijenjati slučajni niz boja koji igrač treba upamtiti. 
+Najprije kreirajmo lika koji će mijenjati niz boja koji igrač treba upamtiti. 
 
 ## Zadatci { .check }
 
@@ -42,11 +42,11 @@ Najprije kreirajmo lika koji će mijenjati slučajni niz boja koji igrač treba 
 
 	![screenshot](colour-costume.png)
 
-+ Za kreiranje slučajnog niza potrebno je kreirati __listu__. Lista je varijabla koja može pohraniti više  podataka __u određenom redoslijedu__. Creiraj novu listu i nazovi ju `niz` {.blockdata}. Kako će listi pristupati samo tvoj lik, prilikom kreiranja odaberi mogućnost 'Samo za ovaj lik'.
++ Za kreiranje slučajnog niza potrebno je kreirati __listu__. Lista je varijabla koja može pohraniti više  podataka __u određenom redoslijedu__. Kreiraj novu listu i nazovi ju `niz` {.blockdata}. Kako će listi pristupati samo tvoj lik, prilikom kreiranja odaberi mogućnost 'Samo za ovaj lik'.
 
 	![screenshot](colour-list.png)
 
-	Sada trebaš vidjeti praznu listu u gornjem lijevom kutu pozornice. You should now see your empty list in the top-left of your stage, as well as lots of new blocks for using lists.
+	Sada u gornjem lijevom kutu pozornice trebaš vidjeti praznu listu koja sadrži blokove za više vrijednosti. 
 
 	![screenshot](colour-list-blocks.png)
 
@@ -63,181 +63,181 @@ end
 		end
 	```
 
-	Primjeti da smo na početku listu ispraznili.
+Primjeti da smo na početku listu ispraznili.
 
 ## Izazov: Dodavanje zvuka {.challenge}
-Isprobaj projekt nekoliko puta. Možda ćeš primjetiti da je ponekad jedan broj prikazan dva ili više puta. Zbog toga je teže zapamtiti redoslijed. Možeš li napraviti da svaki puta kada lik promjeni kostim i bubanj zasvira? 
+Isprobaj projekt nekoliko puta. Možda ćeš primjetiti da je ponekad jedan broj prikazan dva ili više puta. Zbog toga je teže zapamtiti redoslijed. Možeš li napraviti da svaki puta kada lik promjeni kostim zasvira bubanj? 
 
 Možeš li sada napraviti da bubanj proizvodi drugačiji zvuk ovisno o odabranom broju? 
 Kôd je sličan onome kojim je mijenjan kostim lika. 
 
-## Spremi promjene u projektu { .save }
+## Spremi projekt { .save }
 
-# Step 2: Repeating the sequence { .activity }
+# Korak 2: POnavljanje niza { .activity }
 
-Let's add 4 buttons, for the player to repeat the sequence they've remembered.
+Dodajmo sada četiri gumba. Pomoću njih će igrač ponoviti niz koji je trebao zapamtiti. 
 
-## Activity Checklist { .check }
+## Zadatci { .check }
 
-+ Add 4 sprites to your project, that will become buttons. Edit your 4 sprites, so that there's 1 for each of the 4 colours.
++ Dodaj četiri lika koji će pretstavljati gumbe. Uredi ih tako da svaki od njih ima različitu boju.
 
 	![screenshot](colour-drums.png)
 
-+ When the red drum is clicked, you'll need to broadcast a message to your character, letting them know that the red button has been clicked. Add this code to your red drum:
++ Kada igrač klikne na crveni bubanj trebaš poslati poruku svom liku, tako da on zna da je kliknut crveni bubanj. Dodaj sljedeće naredbe crvenom bubnju: 
 
 	```blocks
-		when this sprite clicked
-		broadcast [red v]
+		kada je lik kliknut
+		pošalji [crvena v]
 	```
 
-+ When your character receives this message, they should check whether the number 1 is at the start of the list (which means that red is the next colour in the sequence). If it is, you can remove the number from the list, as it's been guessed correctly. Otherwise it's game over!
++ Kada lik primi tu poruku treba provjeriti je li na početku liste spremljena vrijednost 1 (što znači da je crvena sljedeća boja u nizu). Ako je, potrebno je ukloniti broj iz liste jer je ispravno pogođen. Inače je igra gotova. 
 
 	```blocks
-		when I receive [red v]
-		if <(item (1 v) of [sequence v])=[1]> then
-			delete (1 v) of [sequence v]
-		else
-			say [Game over!] for (1) secs
-			stop [all v]
+		kada primim [crvena v]
+		ako <(element (1 v) iz [niz v]) = [1]> onda
+   			obriši (1 v) iz [niz v]
+		inače
+   			govori [Kraj igre!] (1) sekundi
+   		zaustavi [sve v]
 		end
 	```
 
-+ You could also display some flashing lights once the list is empty, as it means the entire sequence has been guessed correctly. Add this code to the end of your character's `when flag clicked` {.blockevents} script:
++ Također možeš prikazati svjetleće lampice kada je lista prazna. To znači da je cijeli niz ispravno pogođen. Svom liku dodaj sljedeće naredbe na kraju `kada je ⚑ kliknut` {.blockevents} kôda:
 
 	```blocks
-		wait until < (length of [sequence v]) = [0]>
-		broadcast [won v] and wait
+		čekaj do <(veličina od [niz v]) = [0]>
+		pošalji [pobjeda v] i čekaj
 	```
 
-+ Click on your stage, and add this code to make the backdrop change colour once the player has won.
++ Klikni na pozornicu i dodaj sljedeće naredbe kako bi pozadina promijenila boju kada igrač pobjedi. 
 
 	```blocks
-		when I receive [won v]
-		play sound [drum machine v]
-		repeat (50)
-			change [color v] effect by (25)
-			wait (0.1) secs
+		kada primim [pobjeda v]
+		sviraj zvuk [drum machine v]
+		ponovi (50)
+   			promijeni efekt [boja v] za (25)
+   			čekaj (0.1) sekundi
 		end
-		clear graphic effects
+		makni grafičke efekte
 	```
 
-## Challenge: Creating 4 buttons {.challenge}
-Repeat the steps above for your blue, green and yellow buttons. Which code will stay the same, and which code will change for each button?
+## Izazov: Izrada preostalih gumba {.challenge}
+Ponovi prethodne korake za plavi, zeleni i žuti bubanj. Koje naredbe će ostati jednake, a koje će se promijeniti? 
 
-You can also add sounds for when the buttons are pressed.
+Također možeš dodati zvuk koji će se puštati kada igrač klikne na bubanj. 
 
-Remember to test the code you've added! Can you memorise a sequence of 5 colours? Is the sequence different each time?
+Ne zaboravi isprobati dodani kôd! Možeš li upamtiti niz od pet boja? Je li taj niz svaki puta drugačiji? 
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
-# Step 3: Multiple levels { .activity .new-page }
+# Korak 3 3: Više nivoa { .activity .new-page }
 
-So far, the player only has to remember 5 colours. Let's improve your game, so that the length of the sequence increases.
+Do sada je igrač trebao upamtiti samo pet boja. Poboljšajmo igru tako da se dužina niza povećava. 
 
-## Activity Checklist { .check }
+## Zadatci { .check }
 
-+ Create a new variable called `score` {.blockdata}.
++ Kreiraj novu varijablu i nazovi ju `rezultat` {.blockdata}.
 
 	![screenshot](colour-score.png)
 
-+ This `score` {.blockdata} will be used to decide on the length of the sequence the player has to memorise. So, to begin with the score (and the sequence length) is 3. Add this code block to the start of your character's `when flag clicked` {.blockevents} code:
++ Varijabla `rezultat` {.blockdata} će se koristiti za odluku o dužini niza kojeg igrač treba upamtiti. Za početak, neka dužina niza bude jednaka 3. Liku dodaj sljedeći niz naredbi na početak bloka `kada je ⚑ kliknut` {.blockevents}:
 
 	```blocks
-		set [score v] to [3]
+		postavi [rezultat v] na [3]
 	```
 
-+ Instead of always creating a sequence of 5 colours, you now want the `score` {.blockdata} to determine the sequence length. Change your character's `repeat` {.blockcontrol} loop (for creating the sequence) to:
++ Umjesto da se uvijek kreira niz od pet boja, sada želimo da vrijednost varijable `rezultat` {.blockdata} određuje dužinu niza. Promijeni petlju `ponavljaj` {.blockcontrol}  (koja kreira niz) u:
 
 	```blocks
-		repeat (score)
+		ponaovi (rezultat)
 		end
 	```
 
-+ If the sequence is guessed correctly, you should add 1 to the score, to increase the length of the sequence.
++ Ako je niz ispravno pogođen vrijednost varijable `rezultat` {.blockdata} potrebno je uvećati za 1 kako bi se duljina niza povećala. 
 
 	```blocks
-		change [score v] by (1)
+		promijeni [rezultat v] za (1)
 	```
 
-+ Finally, you need to add a `forever` {.blockcontrol} loop around the code to generate the sequence, so that a new sequence is created for each level. This is how your character's code should look:
++ Na kraju, potrebno je dodati petlju `ponavljaj` {.blockcontrol} oko kôda koji generira niz kako bi se za svaki nivo generirao novi niz boja. Kôd tvog lika sada treba izgledati ovako:
 
 	```blocks
-		when flag clicked
-		set [score v] to [3]
-		forever
-			delete (all v) of [sequence v]
-			repeat (score)
-				add (pick random (1) to (4)) to [sequence v]
-				switch costume to (item (last v) of [sequence v]
-				wait (1) secs
-			end
-			wait until < (length of [sequence v]) = [0]>
-			broadcast [won v] and wait
-			change [score v] by (1)
+		kada je ⚑ kliknut
+		postavi [rezultat v] na [3]
+		ponavljaj
+   			obriši (sve v) iz [niz v]
+  			ponovi (rezultat)
+      				dodaj (slučajni broj od (1) do (4)) u [niz v]
+      				promijeni kostim u (element (last v) iz [niz v])
+      				čekaj (1) sekundi
+   			end
+   			čekaj do <(veličina od [niz v]) = [0]>
+   			pošalji [pobjeda v] i čekaj
+   			promijeni [rezultat v] za (1)
 		end
 	```
 
-+ Get your friends to test out your game. Remember to hide the `sequence` {.blockdata} list before they play it!
++ Pokaži igru prijateljima i zamoli ih da ju isprobaju. Ne zaboravi sakriti listu `niz` {.blockdata} prije toga!
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
-# Step 4: High score { .activity }
+# Korak 4: Najbolji rezultat { .activity }
 
-Let's save the high score, so that you can play against your friends.
+Spremimo sada najbolji rezultat tako da možeš igrati sa prijateljima!
 
-## Activity Checklist { .check }
+## Zadatci{ .check }
 
-+ Add 2 new variables to your project, called `high score` {.blockdata} and `name` {.blockdata}.
++ Dodaj dvije nove varijable u projekt. Nazovi ih `najbolji rezultat` {.blockdata} i `igrač` {.blockdata}.
 
-+ If ever the game ends (by pressing the wrong button), you need to check whether the player's score is higher than the current high score. If it is, you need to save the score as the high score, and store the name of the player. Here's how your red button should look:
++ Kada igra završi (pritiskom na pogrešni bubanj) potrebno je provjeriti je li rezultat igrača veći od trenutnog najvećeg rezultata. Ako je, trebamo ga spremiti kao najveći i pohraniti ime igrača. Ovako sada reba izgledati kôd za crveni bubanj: 
 
 	```blocks
-		when I receive [red v]
-		if <(item (1 v) of [sequence v])=[1]> then
-			delete (1 v) of [sequence v]
-		else
-			say [Game over!] for (1) secs
-			if < (score) > (high score) > then
-				set [high score v] to (score)
-				ask [High score! What is your name?] and wait
-				set [name v] to (answer)
-			end
-			stop [all v]
-		end
+		kada primim [crvena v]
+		ako <(element (1 v) iz [niz v]) = [1]> onda
+   			obriši (1 v) iz [niz v]
+		inače
+   			govori [Kraj igre!] (1) sekundi
+   		ako <(rezultat) > (najbolji rezultat)> onda
+      			postavi [najbolji rezultat v] na (rezultat)
+      			pitaj [Najbolji rezultat! Kako se zoveš?] i čekaj
+      			postavi [igrač v] na (odgovor)
+	   	end
+   		zaustavi [sve v]
+   		end
 	```
 
-+ You'll need to add this new code to the other 3 buttons too! Have you noticed that the 'Game over' code in each of the 4 buttons is exactly the same?
++ Dodaj prethodne naredbe i preostalim bubnjevima. Primjeti da su naredbe u dijelu 'Kraj igre' jednake za sva četiri bubnja. 
 
 	![screenshot](colour-same.png)
 
-+ If ever you need to change any of this code, such as adding a sound or changing the 'Game over!' message, you'd have to change it 4 times! That could get annoying, and waste a lot of time.
++ Pojavi li se nekada potreba za izmjenom tog dijela kôda, promjene će trebati napraviti četiri puta. To je dosadno i odnosi previše vremena.
 
-	Instead, you can define your own blocks, and reuse them in your project! To do this, click `more blocks` {.blockmoreblocks}, and then 'Make a block'. Call this new block 'Game over'.
+	Umjesto toga možeš definirati vlastiti blok naredbi i koristiti ga više puta u projektu. Odaberi skupinu naredbi `Više Blokova` {.blockmoreblocks}, a zatim 'Napravi blok'. Nazovi ga 'Kraj igre'.
 
 	![screenshot](colour-more.png)
 
-+ Add the code from the `else` {.blockcontrol} block from the red button to the new block that appears:
++ Dodaj naredbe iz bloka `inače` {.blockcontrol} crvenog bubnja u novi blok koji se pojavio:
 
 	![screenshot](colour-make-block.png)
 
-+ You've now made a new _function_ called `Game over` {.blockmoreblocks}, which you can use anywhere you like. Drag your new `Game over` {.blockmoreblocks} block onto the 4 scripts for the buttons.
++ Napravili smo novu  _funkciju_  `Kraj igre` {.blockmoreblocks} koju sada možemo koristiti kada god nam zatreba. Odvuci blok  `Kraj igre` {.blockmoreblocks} u četiri skripte za bubnjeve.
 
 	![screenshot](colour-use-block.png)
 
-+ Now add a sound for when the wrong button is pressed. You only need to add this code _once_ in the `Game over` {.blockmoreblocks} block that you made, and not 4 separate times!
++ Sada dodaj zvuk koji će se puštati kada igrač odabere krivu boju. Narebe za to trebaš dodati samo  _jednom_ u blok `Kraj igre` {.blockmoreblocks}, ne četiri puta! 
 
 	![screenshot](colour-cough.png)
 
-## Challenge: Making more blocks {.challenge}
-Do you notice any other code that is the same for all 4 buttons?
+## Izazov: Napravi više blokova {.challenge}
+Primjećuješ li još naredbi koje su jednake za sva četiri bubnja?
 
 ![screenshot](colour-more-blocks.png)
 
-Can you make another custom block, that is used by each button?
+Možeš li napraviti neki drugi blok koji će koristiti sva četiri bubnja? 
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
-## Challenge: Another costume {.challenge}
+## Izazov: Drugi kostim {.challenge}
 Have you noticed that your game starts with your character showing one of the 4 colours, and that they always display the last colour in the sequence while the player is repeating the sequence?
 
 Can you add another plain white costume to your character, which is displayed at the start of your game, and when the player is trying to copy the sequence?
