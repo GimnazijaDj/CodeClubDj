@@ -5,17 +5,17 @@ embeds: "*.png"
 ...
 
 #Uvod:
-U ovome projektu, djeca će naučiti kako da naprave kviz u kojemu igrač treba odgovoriti na koliko god pitanja stignu u 30 sekundi
+U ovome projektu djeca će naučiti napraviti kviz u kojemu igrač treba odgovoriti na što više pitanja u 30 sekundi
 
 #Izvori
-Za ovaj prokejt potrebno je koristiti Scratch 2. Scratch 2 može biti korišten online na [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ili preuzeti na [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) i korišten offline.
+Za ovaj prokejt potrebno je koristiti Scratch 2. Scratch 2 se može koristiti online na [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ili preuzeti na računalo s adrese [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off).
 
-Možete naći završenu verziju ovog projekta <a href="http://scratch.mit.edu/projects/42225768/#editor">online</a>, ili možete preuzeti 'Download Project Materials' link za projekt koji sadrži: 
+Završena inačica ovog projekta može se pogledati <a href="http://scratch.mit.edu/projects/42225768/#editor">online</a>, ili mpreuzeti preko linka 'Download Project Materials'. Materijali sadrže datoteku: 
 
 + BrainGame.sb2
 
 #Ishodi učenja
-+ Ovaj projekt će učvrstiti prethodno znanje o programiranju, i pokazati kako kako se prijenos može korstiti za izradu jednostavnog izbornika za igricu.
++ Ovaj projekt će učvrstiti prethodno znanje o programiranju, i pokazati kako kako se prijenos poruka može korstiti za izradu jednostavnog izbornika za igricu.
 
 #Izazovi
 + "Promijena kostima" - promijena izgleda lika u odnosu na točne i netočne odgovore;
@@ -24,5 +24,5 @@ Možete naći završenu verziju ovog projekta <a href="http://scratch.mit.edu/pr
 + "Poboljšavanje animacije" - korištenje petlji i efekata kako bi se poboljšala animacija;
 + "Zvuk i glazba" - učvršćivanje znanja o petljama za glazbu i zvučnim efektima;
 + "Utrka do 10 bodova" - promijena načina igre zbog novog (objective);
-+ "Ekran s instrukcijama" - učvršćivanje uporabe prijenosa kako bi se napravio izbornik za igru dodavanjem novog gumba 'instructions' na ekran.
++ "Ekran s uputama" - učvršćivanje uporabe prijenosa kako bi se napravio izbornik za igru dodavanjem novog gumba 'instructions' na ekran.
 
