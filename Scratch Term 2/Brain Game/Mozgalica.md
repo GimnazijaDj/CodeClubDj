@@ -179,7 +179,7 @@ Umjesto da tvoj lik igraču samo govori 'Točno! :)' ili 'Netočno :(', možeš 
 
 	![screenshot](brain-result.png)
 
-+ Promijeni kôd lika 'Rezultat' tako da umijesto da samo govori igraču kako mu ide, šalje poruke `točno` {.blockevents} i `pogrešno` {.blockevents}. 
++ Promijeni kôd lika 'Rezultat' tako da umjesto da samo govori igraču kako mu ide, šalje poruke `točno` {.blockevents} i `netočno` {.blockevents}. 
 
 	![screenshot](brain-broadcast-answer.png)
 
