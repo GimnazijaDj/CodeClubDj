@@ -80,7 +80,7 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 
 ## Zadatci { .check }
 
-+ Dodaj lik gumba iz biblioteke likova (možeš ga i nacrtati) na kojeg će igrač kliknuti kako bi pokrenuo novu igru. U kostimima dodaj na gumb tekst 'Play' (ili 'Pokreni', kako želiš)
++ Dodaj lik gumba iz biblioteke likova (možeš ga i nacrtati) na kojeg će igrač kliknuti kako bi pokrenuo novu igru. U kostimima dodaj na gumb tekst 'Pokreni' (ili 'Play', kako želiš)
 
 	![screenshot](brain-play.png)
 
