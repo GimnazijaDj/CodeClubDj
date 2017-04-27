@@ -8,7 +8,7 @@ materials: ["Club Leader Resources/*"]
 ...
 
 ## Community Contributed Project { .challenge .pdf-hidden }
-This project was created with Erik and his daughter Ruth. If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
+Ovaj projekt kreirli su Erik i njegova kćer Ruth. Želite li sudjelovati svojim projektom  [kontaktirajte nas na GitHubu](https://github.com/CodeClub).
 
 # Uvod { .intro }
 
