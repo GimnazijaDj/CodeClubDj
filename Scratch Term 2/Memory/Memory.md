@@ -54,12 +54,12 @@ Najprije kreirajmo lika koji će mijenjati niz boja koji igrač treba upamtiti.
 
 	```blocks
 		kada je ⚑ kliknut
-obriši (sve v) iz [niz v]
-ponovi (5)
-   dodaj (slučajni broj od (1) do (4)) u [niz v]
-   promijeni kostim u (element (last v) iz [niz v])
-   čekaj (1) sekundi
-end
+		obriši (sve v) iz [niz v]
+		ponovi (5)
+   			dodaj (slučajni broj od (1) do (4)) u [niz v]
+   			promijeni kostim u (element (last v) iz [niz v])
+   			čekaj (1) sekundi
+		end
 		end
 	```
 
@@ -130,7 +130,7 @@ Ne zaboravi isprobati dodani kôd! Možeš li upamtiti niz od pet boja? Je li ta
 
 ## Spremi promjene u projektu { .save }
 
-# Korak 3 3: Više nivoa { .activity .new-page }
+# Korak 3: Više nivoa { .activity .new-page }
 
 Do sada je igrač trebao upamtiti samo pet boja. Poboljšajmo igru tako da se dužina niza povećava. 
 
@@ -149,7 +149,7 @@ Do sada je igrač trebao upamtiti samo pet boja. Poboljšajmo igru tako da se du
 + Umjesto da se uvijek kreira niz od pet boja, sada želimo da vrijednost varijable `rezultat` {.blockdata} određuje dužinu niza. Promijeni petlju `ponavljaj` {.blockcontrol}  (koja kreira niz) u:
 
 	```blocks
-		ponaovi (rezultat)
+		ponovi (rezultat)
 		end
 	```
 
