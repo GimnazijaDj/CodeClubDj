@@ -103,7 +103,7 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 
 	![screenshot](brain-start.png)
 
-+ Klikni na zelenu zastavicu, a zatim na gumb Play i isprobaj program. Vidjet ćeš da igra ne počinje sve dok igrač ne pritisne gumb.
++ Klikni na zelenu zastavicu, a zatim na gumb 'Pokreni' i isprobaj program. Vidjet ćeš da igra ne počinje sve dok igrač ne pritisne gumb.
 
 + Primjećuješ li da odbrojavanje počinje kada se klikne zelena zastavica, a ne kada počne igra?
 
@@ -129,7 +129,7 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 		zaustavi [ostale skripte lika v]
 	```
 
-+ Isprobaj gumb Play tako što ćeš odigrati igricu nekoliko puta. Primjeti da se ponovno pojavi nakon svake igre. Kako bi ti testiranje bilo lakše, možeš skratiti trajanje igre.
++ Isprobaj gumb 'Pokreni' tako što ćeš odigrati igricu nekoliko puta. Primjeti da se ponovno pojavi nakon svake igre. Kako bi ti testiranje bilo lakše, možeš skratiti trajanje igre.
 
 	```blocks
 		postavi [vrijeme v] na [10]
@@ -156,7 +156,8 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 ## Izazov: Početni zaslon {.challenge}
 Možeš li dodati još jednu pozadinu na pozornicu? Ona bi trebala biti početni zaslon tvoje igre. Za promjenu pozadina koristiti naredbe `kada primim kreni` {.blockevents} i `kada primim kraj` {.blockevents}.
 
-+ Također možeš prikazati i sakriti svoga lika i odbrojavanje koristeći ove naredbe:
++ Također možeš prikazati ili sakriti svoga lika
++ Možeš prikazati ili sakriti i odbrojavanje koristeći ove naredbe:
 
 	```blocks
 		prikaži varijablu [vrijeme v]
