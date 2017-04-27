@@ -191,7 +191,7 @@ Umjesto da tvoj lik igraču samo govori 'Točno! :)' ili 'Netočno :(', možeš 
 
 	![screenshot](brain-test-answer.png)
 
-+ Primjećuješ li da su kôdovi za `kada primim točno` {.blockevents} i `kada primim pogrešno` {.blockevents} gotovo identični? Napravimo funkciju koja će olakšati promjene u kôdu.
++ Primjećuješ li da su kôdovi za `kada primim točno` {.blockevents} i `kada primim netočno` {.blockevents} gotovo identični? Napravimo funkciju koja će olakšati promjene u kôdu.
 
 	Odaberi lik 'Rezultat' i grupu naredbi `Više blokova` {.blockmoreblocks}. Klikni na gumb 'Napravi blok' i kreiraj novu funkciju koju ćeš nazvati `animiraj` {.blockmoreblocks}.
 
