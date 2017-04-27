@@ -238,17 +238,17 @@ Možeš li napraviti neki drugi blok koji će koristiti sva četiri bubnja?
 ## Spremi promjene u projektu { .save }
 
 ## Izazov: Drugi kostim {.challenge}
-Have you noticed that your game starts with your character showing one of the 4 colours, and that they always display the last colour in the sequence while the player is repeating the sequence?
+Primjećuješ li da je na početku igre tvoj lik uvijek u kostimu kojim je završila prethodna igra?
 
-Can you add another plain white costume to your character, which is displayed at the start of your game, and when the player is trying to copy the sequence?
+Možeš li dodati još jedan bijeli kostim koji će se prikazivati na početku igre i dok igrač ponavlja boje? 
 
 ![screenshot](colour-white.png)
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
-## Challenge: Difficulty level {.challenge}
-Can you allow your player to choose between 'easy mode' (using just the red and blue drums) and 'normal mode' (which uses all 4 drums)?
+## Izazov: Različite težine igre {.challenge}
+Možeš li omogućiti igraču da odabere između 'lakše razine' (koristeći samo crveni i plavi bubanj) i 'normalne razine' (u kojoj se koriste sva četiri bubnja)?
 
-You could even add a 'hard' mode, which makes use of a 5th drum!
+Možeš čak dodati i 'tešku razinu' koja koristi i peti bubanj!
 
-## Save your project { .save }
+## Spremi projekt{ .save }
