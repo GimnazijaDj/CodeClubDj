@@ -105,58 +105,58 @@ Dodavanjem gravitacije i omogućavanjem skakanja napravit ćemo da igrač bude j
 
 	![screenshot](dodge-gravity-drag.png)
 
-+ Gravity shouldn't move your character through a platform or a pole! Add an `if` {.blockcontrol} block to your code, so that the gravity only works when your character is in mid-air. The gravity code should now look like this:
++ Gravitacija ne bi trebala pomicati lik kroz platformu ili stup! Dodaj naredbu `ako je` {.blockcontrol} u kôd tako da gravitacija djeluje samo kada je lik u zraku. Kôd za gravitaciju sada treba izgledati ovako: 
 
 	```blocks
-		when flag clicked
-		set [gravity v] to [-4]
-		forever
-			if < not < <touching color [#0000FF]?> or <touching color [#FFFF00]?> > > then
-				change y by (gravity)
-			end
+		kada je ⚑ kliknut
+		postavi [gravitacija v] na [-4]
+		ponavljaj
+   			ako <nije <<dodiruje boju [#0000FF]?> ili <dodiruje boju [#FFFF00]?>>> onda
+      			promijeni y za (gravitacija)
+   		end
 		end
 	```
 
-+ Test the gravity again. Does your character stop when they are on a platform or a pole? Can you walk off the edge of platforms to the level below?
++ Isprobaj sada gravitaciju. Zaustavi li se lik kada dodirne platformu ili stup? Test the gravity again. Does your character stop when they are on a platform or a pole? Možeš li sada hodati od ruba platforme do razine ispod?
 
 	![screenshot](dodge-gravity-test.png)
 
-+  Let's also make your character jump when the player presses the space bar. One very easy way to do this is to move your character up a few times, using this code:
++  Napravimo ssda da lik skoči svaki puta kada igrač protisne razmaknicu. Jednostavan način za to je pomicanje lika prema gore nekoliko puta, koristeći naredbe: 
 
 	```blocks
-		when [space v] key pressed
-		repeat (10)
-			change y by (4)
+		kada je tipka [razmaknica v] pritisnuta
+		ponovi (10)
+   		promijeni y za (4)
 		end
 	```
 
-	As gravity is constantly pushing your character down by 4 pixels, you need to choose a number greater than 4 in your `change y by (4)` {.blockmotion} block. Change this number until you're happy with the height your character jumps.
+	Kako gravitacija konstantno vuče lika za 4 piksela dolje trebaš odabrati broj veći od 4 u bloku `promijeni y za (4)` {.blockmotion}. Mijenjaj taj broj sve dok ne budeš zadovoljan skokom. 
 
-+ If you test out this code, you'll notice that it works, but the movement isn't very smooth. To make jumping look smoother, you'll need to move your character by smaller and smaller amounts, until they're not jumping anymore.
++ Isprobaš li sada projekt prijetit ćeš da radi, ali da su pokreti jako spori. Da bi skog izgledao bolje potrebno je pokrete smanjivati postepeno. 
 
-+ To do this, create another variable called `jump height` {.blockdata}. Again, you can hide this variable if you prefer.
++ Da to napraviš kreiraj još jednu varijablu. Nazovi ju `visina skoka` {.blockdata}. I nju možeš sakriti ako želiš.
 
-+ Delete the jumping code you added to your character, and replace it with this code:
++ Obriši naredbe za skakanje lika i zamijeni ih sljedećim naredbama: 
 
 	```blocks
-		when [space v] key pressed
-		set [jump height v] to [8]
-		repeat until < (jump height) = [0] >
-			change y by (jump height)
-			change [jump height v] by (-0.5)
+		kada je tipka [razmaknica v] pritisnuta
+		postavi [visina skoka v] na [8]
+		ponavljaj dok nije <(visina skoka) = [0]>
+   		promijeni y za (visina skoka)
+   		promijeni [visina skoka v] za (-0.5)
 		end
 	```
 
-	This code moves your character up by 8 pixels, then 7.5 pixels, then 7 pixels, and so on, until your character has finished jumping. This makes jumping look much smoother.
+	Ove naredbe pomiću lika za 8 piksela, pa na 7.5, 7, i tako sve dok lik ne završi sa skakanjem. Tako će skok izgledati glađe. 
 
-+ Change the starting value of your `jump height` {.blockdata} variable and test it until you're happy with the height your character jumps.
++ Mijenjaj početnu vrijednost varijable `visina skoka` {.blockdata} i testiraj ju sve dok ne budeš zadovoljan načinom na koji tvoj lik skače. 
 
-## Save your project { .save }
+## Spremi projekt { .save }
 
-## Challenge: Improved jumping {.challenge}
-Your character is able to jump whenever the spacebar is pressed, even if they're already in mid-air. You can test this by just holding down the spacebar. Can you fix this, so that your character can only jump `if` {.blockcontrol} they're touching a blue platform?
+## Izazov: Poboljšaj skakanje {.challenge}
+Tvoj lik sada je sposoban skočiti svaki puta kada je pritisnuta razmaknica., čak i kada je u zraku. Isprobaj to držeći razmaknicu pritisnutom. Možeš li to popraviti tako da lik može skakatisamo  `ako` {.blockcontrol} dodiruje plavu platformu?  
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
 # Step 3: Dodging balls { .activity .new-page}
 
