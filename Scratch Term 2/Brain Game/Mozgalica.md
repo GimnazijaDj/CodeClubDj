@@ -31,7 +31,7 @@ Krenimo s izradom pitanja.
 + Kreiraj dvije nove varijable koje se zovu 'broj 1' {.blockdata} i broj 2 {.blockdata}. U njih će se spremiti dva broja koja će se pomnožiti.
 	![screenshot](brain-variables.png)
 
-+ Za postavljnje varijabli na 'slučajan' {.blockoperators} broj između 2 i 12 dodaj svom liku sljedeće naredbe:
++ Za postavljanje varijabli na 'slučajan' {.blockoperators} broj između 2 i 12 dodaj svom liku sljedeće naredbe:
 
 	```blocks
 		kada je ⚑ kliknut
