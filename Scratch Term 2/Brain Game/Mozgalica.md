@@ -76,7 +76,7 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 
 # Korak 2: Više igara { .activity .new-page}
 
-Želiš li igrati igru više puta, možeš dodati gumb 'play'.
+Želiš li igrati igru više puta, možeš dodati gumb 'Pokreni'.
 
 ## Zadatci { .check }
 
