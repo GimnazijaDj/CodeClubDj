@@ -60,7 +60,6 @@ Najprije kreirajmo lika koji će mijenjati niz boja koji igrač treba upamtiti.
    			promijeni kostim u (element (last v) iz [niz v])
    			čekaj (1) sekundi
 		end
-		end
 	```
 
 Primjeti da smo na početku listu ispraznili.
@@ -73,7 +72,7 @@ Kôd je sličan onome kojim je mijenjan kostim lika.
 
 ## Spremi projekt { .save }
 
-# Korak 2: POnavljanje niza { .activity }
+# Korak 2: Ponavljanje niza { .activity }
 
 Dodajmo sada četiri gumba. Pomoću njih će igrač ponoviti niz koji je trebao zapamtiti. 
 
