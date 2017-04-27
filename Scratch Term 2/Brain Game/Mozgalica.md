@@ -95,7 +95,7 @@ Možeš li dodati rezultat svojoj igri? Možeš dodati bod za svaki točan odgov
 		pošalji [kreni v]
 	```
 
-	Ovaj kôd će prikazati gumb Play kada se projekt pokrene. Kada igrač klikne na njega, gumb nestaje i šalje se poruka koja će pokrenuti igru.
+	Ovaj kôd će prikazati gumb 'Pokreni' kada se projekt pokrene. Kada igrač klikne na njega, gumb nestaje i šalje se poruka koja će pokrenuti igru.
 
 + Promijeni kôd svoga lika tako da igra počne kada on dobije poruku 'kreni' {.blockevents}, a ne kada je kliknuta zastavica.
 
