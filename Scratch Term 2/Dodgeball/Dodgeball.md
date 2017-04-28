@@ -9,7 +9,7 @@ materials: ["Club Leader Resources/*","Project Resources/*"]
 
 # Uvod { .intro }
 
-U ovom projektu ćeš naučiti kako kreirati igru u kojoj igrač treba izbjegavati lopte koje se kreću i stići do kraja nivoa.
+U ovom projektu ćeš naučiti napraviti igru u kojoj igrač treba izbjegavati lopte koje se kreću i stići do kraja nivoa.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/39740618/?autostart=false" frameborder="0"></iframe>
@@ -149,7 +149,7 @@ Dodavanjem gravitacije i omogućavanjem skakanja napravit ćemo da igrač bude j
 
 	Ove naredbe pomiću lika za 8 piksela, pa na 7.5, 7, i tako sve dok lik ne završi sa skakanjem. Tako će skok izgledati glađe. 
 
-+ Mijenjaj početnu vrijednost varijable `visina skoka` {.blockdata} i testiraj ju sve dok ne budeš zadovoljan načinom na koji tvoj lik skače. 
++ Mijenjaj početnu vrijednost varijable `visina skoka` {.blockdata} i testiraj ju sve dok ne budeš zadovoljan načinom na koji  lik skače. 
 
 ## Spremi projekt { .save }
 
@@ -160,7 +160,7 @@ Tvoj lik sada je sposoban skočiti svaki puta kada je pritisnuta razmaknica., č
 
 # Step 3: Dodavanje lopti { .activity .new-page}
 
-Sada kada smo dovršili kretanje lika, dodajmo nekoliko lopti koje treba izbjegavati. 
+Sada kada smo dovršili kretanje lika, dodajmo lopte koje treba izbjegavati. 
 
 ## Zadatci { .check }
 
@@ -220,62 +220,62 @@ Sve lopte su sada jednake i pojavljuju se svake tri sekunde. Možeš li to pobol
 
 ## Spremi promjene u projektu { .save }
 
-# Step 4: Lasers! { .activity .new-page}
+# Korak 4: Laseri! { .activity .new-page}
 
-Let's make your game a little harder to complete, by adding lasers!
+Otežajmo sada igru dodajući lasere!
 
-## Activity Checklist { .check }
+## Zadatci { .check }
 
-+ Add a new sprite to your game, called 'Laser'. It should have 2 costumes, called 'on' and 'off'.
++ Dodaj novog lika i nazovi ga laser. On treba imati dva kostima - 'uključen' i 'isključen'.
 
 	![screenshot](dodge-lasers-costume.png)
 
-+ Place your new laser anywhere you like, between 2 platforms.
++ Postavi ga negdje između dvije platforme. 
 
 	![screenshot](dodge-lasers-position.png)
 
-+ Add code to your laser, to make it switch between the 2 costumes.
++ Dodaj mu sljedeće naredbe kako bi laser mijenjao kostime: 
 
 	```blocks
-		when flag clicked
-		forever
-			switch costume to [on v]
-			wait (2) secs
-			switch costume to [off v]
-			wait (2) secs
+		kada je ⚑ kliknut
+		ponavljaj
+   			promijeni kostim u [uključeno v]
+   			čekaj (2) sekundi
+   			promijeni kostim u [isključeno v]
+   			čekaj (2) sekundi
 		end
 	```
 
-	If you prefer, you can `wait` {.blockcontrol} a `random` {.blockoperators} amount of time between costume changes.
+	Želiš li, možeš u bloku `čekaj` {.blockcontrol} umjesto dvije sekunde staviti broj sekundi odabran `slučajnim` {.blockoperators} odabirom kako bi se zamjena kostima odvijala svaki puta drugačije.
 
-+ Finally, add code to your laser, so that the 'hit' message is broadcast when the laser touches your character. This code will be the same as the code you added to your ball sprite.
++ Na kraju dodaj laseru naredbe da pošalje poruku 'sudar' kada se lik i laser dodirnu. To je jednak kôd onome koji smo dodavali lopti. 
 
-	You don't need to add any more code to your character - they already know what to do when they get hit!
+	Ne trebaš dodavati naredbe liku - on već zna što treba napraviti kada dođe do sudara! Y
 
-+ Test out your game to see if you can get past the laser. Change the `wait` {.blockcontrol} times in your code if the lasers are too easy or too hard.
++ Pokreni igru i provjeri možeš li proći kroz laser. Promijeni vrijeme u bloku  `čekaj` {.blockcontrol} i time olakšaj ili otežaj igru.
 
-## Challenge: More obstacles {.challenge}
-If you think your game is still too easy, you can add more obstacles to your level. You can add anything you like, but here are some ideas:
+## Izazov: Više prepreka {.challenge}
+Misliš li da je igra još uvijek prelagana dodaj više prepreka. Evo nekoliko ideja: 
 
-+ A flying killer butterfly;
-+ Platforms that appear and disappear;
-+ Falling tennis balls that must be avoided.
++ Leteći leptir;
++ Platforme koje se pojavljuju i nestaju
++ Tenike loptice koje padaju i potrebno ih je izbjeći.
 
 ![screenshot](dodge-obstacles.png)
 
-You could even create more than one backdrop, and move to the next level when your character reaches the brown door:
+Možeš napraviti i više pozadina i prijeći na novi nivo kada lik dodirne smeđa vrata: 
 
 ```blocks
-	if <touching color [#714300]?> then
-		switch backdrop to [next backdrop v]
-		go to x: (-210) y: (-120)
-		wait (1) secs
-	end
+	ako <dodiruje boju [#714300]?> onda
+   	promijeni pozadinu na [sljedeća pozadina v]
+   	idi na x:(-210) y:(-120)
+   	čekaj (1) sekundi
+end
 ```
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
-## Challenge: Improved gravity {.challenge}
+## Izazov: Poboljšaj gravitaciju {.challenge}
 There's one other small bug in your game: gravity doesn't pull your character downwards if _any_ part of it is touching a blue platform - even it's head! You can test this out by climbing most of the way up a pole and then moving to the left.
 
 ![screenshot](dodge-gravity-bug.png)
