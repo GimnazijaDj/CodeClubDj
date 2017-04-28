@@ -117,11 +117,11 @@ Dodavanjem gravitacije i omogućavanjem skakanja napravit ćemo da igrač bude j
 		end
 	```
 
-+ Isprobaj sada gravitaciju. Zaustavi li se lik kada dodirne platformu ili stup? Test the gravity again. Does your character stop when they are on a platform or a pole? Možeš li sada hodati od ruba platforme do razine ispod?
++ Isprobaj gravitaciju. Zaustavi li se lik kada dodirne platformu ili stup? Test the gravity again. Does your character stop when they are on a platform or a pole? Možeš li sada hodati od ruba platforme do razine ispod?
 
 	![screenshot](dodge-gravity-test.png)
 
-+  Napravimo ssda da lik skoči svaki puta kada igrač protisne razmaknicu. Jednostavan način za to je pomicanje lika prema gore nekoliko puta, koristeći naredbe: 
++  Napravimo sada da lik skoči svaki puta kada igrač protisne razmaknicu. Jednostavan način za to je pomicanje lika prema gore nekoliko puta, koristeći naredbe: 
 
 	```blocks
 		kada je tipka [razmaknica v] pritisnuta
@@ -158,67 +158,67 @@ Tvoj lik sada je sposoban skočiti svaki puta kada je pritisnuta razmaknica., č
 
 ## Spremi promjene u projektu { .save }
 
-# Step 3: Dodging balls { .activity .new-page}
+# Step 3: Dodavanje lopti { .activity .new-page}
 
-Now that you've got your character moving around, let's add some balls for your character to avoid.
+Sada kada smo dovršili kretanje lika, dodajmo nekoliko lopti koje treba izbjegavati. 
 
-## Activity Checklist { .check }
+## Zadatci { .check }
 
-+ Create a new ball sprite. You can choose any type of ball you like.
++ Dodaj novi lik - loptu. Odaberi koju želiš. 
 
 	![screenshot](dodge-balls.png)
 
-+ Resize your ball, so that your character can jump over it. Try jumping over the ball to test it. 
++ Promijeni veličinu lopte tako da ju tvoj lik može preskočiti. Pokušaj preskočiti loptu da se uvjeriš da je sve u redu. 
 
 	![screenshot](dodge-ball-resize.png)
 
-+ Add this code to your ball:
++ Dodaj sljedeće naredbe lopti: 
 
 	![screenshot](dodge-ball-motion.png)
 
-	This code creates a new ball clone every 3 seconds. Each new clone moves along the top platform.
+	One će svake tri sekunde kreirati klona lopte koji će se kretati gornjom platformom. 
 
-+ Click the flag to test this out.
++ Klikni na zastavicu i provjeri radi li.
 
 	![screenshot](dodge-ball-test.png)
 
-+ Add more code to your ball sprite, so that they move across all 3 platforms.
++ Dodaj sljedeće naredbe kako bi se lopte kretale kroz sve tri platforme. 
 
 	![screenshot](dodge-ball-more-motion.png)
 
-+ Finally, you'll need code for when your character gets hit by a ball! Add this code to your ball sprite:
++ Na kraju, trebat ćeš naredbe za situaciju u kojoj lik dodirne loptu. Liku lopte dodaj ove naredbe:  
 
 	```blocks
-		when I start as a clone
-		forever
-			if < touching [Pico walking v]? > then
-				broadcast [hit v]
-			end
+		kada krećem kao klon
+		ponavljaj
+   			ako <dodiruje [Pico walking v]?> onda
+      			pošalji [sudar v]
+   		end
 		end
 	```
 
-+ You'll also need to add code to your character, to move back to the start when they're hit:
++ Također trebaš dodati naredbe svom liku koje će ga vraćati na početak kada dodirne loptu:
 
 	```blocks
-		when I receive [hit v]
-		point in direction (90 v)
-		go to x: (-210) y: (-120)
+		kada primim [sudar v]
+		okreni se u smjeru (90 v)
+		idi na x:(-210) y:(-120)
 	```	
 
-+ Test out your character and see if they go back to the start when they've been hit by a ball.
++ Pokreni projekt i provjeri vraća li se lik na početak nakon što se sudari s loptom. 
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
-## Challenge: Random balls {.challenge}
-The balls your character has to dodge all look the same, and always appear every 3 seconds. Can you improve them, so that they:
+## Izazov: Slučajne lopte {.challenge}
+Sve lopte su sada jednake i pojavljuju se svake tri sekunde. Možeš li to poboljšati na način:
 
-+ don't all look the same?
-+ appear after a random amount of time?
-+ are a random size?
++ da ne izgledaju sve lopte jednako?
++ da se ne pojavljuju u isto vrijeme (već nako slučajno odabranog broja sekundi)?
++ da su različitih veličina?
 
 ![screenshot](dodge-ball-random.png)
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
 # Step 4: Lasers! { .activity .new-page}
 
