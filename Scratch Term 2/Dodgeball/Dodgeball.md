@@ -32,9 +32,10 @@ Krenimo kreiranjem lika koji se može kretati lijevo i desno i penjati po prepre
 
 	![screenshot](dodge-background.png)
 
-+ Dodaj novog lika. Najbolje bi bilo da odabrani lik ima više kostima, tako da možeš napraviti da izgleda kao da hoda. 
++ Dodaj novog lika i smanji ga tako da se veličinom uklopi u igru. Najbolje bi bilo da odabrani lik ima više kostima, tako da možeš napraviti da izgleda kao da hoda. 
 
 	![screenshot](dodge-characters.png)
+	
 
 + Upotrijebimo strelice za pomicanje lika po pozornici. Kada igrač pritisne desnu strelicu tvoj lik se treba okrenuti u desno, napraviti nekoliko koraka i promijeniti kostim: 
 
@@ -60,7 +61,7 @@ Krenimo kreiranjem lika koji se može kretati lijevo i desno i penjati po prepre
 	postavi stil rotacije [lijevo-desno v]
 	```
 
-+ Da se popne na stup, igrač se treba polako pomicati prema gore ako je pritisnuta strelica prema gore, te ako igrač dodiruje ispravnu boju. Dodaj ove naredbe unutar petlje `ponavljaj` {.blockcontrol} :
++ Da se popne na stup, igrač se treba polako pomicati prema gore ako je pritisnuta strelica prema gore i ako igrač dodiruje ispravnu boju. Dodaj ove naredbe unutar petlje `ponavljaj` {.blockcontrol} :
 
 	```blocks
 		ako <<tipka [strelica gore v] pritisnuta?> i <dodiruje boju [#FFFF00]?>> onda
@@ -92,7 +93,7 @@ Dodavanjem gravitacije i omogućavanjem skakanja napravit ćemo da igrač bude j
 
 	![screenshot](dodge-no-gravity.png)
 
-+ Da bi to popravili, dodajmo u igru gravitaciju. Kreiraj novu varujablu, nazovi ju `gravitacija` {.blockdata}. Slobodno ju sakrij da se ne prikazuje na pozornici. 
++ Da bi to popravili, dodajmo u igru gravitaciju. Kreiraj novu varijablu i nazovi ju `gravitacija` {.blockdata}. Slobodno ju sakrij da se ne prikazuje na pozornici. 
 
 	![screenshot](dodge-gravity.png)
 
@@ -122,11 +123,11 @@ Dodavanjem gravitacije i omogućavanjem skakanja napravit ćemo da igrač bude j
 		end
 	```
 
-+ Isprobaj gravitaciju. Zaustavi li se lik kada dodirne platformu ili stup? Test the gravity again. Does your character stop when they are on a platform or a pole? Možeš li sada hodati od ruba platforme do razine ispod?
++ Isprobaj gravitaciju. Zaustavi li se lik kada dodirne platformu ili stup? Možeš li sada hodati od ruba platforme do razine ispod?
 
 	![screenshot](dodge-gravity-test.png)
 
-+  Napravimo sada da lik skoči svaki puta kada igrač protisne razmaknicu. Jednostavan način za to je pomicanje lika prema gore nekoliko puta, koristeći naredbe: 
++  Napravimo sada da lik skoči svaki puta kada igrač pritisne razmaknicu. Jednostavan način za to je pomicanje lika prema gore nekoliko puta, koristeći naredbe: 
 
 	```blocks
 		kada je tipka [razmaknica v] pritisnuta
@@ -135,9 +136,9 @@ Dodavanjem gravitacije i omogućavanjem skakanja napravit ćemo da igrač bude j
 		end
 	```
 
-	Kako gravitacija konstantno vuče lika za 4 piksela dolje trebaš odabrati broj veći od 4 u bloku `promijeni y za (4)` {.blockmotion}. Mijenjaj taj broj sve dok ne budeš zadovoljan skokom. 
+	Kako gravitacija konstantno vuče lika za 4 piksela dolje u bloku `promijeni y za (4)` {.blockmotion} trebaš odabrati broj veći od 4. Mijenjaj taj broj sve dok skok ne izgleda dobro. 
 
-+ Isprobaš li sada projekt prijetit ćeš da radi, ali da su pokreti jako spori. Da bi skog izgledao bolje potrebno je pokrete smanjivati postepeno. 
++ Isprobaš li sada projekt primjetit ćeš da radi, ali da su pokreti jako spori. Da bi skok izgledao bolje potrebno je pokrete smanjivati postepeno. 
 
 + Da to napraviš kreiraj još jednu varijablu. Nazovi ju `visina skoka` {.blockdata}. I nju možeš sakriti ako želiš.
 
@@ -154,12 +155,12 @@ Dodavanjem gravitacije i omogućavanjem skakanja napravit ćemo da igrač bude j
 
 	Ove naredbe pomiču lika za 8 piksela, pa na 7.5, 7, i tako sve dok lik ne završi sa skakanjem. Tako će skok izgledati glađe. 
 
-+ Mijenjaj početnu vrijednost varijable `visina skoka` {.blockdata} i testiraj ju sve dok ne budeš zadovoljan načinom na koji  lik skače. 
++ Mijenjaj početnu vrijednost varijable `visina skoka` {.blockdata} i testiraj ju sve dok skok ne izgleda točno onako kako želiš.
 
 ## Spremi projekt { .save }
 
 ## Izazov: Poboljšaj skakanje {.challenge}
-Tvoj lik sada je sposoban skočiti svaki puta kada je pritisnuta razmaknica., čak i kada je u zraku. Isprobaj to držeći razmaknicu pritisnutom. Možeš li to popraviti tako da lik može skakatisamo  `ako` {.blockcontrol} dodiruje plavu platformu?  
+Tvoj lik sada je sposoban skočiti svaki puta kada je pritisnuta razmaknica, čak i kada je u zraku. Isprobaj to držeći razmaknicu pritisnutom. Možeš li to popraviti tako da lik može skakati samo  `ako` {.blockcontrol} dodiruje plavu platformu?  
 
 ## Spremi promjene u projektu { .save }
 
@@ -169,7 +170,7 @@ Sada kada smo dovršili kretanje lika, dodajmo lopte koje treba izbjegavati.
 
 ## Zadatci { .check }
 
-+ Dodaj novi lik - loptu. Odaberi koju želiš. 
++ Dodaj novi lik - loptu.  
 
 	![screenshot](dodge-balls.png)
 
@@ -187,7 +188,7 @@ Sada kada smo dovršili kretanje lika, dodajmo lopte koje treba izbjegavati.
 
 	![screenshot](dodge-ball-test.png)
 
-+ Dodaj sljedeće naredbe kako bi se lopte kretale kroz sve tri platforme. 
++ Dodaj više naredbi kako bi se lopte kretale kroz sve tri platforme. 
 
 	![screenshot](dodge-ball-more-motion.png)
 
@@ -218,7 +219,7 @@ Sada kada smo dovršili kretanje lika, dodajmo lopte koje treba izbjegavati.
 Sve lopte su sada jednake i pojavljuju se svake tri sekunde. Možeš li to poboljšati na način:
 
 + da ne izgledaju sve lopte jednako?
-+ da se ne pojavljuju u isto vrijeme (već nako slučajno odabranog broja sekundi)?
++ da se ne pojavljuju u isto vrijeme (već nakon slučajno odabranog broja sekundi)?
 + da su različitih veličina?
 
 ![screenshot](dodge-ball-random.png)
@@ -231,7 +232,7 @@ Otežajmo sada igru dodajući lasere!
 
 ## Zadatci { .check }
 
-+ Dodaj novog lika i nazovi ga laser. On treba imati dva kostima - 'uključen' i 'isključen'.
++ Napravi novi lik i nazovi ga laser. On treba imati dva kostima - 'on' (uključen) i 'off' (isključen).
 
 	![screenshot](dodge-lasers-costume.png)
 
@@ -244,9 +245,9 @@ Otežajmo sada igru dodajući lasere!
 	```blocks
 		kada je ⚑ kliknut
 		ponavljaj
-   			promijeni kostim u [uključeno v]
+   			promijeni kostim u [on v]
    			čekaj (2) sekundi
-   			promijeni kostim u [isključeno v]
+   			promijeni kostim u [off v]
    			čekaj (2) sekundi
 		end
 	```
