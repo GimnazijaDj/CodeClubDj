@@ -1,5 +1,5 @@
 ---
-title: Hvatanje točki
+title: Uhvati točke
 level: Scratch 2
 language: hr-HR
 stylesheet: scratch
@@ -19,78 +19,80 @@ U ovom projektu naučit ćeš kako kreirati igru u kojoj moraš uskladiti obojan
 
 # Korak 1: Izrada kontrolera { .activity }
 
-Počnimo sa izradom kontrolera koji će se koristiti kako bi se prikupile točke. 
+Počnimo s izradom kontrolera koji će se koristiti kako bi se prokupile točke. 
 
 ## Zadaci { .check }
 
-+ Otvori novu Scratch projekt i obriši lik mačke da dobiješ prazan projekt. Možeš koristiti online Scratch editor koji se nalazi na adresi <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Otvori novi Scratch projekt i obriši lik mačke da dobiješ prazan projekt. Možeš koristiti online Scratch editor koji se nalazi na adresi <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Ako ti je volonter pokazao mapu 'Resources', klikni 'Upload sprite from file' i dodaj sliku 'controller.svg'. Trebaš premijestiti lika u centar pozornice.
++ Ako imaš pristup do mape 'Resources' ili slike 'controller.svg' klikni ikonu 'Učitaj lik iz datoteke' i dodaj sliku 'controller.svg'. Premjesti ju u centar pozornice.
 
 	![screenshot](dots-controller.png)
 	
-	Ako nemaš tu sliku, možeš sam nacrtati lika!
+	Ako nemaš tu sliku, nacrtaj ju!
 	
 + Okreni kontroler desno kada se pritisne desna strelica na tipkovnici:
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [right arrow v] pressed?> then
-				turn right (3) degrees
-			end
+		kada je ⚑ kliknut
+		ponavljaj
+   			ako <tipka [strelica desno v] pritisnuta?> onda
+      				skreni ↻ (3) stupnjeva
+   			end
 		end
 	```
-+ Testiraj svoj kontroler -- trebao bi se vrtiti na desno.
++ Pokreni projekt i isprobaj kontroler - trebao bi se vrtiti u desno.
 
-## Spremi svoj projekt. { .save }
+## Spremi projekt. { .save }
 
-## Izazov: Okretanje na lijevo {.challenge}
-Možeš li napraviti da se kontroler okreće lijevo kada se pritisne lijeva strelica na tipkovnici?
+## Izazov: Okretanje u lijevo {.challenge}
+Možeš li napraviti da se kontroler okreće u lijevu stranu kada se pritisne lijeva strelica na tipkovnici?
 
-## Spremi promijene u projektu. { .save }
+## Spremi promjene u projektu. { .save }
 
 # Korak 2: Skupljanje točaka { .activity }
 
-Dodajmo nekoliko točaka kako bi ih igrač pokupio sa kontolerom.
+Dodajmo nekoliko točaka kako bi ih igrač pokupio s kontolerom.
 
-## Zadaci { .check }
+## Zadatci { .check }
 
 + Kreiraj novog lika koji se zove 'red'. Taj lik bi trebao biti mala crvena točka.
 
 	![screenshot](dots-red.png)
 
-+ Dodaj ovo svome liku 'red' točka, kako bi se svakih nekoliko sekundi kreirao duplikat točke:
++ Točki dodaj sljedeće naredbe kako bi se svakih nekoliko sekundi kreirao njezin duplikat:
 
 	```blocks
-		when flag clicked
-		wait (2) secs
-		forever
-			create clone of [myself v]
-			wait (pick random (5) to (10)) secs
+		kada je ⚑ kliknut
+		čekaj (2) sekundi
+		ponavljaj
+   			kloniraj [ja v]
+   			čekaj (slučajni broj od (5) do (10)) sekundi
 		end
+
 	```
 
-+ Kada god se pojavi duplikat, želiš da se pojavi u jednome od 4 kuta pozornice.
++ Kada god se pojavi duplikat, želiš da se pojavi u jednome od četiri kuta pozornice.
 
 	![screenshot](dots-start.png)
 
-	Kako bi napravio to, prvo kreiraj novu varijablu koja se zove `start positions` {.blockdata} i klikni `(+)` kako bi dodao vrijednosti `-180` i `180`.
+	Kako bi to napravili najprije kreiraj novu listu koja se zove `početak` {.blockdata}, klikni na znak `(+)`i dodaj vrijednosti `-180` i `180`.
 
 	![screenshot](dots-list.png)
 
-+ Možeš koristiti ova 2 (list items) da odabereš nasumičak kut pozornice. Dodaj ovaj kod 'dot' liku, tao da se svaki novi duplikat kreće u nasumičan kut, a onda se polako kreće prema kontroleru.
++ Ta dva elementa liste možeš koristiti za odabiranje nasumičnog kuta pozornice. Sljedeće naredbe dodaj liku 'točke' kako bi se svaki novi duplikat pojavio u nasumičnom kutu, a onda se polako kretao prema kontroleru.
+
 	```blocks
-		when I start as a clone
-		go to x: (item (random v) of [start positions v]) y: (item (random v) of [start positions v])
-		point towards [controller v]
-		show
-		repeat until <touching [controller v]?>
-			move (1) steps
+		kada krećem kao klon
+		idi na x:(element (random v) iz [početak v]) y:(element (random v) iz [početak v])
+		okreni se k [controller v]
+		prikaži
+		ponavljaj dok nije <dodiruje [controller v]?>
+   			idi (1) koraka
 		end
 	```
 
-	Kod iznad bira ili `-180` ili `180` za x _i_ y pozicije, što znači da svaki put duplikat počinje u jednome kutu pozornice.
+	Naredbama iznad odabiremo vrijednost `-180` ili `180` za x _i_ y pozicije točke, što znači da će svaki puta duplikat krenuti iz jednog kuta pozornice.
 
 + Testiraj projekt. Trebaš vidjeti puno crvenih točaka koje se pojavljuju u svakome uglu ekrana i polako se pokreću prema kontroleru.
 
