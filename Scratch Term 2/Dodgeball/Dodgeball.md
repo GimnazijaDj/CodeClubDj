@@ -307,7 +307,7 @@ Ne zaboravi isprobati program!
 ## Spremi promjene u projektu { .save }
 
 ## Izazov: Više života {.challenge}
-Možeš li dati igraču tri `života` {.blockdata}, umjesto da ga svaki puta kada pogriješi šalješ na početak? To možeš napraviti na sljedeći način:
+Možeš li dati igraču tri `života` {.blockdata}, umjesto da ga svaki puta kada pogriješi samo šalješ na početak? To možeš napraviti na sljedeći način:
 
 + Igrač započinje igru s tri života
 + Kada igrač dodirne neku od prepreka, gubi jedan život i vraća se na početak; 
