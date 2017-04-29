@@ -10,7 +10,7 @@ beta: true
 
 # Uvod { .intro }
 
-U ovom projektu naučit ćeš kako kreirati igru u kojoj moraš uskladiti obojane točkice sa točnim dijelovima kontrolera.
+U ovom projektu naučit ćeš kako kreirati igru u kojoj moraš uskladiti obojane točke s točnim dijelovima kontrolera.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/44942820/?autostart=false" frameborder="0"></iframe>
@@ -19,9 +19,9 @@ U ovom projektu naučit ćeš kako kreirati igru u kojoj moraš uskladiti obojan
 
 # Korak 1: Izrada kontrolera { .activity }
 
-Počnimo s izradom kontrolera koji će se koristiti kako bi se prokupile točke. 
+Počnimo s izradom kontrolera koji će se koristiti za hvatanje točaka. 
 
-## Zadaci { .check }
+## Zadatci { .check }
 
 + Otvori novi Scratch projekt i obriši lik mačke da dobiješ prazan projekt. Možeš koristiti online Scratch editor koji se nalazi na adresi <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
@@ -56,7 +56,7 @@ Dodajmo nekoliko točaka kako bi ih igrač pokupio s kontolerom.
 
 ## Zadatci { .check }
 
-+ Kreiraj novog lika koji se zove 'red'. Taj lik bi trebao biti mala crvena točka.
++ Kreiraj novog lika koji se zove 'crvena'. Taj lik bi trebao biti mala crvena točka.
 
 	![screenshot](dots-red.png)
 
@@ -72,7 +72,7 @@ Dodajmo nekoliko točaka kako bi ih igrač pokupio s kontolerom.
 
 	```
 
-+ Kada god se pojavi duplikat, želiš da se pojavi u jednome od četiri kuta pozornice.
++ Kada god se pojavi duplikat, želiš da se pojavi u jednome od četiri kuta pozornice:
 
 	![screenshot](dots-start.png)
 
@@ -80,7 +80,7 @@ Dodajmo nekoliko točaka kako bi ih igrač pokupio s kontolerom.
 
 	![screenshot](dots-list.png)
 
-+ Ta dva elementa liste možeš koristiti za odabiranje nasumičnog kuta pozornice. Sljedeće naredbe dodaj liku 'točke' kako bi se svaki novi duplikat pojavio u nasumičnom kutu, a onda se polako kretao prema kontroleru.
++ Ta dva elementa liste ćeš koristiti za odabiranje nasumičnog kuta pozornice. Sljedeće naredbe dodaj liku 'točke' kako bi se svaki novi duplikat pojavio u nasumičnom kutu, a onda se polako kretao prema kontroleru.
 
 	```blocks
 		kada krećem kao klon
@@ -92,43 +92,44 @@ Dodajmo nekoliko točaka kako bi ih igrač pokupio s kontolerom.
 		end
 	```
 
-	Naredbama iznad odabiremo vrijednost `-180` ili `180` za x _i_ y pozicije točke, što znači da će svaki puta duplikat krenuti iz jednog kuta pozornice.
+	Prethodnim odabiremo jednu od vrijednosti `-180` ili `180` za x _i_ y pozicije točke, što znači da će svaki puta duplikat krenuti iz jednoga kuta pozornice.
 
-+ Testiraj projekt. Trebaš vidjeti puno crvenih točaka koje se pojavljuju u svakome uglu ekrana i polako se pokreću prema kontroleru.
++ Pokreni projekt. Trebaš vidjeti puno crvenih točaka koje se pojavljuju u svakome uglu ekrana i polako se pokreću prema kontroleru.
 
 	![screenshot](dots-red-test.png)
 
-+ Napravi dvije nove varijable koje se zovu`lives` {.blockdata} i `score` {.blockdata}.
++ Napravi dvije nove varijable koje se zovu`životi` {.blockdata} i `rezultat` {.blockdata}.
 
-+ Dodaj kod na pozornici kako bi postavio `lives` {.blockdata} ma 3 i `score` {.blockdata} na 0 na početku igrice.
++ Pozornici dodaj naredbe kojima ćeš na početku igrice postaviti vrijednost varijable `životi` {.blockdata} na 3 i `rezultat` {.blockdata} na 0.
 
-+ Trebaš dodati ovaj kod na kraj koda `when I start as a clone` {.blockcontrol} crvene točke, tako da se 1 bod dodaje igračevu `score` {.blockdata} ako se boje poklapaju, ili se 1 oduzima iz igračevih `lives` {.blockdata} ako se boje ne poklapaju.
++  Na kraj koda `kada krećem kao klon` {.blockcontrol} crvene točke dodaj naredbe kojima ćeš dodati 1 bod igračevu `rezultatu` {.blockdata} ako se boje poklapaju, a  ako se ne poklapaju oduzeti 1 `život` {.blockdata}.
 
 	```blocks
-		move (5) steps
-		if <touching color [#FF0000]?> then
-			change [score v] by (1)
-			play sound [pop v]
-		else
-			change [lives v] by (-1)
-			play sound [laser1 v]
+		idi (5) koraka
+		ako <dodiruje boju [#FF0000]?> onda
+   			promijeni [rezultat v] za (1)
+   			zasviraj [pop v]
+		inače
+   			promijeni [životi v] za (-1)
+   			zasviraj [laser1 v]
 		end
-		delete this clone
+		izbriši klona
 	```
 
-+ Dodaj ovaj kod na kraj pozornicine (script) tako da igra završi kada igrač izgubi sva 3 života:
++ Na kraj skripte na pozornici dodaj naredbe kojima ćeš završiti igru kada  igrač izgubi sva 3 života:
 
 	```blocks
-		wait until <(lives) < [1]>
-		stop [all v]
+		čekaj do <(životi) < [1]>
+		zaustavi [sve v]
+
 	```
 
-+ Testiraj igricu da vidiš radi li kod kako treba.
++ Pokreni program i isprobaj igricu da vidiš radi li kako treba.
 
 ## Spremi promjene u projektu { .save }
 
 ## Izazov: Više točaka {.challenge}
-Dupliciraj svoga lika 'red' točku dva puta i imenuj dva nova lika 'yellow' i 'blue'.
+Kloniraj 'red' točku dva puta i imenuj dva nova lika 'yellow' i 'blue'.
 
 ![screenshot](dots-more-dots.png)
 
