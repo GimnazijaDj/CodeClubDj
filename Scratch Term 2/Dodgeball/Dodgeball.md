@@ -53,7 +53,12 @@ Krenimo kreiranjem lika koji se može kretati lijevo i desno i penjati po prepre
 
 	![screenshot](dodge-walking.png)
 
-+ Za pomicanje lika u lijevo potrebno je unutar petlje `ponavljaj` {.blockcontrol} dodati još jednu naredbu `ako je` {.blockcontrol}. Njome ćeš pokretati lika u lijevo. Ne zaboravi testirati projekt, da se uvjeriš da radi ispravno!  
++ Za pomicanje lika u lijevo potrebno je unutar petlje `ponavljaj` {.blockcontrol} dodati još jednu naredbu `ako je` {.blockcontrol}.  
++ Pokreni program i provjeri radi li ispravno. Okreće li se možda igrač naopako kada skreće lijevo?  Ako da, na početak programa dodaj blok 
+
+	```blocks
+	postavi stil rotacije [lijevo-desno v]
+	```
 
 + Da se popne na stup, igrač se treba polako pomicati prema gore ako je pritisnuta strelica prema gore, te ako igrač dodiruje ispravnu boju. Dodaj ove naredbe unutar petlje `ponavljaj` {.blockcontrol} :
 
