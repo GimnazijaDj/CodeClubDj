@@ -8,12 +8,12 @@ materials: ["Club Leader Resources/*"]
 beta: true
 ...
 
-## Community Contributed Project { .challenge .pdf-hidden }
-This project was created with Erik. If you'd like to contribute a project of your own, then [get in touch with us on Github](https://github.com/CodeClub).
+## Projekt doprinosa zajednice { .challenge .pdf-hidden }
+Ovaj projekt kreirao je Erik. Želite li doprinijeti svojim projektom [kontaktirajte nas na Githubu](https://github.com/CodeClub).
 
 # Uvod { .intro }
 
-U ovome projektu naučit ćeš kako napraviti igricu u kojoj moraš spasiti Zemlju od čudovišta iz svemira.
+U ovome projektu naučit ćeš napraviti igricu u kojoj moraš spasiti Zemlju od čudovišta iz svemira.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/46018140/?autostart=false" frameborder="0"></iframe>
@@ -24,80 +24,82 @@ U ovome projektu naučit ćeš kako napraviti igricu u kojoj moraš spasiti Zeml
 
 Napravimo svemirski brod koji će braniti Zemlju!
 
-## Zadaci { .check }
+## Zadatci { .check }
 
-+ Otvori novu Scratch projekt i obriši lik mačke da dobiješ prazan projekt. Možeš koristiti online Scratch editor koji se nalazi na adresi <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Otvori novi Scratch projekt i obriši lik mačke da dobiješ prazan projekt. Online Scratch nalazi se na adresi <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ Dodaj 'stars' pozadinu i 'Spaceship' lika svome projektu. Smanji svemirski brod i pomakni ga na dno ekrana.
++ Dodaj u projekt zvjezdanu pozadinu i svemirski brod. Smanji svemirski brod i pomakni ga na dno ekrana.
 
 	![screenshot](invaders-sprites.png)
 
-+ Dodaj kod kako bi pomaknuo svemirski brod na lijevo kada se pritisne lijeva strelica na tipkovnici. Trebat ćeš koristiti ovaj blok naredbi:
++ Dodaj naredbe kojima ćeš pomicati svemirski brod u lijevo kada se pritisne lijeva strelica na tipkovnici:
 
 	```blocks
 		when flag clicked
-		forever
-			if <key [left arrow v] pressed?> then
-				change x by (-4)
-			end
+		ponavljaj
+   		ako <tipka [strelica lijevo v] pritisnuta?> onda
+      			promijeni x za (-4)
+   		end
 		end
+
 	```
 
-+ Dodaj kod koji će pokretati tvoj svemirski brod na desno kada se pritisne desna strelica na tipkovnici.
++ Dodaj naredbe koji će pokretati svemirski brod u desno kada se pritisne desna strelica na tipkovnici.
 
-+ Testiraj svoj projekt kako bi vidio možeš li kontrolirati svoj svemirski brod sa strelicama na tipkovnici.
++ Pokreni projekt i provjeri možeš li kontrolirati svemirski brod sa strelicama na tipkovnici.
 
-## Spremi svoj projekt. { .save }
+## Spremi projekt. { .save }
 
 # Korak 2: Munje { .activity }
 
 Dajmo svemirskome brodu mogućnost da ispaljuje munje.
 
-## Zadaci{ .check }
+## Zadatci{ .check }
 
-+ Dodaj lika 'Lightning' iz biblioteke likova. Klikni na kostim lika i okreni munju prema dolje.
++ Dodaj lik 'munje' iz biblioteke likova. Odaberi karticu kostimi i okreni munju prema dolje.
 
 	![screenshot](invaders-lightning.png)
 
 + Kada se igra pokrene, munja bi trebala biti skrivena sve dok svemirski brod ne ispali laserske topove.
 
 	```blocks
-		when flag clicked
-		hide
+		kada je ⚑ kliknut
+		sakrij
 	```
 
-+ Dodaj slijedeći kod **to the Spaceship** kako bi se nova munja stvorila svaki put kada se stisne tipka Space.
++ Dodaj slijedeće naredbe svemirskom brodu kako bi se nova munja stvorila svaki puta kada se pritisne razmaknica.
 
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [space v] pressed?> then
-				create clone of [Lightning v]
-			end
+		kada je ⚑ kliknut
+		ponavljaj
+   			ako <tipka [razmaknica v] pritisnuta?> onda
+      				kloniraj [Lightning v]
+   			end
 		end
+
 	```
 
-+ Kada god se kreira novi klon, trebao bi se pojaviti na istome mjestu kao i svemirski brod, a tada se pomicati do pozornice dok ne dođe do ruba. Dodaj ovaj kod **to the Lightning sprite**:
++ Kada god se kreira nova munja trebala bi se pojaviti na istome mjestu kao i svemirski brod, pomicati se pozornicom sve dok ne dođe do ruba. Dodaj sljedeće naredne liku munje:
 
 	```blocks
-		when I start as a clone
-		go to [Spaceship v]
-		show
-		repeat until <touching [edge v] ?>
-			change y by (10)
+		kada krećem kao klon
+		idi do [Spaceship v]
+		prikaži
+		ponavljaj dok nije <dodiruje [rub v]?>
+   			promijeni y za (10)
 		end
-		delete this clone
+		izbriši klona
 	```
 
 Bilješka: Pokrećemo novog klona prema svemirskome brodu dok je on još uvijek skriven.
 
-+ Testiraj munje tako što ćeš stisnuti tipku Space.
++ Pokreni projekt i testiraj munje držeći pritisnutu razmaknicu.
 
 ## Spremi promjene u projektu { .save }
 
 ## Izazov: Popravljanje munje {.challenge}
-Što se događa ako cijelo vrijeme drži  tipku space? Možeš li iskoristiti `wait` {.blockcontrol} naredbu da popraviš to?
+Što se događa ako cijelo vrijeme držiš razmaknicu? Možeš li iskoristiti naredbu `čekaj` {.blockcontrol} da to popraviš?
 
 ## Spremi promjene u projektu { .save }
 
@@ -105,96 +107,98 @@ Bilješka: Pokrećemo novog klona prema svemirskome brodu dok je on još uvijek 
 
 Dodajmo leteće nilske konje koji pokušavaju uništiti svemirski brod. 
 
-## Zadaci { .check }
+## Zadatci { .check }
 
-+ Napravi novog lika sa slike 'Hippo1' iz biblioteke likova.
++ Dodaj lik letećeg nilskog konja ('Hippo1') iz biblioteke likova.
 
 	![screenshot](invaders-hippo.png)
 
-+ Napravi da se može kretati samo lijevo i desno i dodaj ovaj kod kako bi sakrio lika kada počne igrica:
++ Napravi da se može kretati samo lijevo i desno i dodaj sljedeću naredbu kako bi on na početku igre bio sakriven:
 
 	```blocks
-		when flag clicked
-		hide
+		kada je ⚑ kliknut
+		sakrij
+
 	```
 
-+ Kreiraj novu varijablu koja se zove `speed` {.blockdata}, i koja je samo za lika nilskog konja.
++ Kreiraj novu varijablu koja se zove `brzina` {.blockdata} i koja je samo za lika nilskog konja.
 
 	![screenshot](invaders-var.png)
 
-	Znati ćeš je li dobro napravljeno zato što će varijabla imati ime lika kraj nje, ovako:
+	Znat ćeš da je dobro napravljeno jer će varijabla imati ime lika kraj nje, ovako:
 
 	![screenshot](invaders-var-test.png)
 
-+ Idući kod će kreirati novog nilskog konja svakih nekoliko sekundi. **The Stage** je dobro mjesto za staviti ovaj kod:
++ Idući kôd će kreirati novog nilskog konja svakih nekoliko sekundi. Postavi ga na pozornicu: 
 
 	```blocks
-		when flag clicked
-		forever
-			wait (pick random (2) to (4)) secs
-			create clone of [Hippo1 v]
+		kada je ⚑ kliknut
+		ponavljaj
+   			čekaj (slučajni broj od (2) do (4)) sekundi
+   		kloniraj [Hippo1 v]
 		end
+
 	```
 
-+ Kada svaki duplikat nilskog konja krene, napravi da se kreće oko pozornice (nasumičnom brzinom) dok ga ne udari munja. Dodaj ovaj kod **to the hippo** sprite
-
++ Kada duplikat nilskog konja krene neka se kreće oko pozornice (nasumičnom brzinom) dok ga ne udari munja. Dodaj ovaj kôd liku nilskoga konja:
 	```blocks
-		when I start as a clone
-		set [speed v] to (pick random (2) to (4))
-		go to x: (pick random (-220) to (220)) y: (150)
-		show
-		repeat until <touching [lightning v] ?>
-			move (speed) steps
-			turn right (pick random (-10) to (10)) degrees
-			if on edge, bounce
+		kada krećem kao klon
+		postavi [brzina v] na (slučajni broj od (2) do (4))
+		idi na x:(slučajni broj od (-220) do (220)) y:(150)
+		prikaži
+		ponavljaj dok nije <dodiruje [lightning v]?>
+   			idi (brzina) koraka
+   			skreni ↻ (slučajni broj od (-10) do (10)) stupnjeva
+   			ako si na rubu, okreni se
 		end
-		delete this clone
+		izbriši klona
 	```
 
-+ Testiraj svoj kod za nilske konje. Novi nilski konj trebao bi se pojavljivati svakih nekoliko sekundi, i svaki od njih bi se trebao kretati vlastitom brzinom.
++ Pokreni projekt i provjeri kôd za nilske konje. Novi nilski konj trebao bi se pojavljivati svakih nekoliko sekundi i svaki od njih bi se trebao kretati vlastitom brzinom.
 
 	![screenshot](invaders-hippo-test.png)
 
-+ Testiraj svoj laserski top. Ako udariš nilskog konja, nestane li?
++ Provjeri i munju. Kada udari nilskog konja, nestane li?
 
-+ Kada nilski konj dodirne tvoj svemirski brod, on bi trebao eksplodirati. Da napraviš to, prvo provjeri ima li tvoj svemirski broj 2 kostima koji se zovu 'normal' i 'hit'.
++ Kada nilski konj dodirne svemirski brod on bi trebao eksplodirati. Da napraviš to, prvo provjeri ima li tvoj svemirski broj dva kostima koji se zovu 'normalan' i 'udaren'.
 
 	![screenshot](invaders-spaceship-costumes.png)
 
-	The spaceship's 'hit' costume can be made by importing the 'Sun' image from the Scratch library, and using the 'Color a shape' tool to change its colour.
+	Kostim 'udaren' možeš napraviti tako da učitaš sliku 'Sunca' iz biblioteke i alatom 'Oboji oblik' promijeniš njegovu boju. 
 
 	![screenshot](invaders-sun.png)
 
-+ Dodaj ovaj kod svome svemirskome brodu tako da zamijeni kostime kada god se sudari sa letećim nilskim konjem:
++ Dodaj sljedeće naredbe svemirskome brodu tako da zamijeni kostime kada se sudari s letećim nilskim konjem:
 
 	```blocks
-		when flag clicked
-		forever
-			switch costume to [normal v]
-			wait until <touching [Hippo1 v]>?
-			switch costume to [hit v]
-			broadcast [hit v]
-			wait (1) secs
+		kada je ⚑ kliknut
+		ponavljaj
+   			promijeni kostim u [normalan v]
+   			čekaj do <dodiruje [Hippo1 v]?>
+   			promijeni kostim u [udaren v]
+   			pošalji [udaren v]
+   			čekaj (1) sekundi
 		end
 	```
 
-+ Primječuješ li da imaš prikazanu poruku 'hit' u kodu ispod? Možeš koristiti tu poruku da napraviš da svi nilski konji nestanu kada je svemirski brod udaren.
++ Poruku 'udaren' iz prethodnoga kôda možeš iskoristiti da napraviš da svi nilski konji nestanu kada je svemirski brod udaren.
 
-	Dodaj ovaj kod nilskome konju:
+	Dodaj nilskome konju sljedeće naredbe:
 
 	```blocks
-		when I receive [hit v]
-		delete this clone
+		kada primim [udaren v]
+		izbriši klona
+
 	```
 
-+ Testiraj kod tako što ćeš pokrenuti novu igru i sudariti se sa nilskim konjem.
++ Testiraj kod tako što ćeš pokrenuti novu igru i sudariti se s nilskim konjem.
 
 	![screenshot](invaders-hippo-collide.png)
 
 ## Spremi promjene u projektu. { .save }
 
 ## Izazov: Životi i bodovi {.challenge}
-Možeš li dodati `lives` {.blockdata}, `score` {.blockdata} ili čak `highscore` {.blockdata} svojoj igrici? Projekt "Uhvati točke" će ti pomoći.
+Možeš li dodati varijable `životi` {.blockdata}, `rezultat` {.blockdata} ili čak `najbolji rezultat` {.blockdata} svojoj igrici? Projekt "Uhvati točke" će ti pomoći.
 
 ## Spremi promjene u projektu.{ .save }
 
@@ -202,55 +206,58 @@ Možeš li dodati `lives` {.blockdata}, `score` {.blockdata} ili čak `highscore
 
 Napravimo šišmiša koji baca naranče na svemirski brod.
 
-## Zadaci { .check }
+## Zadatci { .check }
 
-+ Prvo napravi lika šišmiša koji će se `move` {.blockmotion} kroz vrh pozornice `forever` {.blockcontrol}. Nemoj zaboraviti testirati kod.
++ Dodaj lika šišmiša koji će se `kretati` {.blockmotion} vrhom pozornice `zauvijek` {.blockcontrol}. Ne zaboravi provjeriti kôd. 
 
 	![screenshot](invaders-bat.png)
 
-+ Ako pogledaš šišmiševe kostime, vidjet ćeš da već ima dva:
++ Pogledaš li kostime šišmiša, vidjet ćeš da već ima dva:
 
 	![screenshot](invaders-bat-costume.png)
 
-	Iskoristi naredbu `next costume` {.blocklooks} kako bi napravio da šišmiš maše krilima dok se pomiće.
+	Iskoristi naredbu `sljedeći kostim` {.blocklooks} da postigneš da šišmiš maše krilima dok se pomiče.
 
-+ Učitaj novog 'Orange' lika iz biblioteke s likovima.
++ Iz biblioteke likova dodaj lik naranče ('Orange').
 
 	![screenshot](invaders-orange.png)
 
 
-+ Dodaj kod svome šišmišu tako da može napraviti novu dupliciranu naranču svakih nekoliko sekundi.
++ Sljedeće naredbe dodaj šišmišu kako bi se svakih nekoliko sekundi dodala nova duplicirana naranča.
 
 	```blocks
-		when flag clicked
-		forever
-			wait (pick random (5) to (10)) secs
-			create clone of [Orange v]
+		kada je ⚑ kliknut
+		ponavljaj
+   			čekaj (slučajni broj od (5) do (10)) sekundi
+   			kloniraj [Orange v]
 		end
+
 	```
 
-+ Klikni na lik naranče kako bi dodao ovaj kod. Tako će šišmiš ispustiti duplikat naranče prema svemirskome brodu.
++ Klikni na lik naranče i dodaj sljedeće naredbe: Tako će šišmiš ispustiti duplikat naranče prema svemirskome brodu.
 
 	```blocks
-		when flag clicked
-		hide
+		kada je ⚑ kliknut
+		sakrij
 
-		when I start as a clone
-		go to [Bat1 v]
-		show
-		repeat until <touching [edge v]?
-			change y by (-4)
+		kada krećem kao klon
+		idi do [Bat1 v]
+		prikaži
+		ponavljaj dok nije <dodiruje [rub v]?>
+   			promijeni y za (-4)
 		end
-		delete this clone
+		izbriši klona
 
-		when I receive [hit v]
-		delete this clone
+		kada primim [udaren v]
+		izbriši klona
+
+
 	```
 
-+ Trebaš promijeniti svoga lika svemirskog broda tako da kada dodirne naranču ili nilskog konja bude udaren:
++ Promijeni kôd za svemirski brod, tako da on bude 'udaren' kada dodirne naranču ili nilskog konja:
 
 	```blocks
-		wait until < <touching [Hippo1 v]?> or <touching [Orange v]?>>
+		čekaj do <<dodiruje [Hippo1 v]?> ili <dodiruje [Orange v]?>>
 	``` 
 
 + Testiraj svoju igricu. Što se dogodi ako te udari padajuća naranča?
@@ -259,13 +266,13 @@ Napravimo šišmiša koji baca naranče na svemirski brod.
 
 # Korak 5: Kraj igre { .activity }
 
-Dodajmo 'game over' poruku na kraj ove igre.
+Dodajmo poruku 'Kraj igre'.
 
-## Zadaci { .check }
+## Zadatci { .check }
 
-+ Ako već nisi, napravi novu varijablu koja se zove `lives` {.blockdata}. Tvoj svemirski brod treba početi sa 3 života i izgubiti život kada god se sudari sa neprijateljem. Tvoja igra također treba završiti kada igraču ponestane života. Ako trebaš pomoć, možeš koristiti projekt 'Uhvati točke' kako bi si pomogao. 
++ Ako već nisi, napravi novu varijablu koja se zove `životi` {.blockdata}. Svemirski brod treba početi s 3 života i izgubiti život kada se sudari s neprijateljem. Igra treba završiti kada igraču ponestane života. Ako trebaš pomoć pogledaj projekt 'Uhvati točke'. 
 
-+ Nacrtaj novog lika koji se zove 'Game Over', koristeći alat za tekst.
++ Alatom za tekst nacrtaj lik 'Kraj igre'.
 
 	![screenshot](invaders-game-over.png)
 
