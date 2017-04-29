@@ -150,11 +150,11 @@ Napravimo da igrica postaje sve teža što dulje ju igrač igra, polako smanjuju
 + Na pozornici napravi novu skupinu naredbi koja postavlja vrijednost varijable odgoda na visoki broj, a onda polako smanjuje vrijeme odgode.
 
 	```blocks
-		when flag clicked
-		set [delay v] to (8)
-		repeat until < (delay) = (2)>
-			wait (10) secs
-			change [delay v] by (-0.5)
+		kada je ⚑ kliknut
+		postavi [odgoda v] na (8)
+		ponavljaj dok nije <(odgoda) = (2)>
+   			čekaj (10) sekundi
+   			promijeni [odgoda v] za (-0.5)
 		end
 	```
 
