@@ -129,11 +129,11 @@ Dodajmo nekoliko točaka kako bi ih igrač pokupio s kontolerom.
 ## Spremi promjene u projektu { .save }
 
 ## Izazov: Više točaka {.challenge}
-Kloniraj 'red' točku dva puta i imenuj dva nova lika 'yellow' i 'blue'.
+Kloniraj 'crvenu' točku dva puta i imenuj dva nova lika 'žuta' i 'plava'.
 
 ![screenshot](dots-more-dots.png)
 
-Uredi te likov (uključujući i njihov kod), tako da svaka točka odgovara boji kontrolera. Nemoj zaboraviti testirati svoj projekt i uvjeriti se da igrač dobije bodove i gubi živote kako bi i trebao, i da igra nije previše lagana ili previše teška.
+Uredi te likove (uključujući i njihov kôd), tako da svaka točka odgovara boji kontrolera. Nemoj zaboraviti projeravati svoj projekt i uvjeriti se da igrač dobija bodove i gubi živote kako bi i trebao, te da igra nije previše lagana ili previše teška.
 
 ![screenshot](dots-all-test.png)
 
@@ -143,11 +143,11 @@ Uredi te likov (uključujući i njihov kod), tako da svaka točka odgovara boji 
 
 Napravimo da igrica postaje sve teža što dulje ju igrač igra, polako smanjujući razmak između točaka koje se pojavljuju.
 
-## Zadaci { .check }
+## Zadatci { .check }
 
-+ Napravi novu varijablu koja se zove `delay` {.blockdata}.
++ Napravi novu varijablu koja se zove `odgoda` {.blockdata}.
 
-+ Na pozornici, napravi novi (script) koji postavlja delay na visoki broj, a onda polako reducira vrijeme odgode (delaya).
++ Na pozornici napravi novu skupinu naredbi koja postavlja vrijednost varijable odgoda na visoki broj, a onda polako smanjuje vrijeme odgode.
 
 	```blocks
 		when flag clicked
@@ -160,18 +160,19 @@ Napravimo da igrica postaje sve teža što dulje ju igrač igra, polako smanjuju
 
 	Primijeti da je ovo vrlo slično načinu na koji radi odbrojavanje igre!
 
-+ Možeš korisiti `delay` {.blockdata} varijablu u svojim crvenim, plavim i žutim (scripts). Ukloni kod koji čeka nasumičan broj sekundi prije izrade duplikata i zamijeni ga s novom `delay` {.blockdata} varijablom: 
++ Sada iskoristi varijablu `odgoda` {.blockdata} kôdu za crvene, plave i žute točke: ukloni naredbu koja čeka nasumičan broj sekundi prije izrade duplikata i zamijeni ju varijablom `odgoda` {.blockdata}: 
 
 	```blocks
-		wait (delay) secs
+		čekaj (odgoda) sekundi
+
 	```
 
-+ Testiraj svoju novu `delay` {.blockdata} varijablu i vidi reducira li se razmak između točaka. Radi li to za sve 3 boje točaka? Možeš li vidjeti da se vrijednost `delay` {.blockdata} varijable reducira?
++ Pokreni projekt da provjeriš smanjuje li se razmak između točaka. Radi li to za sve tri boje točaka? Možeš li vidjeti da se vrijednost varijable `odgoda` {.blockdata} smanjuje?
 
 ## Spremi promjene u projektu { .save }
 
 ## Izazov: Brže kretanje točaka {.challenge}
-Možeš li poboljšati igru dodajući varijablu `speed` {.blockdata}, tako da se točke počnu kretati korak po korak, i polako postaju sve brže? To će raditi na vrlo sličan način kao `delay` {.blockdata} varijabla koju smo koristili gore. Taj kod ti može pomoći.
+Možeš li poboljšati igru dodajući varijablu `brzina` {.blockdata}, tako da se točke počnu kretati korak po korak i polako postaju sve brže? To radi slično načinu na koji smo koristili varijablu `odgoda` {.blockdata} Te naredbe ti mogu pomoći. 
 
 ## Spremi promjene u projektu { .save }
 
@@ -179,28 +180,28 @@ Možeš li poboljšati igru dodajući varijablu `speed` {.blockdata}, tako da se
 
 Spremimo najbolji rezltat kako bi igrači vidjeli kako im ide.
 
-## Zadaci { .check }
+## Zadatci { .check }
 
-+ Napravi novu varijablu koja se zove `high score` {.blockdata}.
++ Napravi novu varijablu koja se zove `najbolji rezultat` {.blockdata}.
 
-+ Klikni na pozornicu i napravi novi blok naredbi `check high score` {.blockmoreblocks}.
++ Klikni na pozornicu i napravi novi blok naredbi `Provjeri najbolji rezultat` {.blockmoreblocks}.
 
 	![screenshot](dots-custom-1.png)
 
-+ Dodaj novi blok naredbi taman prije završetka igre.
++ Dodaj taj blok prije završetka igre.
 
 	![screenshot](dots-custom-2.png)
 
-+ Dodaj ovaj kod svom bloku naredbi kako bi spremio trenutni `score` {.blockdata} kao `high score` {.blockdata} `if` {.blockcontrol} je to najbolji rezultat do sada:
++ Sada dodaj sljedeće naredbe bloku naredbi `Provjeri najbolji rezultat` {.blockmoreblocks} kako bi se trenutni `rezultat` {.blockdata} spremio kao kao `najbolji rezultat` {.blockdata} `ako je` {.blockcontrol} je to najbolji rezultat do sada:
 
 	```blocks
-		define [check high score]
-		if <(score) > (high score)> then
-			set [high score v] to (score)
-		end
+		definiraj [Provjeri najbolji rezultat]
+		ako <(rezultat) > (najbolji rezultat)> onda
+   		postavi [najbolji rezultat v] na (rezultat)
+end
 	```
 
-+ Testiraj kod. Igraj igricu kako bi provjerio mijenja li se`high score` {.blockdata} kako bi trebao.
++ Pokreni igru i provjeri mijenja li se`najbolji rezultat` {.blockdata} kako bi trebao.
 
 ## Spremi promjene u projektu { .save }
 
@@ -211,7 +212,7 @@ Možeš li smisliti načine na koje ćeš poboljšati svoju igru? Na primjer, mo
 + usporavaju točke;
 + skrivaju sve druge točke na ekranu!
 
-## Spremi promjene u projektu { .save }
+## Spremi projekt { .save }
 
 ## Izazov: Izbornik {.challenge}
-Možeš li dodati izbornik (sa gumbima) u igricu? Trebaš dodati ekran sa instrukcijama, ili odvojeni ekran koji će pokazivati najbolji rezultat. Ako trebaš pomoć s time, projekt 'Mozgalica' će ti pomoći.
+Možeš li igri dodati izbornik (sa gumbima)? Trebaš dodati ekran s uputama ili odvojeni ekran koji će pokazivati najbolji rezultat. Ako trebaš pomoć s time, projekt 'Mozgalica' će ti pomoći.
