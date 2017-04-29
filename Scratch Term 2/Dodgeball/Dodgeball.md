@@ -282,15 +282,15 @@ end
 ## Spremi promjene u projektu { .save }
 
 ## Izazov: Poboljšaj gravitaciju {.challenge}
-Postoji jedna mala pogreška u igrici - gravitacija ne vuče lika prema dolje ukoliko on  _bilo_kojim_ svojim dijelom dodiruje platformu - čak i glavom! Isprobaj to tako što ćeš se penjati uz stup i negdje u drugoj polovici pokušaj se kretati u lijevo. 
+Postoji jedna mala pogreška u igrici - gravitacija ne vuče lika prema dolje ukoliko on  _bilo kojim_ svojim dijelom dodiruje platformu - čak i glavom! Isprobaj to tako što ćeš se penjati uz stup i negdje u drugoj polovici pokušaj se kretati u lijevo. 
 
 ![screenshot](dodge-gravity-bug.png)
 
-Možeš li popraviti ovu pogrešku? Pokušaj svom liku promijeniti boju hlača (u _svim_kostimima)...
+Možeš li popraviti ovu pogrešku? Pokušaj svome liku promijeniti boju hlača (u _svim_ kostimima)...
 
 ![screenshot](dodge-trousers.png)
 
-...i zamijeniti naredbu: 
+...i zamijeniti naredbu (u bloku naredbi za gravitaciju): 
 
 ```blocks
 	< dodiruje boju [#0000FF]? >
