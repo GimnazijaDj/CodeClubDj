@@ -265,7 +265,7 @@ Misliš li da je igra još uvijek prelagana dodaj više prepreka. Evo nekoliko i
 
 + Leteći leptir;
 + Platforme koje se pojavljuju i nestaju
-+ Tenike loptice koje padaju i potrebno ih je izbjeći.
++ Teniske loptice koje padaju i potrebno ih je izbjeći.
 
 ![screenshot](dodge-obstacles.png)
 
