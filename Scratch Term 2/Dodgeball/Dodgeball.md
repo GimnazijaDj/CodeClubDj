@@ -256,7 +256,7 @@ Otežajmo sada igru dodajući lasere!
 
 + Na kraju dodaj laseru naredbe da pošalje poruku 'sudar' kada se lik i laser dodirnu. To je jednak kôd onome koji smo dodavali lopti. 
 
-	Ne trebaš dodavati naredbe liku - on već zna što treba napraviti kada dođe do sudara! Y
+	Ne trebaš dodavati naredbe liku - on već zna što treba napraviti kada dođe do sudara! 
 
 + Pokreni igru i provjeri možeš li proći kroz laser. Promijeni vrijeme u bloku  `čekaj` {.blockcontrol} i time olakšaj ili otežaj igru.
 
