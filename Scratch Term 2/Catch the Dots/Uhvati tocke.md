@@ -10,7 +10,7 @@ beta: true
 
 # Uvod { .intro }
 
-U ovom projektu naučit ćeš kako kreirati igru u kojoj moraš uskladiti obojane točke s točnim dijelovima kontrolera.
+U ovom projektu naučit ćeš kako kreirati igru u kojoj moraš uskladiti obojane točke s dijelovima kontrolera.
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/44942820/?autostart=false" frameborder="0"></iframe>
