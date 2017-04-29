@@ -147,7 +147,7 @@ Dodavanjem gravitacije i omogućavanjem skakanja napravit ćemo da igrač bude j
 		end
 	```
 
-	Ove naredbe pomiću lika za 8 piksela, pa na 7.5, 7, i tako sve dok lik ne završi sa skakanjem. Tako će skok izgledati glađe. 
+	Ove naredbe pomiču lika za 8 piksela, pa na 7.5, 7, i tako sve dok lik ne završi sa skakanjem. Tako će skok izgledati glađe. 
 
 + Mijenjaj početnu vrijednost varijable `visina skoka` {.blockdata} i testiraj ju sve dok ne budeš zadovoljan načinom na koji  lik skače. 
 
@@ -276,35 +276,35 @@ end
 ## Spremi promjene u projektu { .save }
 
 ## Izazov: Poboljšaj gravitaciju {.challenge}
-There's one other small bug in your game: gravity doesn't pull your character downwards if _any_ part of it is touching a blue platform - even it's head! You can test this out by climbing most of the way up a pole and then moving to the left.
+Postoji jedna mala pogreška u igrici - gravitacija ne vuče lika prema dolje ukoliko on  _bilo_kojim_ svojim dijelom dodiruje platformu - čak i glavom! Isprobaj to tako što ćeš se penjati uz stup i negdje u drugoj polovici pokušaj se kretati u lijevo. 
 
 ![screenshot](dodge-gravity-bug.png)
 
-Can you fix this bug? To do this, you need to give your character different coloured trousers (on _all_ costumes)...
+Možeš li popraviti ovu pogrešku? Pokušaj svom liku promijeniti boju hlača (u _svim_kostimima)...
 
 ![screenshot](dodge-trousers.png)
 
-...and then replace the code: 
+...i zamijeniti naredbu: 
 
 ```blocks
-	< touching color [#0000FF]? >
+	< dodiruje boju [#0000FF]? >
 ```
 
-with:
+naredbom:
 
 ```blocks
-	< color [#00FF00] is touching [#0000FF]? >
+	< boja [#00FF00] dodiruje [#0000FF]? >
 ```
 
-Remember to test your improvements to make sure you've fixed the bug!
+Ne zaboravi isprobati program!
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
-## Challenge: More lives {.challenge}
-Can you give your player 3 `lives` {.blockdata}, instead of just sending them back to the beginning each time? Here's how your game could work:
+## Izazov: Više života {.challenge}
+Možeš li dati igraču tri `života` {.blockdata}, umjesto da ga svaki puta kada pogriješi šalješ na početak? To možeš napraviti na sljedeći način:
 
-+ Your player starts with 3 lives;
-+ Whenever your player gets hit, one life is lost and they go back to the start;
-+ If there are no lives left, the game ends.
++ Igrač započinje igru s tri života
++ Kada igrač dodirne neku od prepreka, gubi jedan život i vraća se na početak; 
++ Kada više nema preostalih života igra završava.
 
-## Save your project { .save }
+## Spremi projekt { .save }
