@@ -198,7 +198,7 @@ Spremimo najbolji rezltat kako bi igrači vidjeli kako im ide.
 		definiraj [Provjeri najbolji rezultat]
 		ako <(rezultat) > (najbolji rezultat)> onda
    		postavi [najbolji rezultat v] na (rezultat)
-end
+		end
 	```
 
 + Pokreni igru i provjeri mijenja li se`najbolji rezultat` {.blockdata} kako bi trebao.
