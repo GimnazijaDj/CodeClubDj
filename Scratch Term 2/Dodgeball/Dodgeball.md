@@ -240,7 +240,7 @@ Otežajmo sada igru dodajući lasere!
 
 	![screenshot](dodge-lasers-position.png)
 
-+ Dodaj mu sljedeće naredbe kako bi laser mijenjao kostime: 
++ Dodaj laseru sljedeće naredbe kako bi mijenjao kostime: 
 
 	```blocks
 		kada je ⚑ kliknut
