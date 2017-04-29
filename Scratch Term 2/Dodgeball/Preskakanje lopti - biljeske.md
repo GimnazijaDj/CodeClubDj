@@ -1,5 +1,5 @@
 ---
-title: Preskakivanje lopti — Upute za voditelje radionica
+title: Preskakanje lopti — Upute za voditelje radionica
 language: hr-HR
 embeds: "*.png"
 ...
