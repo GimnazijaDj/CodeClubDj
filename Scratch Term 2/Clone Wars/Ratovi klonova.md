@@ -56,7 +56,7 @@ Dajmo svemirskome brodu mogućnost da ispaljuje munje.
 
 ## Zadatci{ .check }
 
-+ Dodaj lik 'munje' iz biblioteke likova. Odaberi karticu kostimi i okreni munju prema dolje.
++ Dodaj lik 'munje' iz biblioteke likova. Odaberi karticu 'Kostimi' i okreni munju prema gore.
 
 	![screenshot](invaders-lightning.png)
 
@@ -80,7 +80,7 @@ Dajmo svemirskome brodu mogućnost da ispaljuje munje.
 
 	```
 
-+ Kada god se kreira nova munja trebala bi se pojaviti na istome mjestu kao i svemirski brod, pomicati se pozornicom sve dok ne dođe do ruba. Dodaj sljedeće naredne liku munje:
++ Kada god se kreira nova munja trebala bi se pojaviti na istome mjestu kao i svemirski brod, pomicati se pozornicom sve dok ne dođe do ruba. Dodaj sljedeće naredbe liku munje:
 
 	```blocks
 		kada krećem kao klon
