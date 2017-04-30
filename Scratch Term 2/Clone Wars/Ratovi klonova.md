@@ -56,11 +56,11 @@ Dajmo svemirskome brodu mogućnost da ispaljuje munje.
 
 ## Zadatci{ .check }
 
-+ Dodaj lik 'munje' iz biblioteke likova. Odaberi karticu 'Kostimi' i okreni munju prema gore.
++ Dodaj lik 'munje' iz biblioteke likova. Smanji ju prema želj. Odaberi karticu 'Kostimi' i okreni munju prema gore.
 
 	![screenshot](invaders-lightning.png)
 
-+ Kada se igra pokrene, munja bi trebala biti skrivena sve dok svemirski brod ne ispali laserske topove.
++ Kada se igra pokrene, munja bi trebala biti skrivena sve dok svemirski brod ne ispali laserske topove. Dodaj liku munje sljedeće naredbe:
 
 	```blocks
 		kada je ⚑ kliknut
@@ -109,11 +109,11 @@ Dodajmo leteće nilske konje koji pokušavaju uništiti svemirski brod.
 
 ## Zadatci { .check }
 
-+ Dodaj lik letećeg nilskog konja ('Hippo1') iz biblioteke likova.
++ Dodaj lik letećeg nilskog konja ('Hippo1') iz knjižnice likova i prilagodi njegovu veličinu igrici.
 
 	![screenshot](invaders-hippo.png)
 
-+ Napravi da se može kretati samo lijevo i desno i dodaj sljedeću naredbu kako bi on na početku igre bio sakriven:
++ Postavi stil rotacije tako da se može kretati samo lijevo-desno i dodaj sljedeću naredbu kako bi on na početku igre bio sakriven:
 
 	```blocks
 		kada je ⚑ kliknut
@@ -121,15 +121,15 @@ Dodajmo leteće nilske konje koji pokušavaju uništiti svemirski brod.
 
 	```
 
-+ Kreiraj novu varijablu koja se zove `brzina` {.blockdata} i koja je samo za lika nilskog konja.
++ Kreiraj novu varijablu `brzina` {.blockdata}. Neka ona vrijedi samo za lik nilskoga konja.
 
 	![screenshot](invaders-var.png)
 
-	Znat ćeš da je dobro napravljeno jer će varijabla imati ime lika kraj nje, ovako:
+	Kada pored imena varijable piše i ime lika, to znači da je varijabla ograničena samo na njega: 
 
 	![screenshot](invaders-var-test.png)
 
-+ Idući kôd će kreirati novog nilskog konja svakih nekoliko sekundi. Postavi ga na pozornicu: 
++ Sljedeće naredbe će kreirati novog nilskoga konja svakih nekoliko sekundi. Postavi ih na pozornicu: 
 
 	```blocks
 		kada je ⚑ kliknut
@@ -140,7 +140,8 @@ Dodajmo leteće nilske konje koji pokušavaju uništiti svemirski brod.
 
 	```
 
-+ Kada duplikat nilskog konja krene neka se kreće oko pozornice (nasumičnom brzinom) dok ga ne udari munja. Dodaj ovaj kôd liku nilskoga konja:
++ Kada duplikat nilskog konja krene, neka se kreće po pozornici (nasumičnom brzinom) dok ga ne udari munja. Dodaj ovaj kôd liku nilskoga konja:
+
 	```blocks
 		kada krećem kao klon
 		postavi [brzina v] na (slučajni broj od (2) do (4))
@@ -158,13 +159,14 @@ Dodajmo leteće nilske konje koji pokušavaju uništiti svemirski brod.
 
 	![screenshot](invaders-hippo-test.png)
 
-+ Provjeri i munju. Kada udari nilskog konja, nestane li?
++ Provjeri i munju. Kada udari nilskog konja, nestane li on?
 
-+ Kada nilski konj dodirne svemirski brod on bi trebao eksplodirati. Da napraviš to, prvo provjeri ima li tvoj svemirski broj dva kostima koji se zovu 'normalan' i 'udaren'.
-
++ Kada nilski konj dodirne svemirski brod neka brod eksplodira. Da bi prikazali eksploziju broda, moramo mu dodati novi kostim. 
+	
 	![screenshot](invaders-spaceship-costumes.png)
 
-	Kostim 'udaren' možeš napraviti tako da učitaš sliku 'Sunca' iz biblioteke i alatom 'Oboji oblik' promijeniš njegovu boju. 
+	Najprije odaberi karicu 'Kostimi'. Kostim 'spaceship-a' preimenuj u 'normalan'. Kostim 'spaceship-b' slobodno obriši.  
+	Kostim 'udaren' možeš napraviti tako da iz knjižnice kostima učitaš sliku 'Sunca', a zatim alatom 'Oboji oblik' promijeniš njegovu boju. 
 
 	![screenshot](invaders-sun.png)
 
@@ -181,7 +183,7 @@ Dodajmo leteće nilske konje koji pokušavaju uništiti svemirski brod.
 		end
 	```
 
-+ Poruku 'udaren' iz prethodnoga kôda možeš iskoristiti da napraviš da svi nilski konji nestanu kada je svemirski brod udaren.
++ Poruku 'udaren' iz prethodnoga kôda možeš iskoristiti za to da svi nilski konji nestanu kada je svemirski brod udaren.
 
 	Dodaj nilskome konju sljedeće naredbe:
 
@@ -191,14 +193,14 @@ Dodajmo leteće nilske konje koji pokušavaju uništiti svemirski brod.
 
 	```
 
-+ Testiraj kod tako što ćeš pokrenuti novu igru i sudariti se s nilskim konjem.
++ Provjeri kôd tako što ćeš pokrenuti novu igru i sudariti se s nilskim konjem.
 
 	![screenshot](invaders-hippo-collide.png)
 
 ## Spremi promjene u projektu. { .save }
 
 ## Izazov: Životi i bodovi {.challenge}
-Možeš li dodati varijable `životi` {.blockdata}, `rezultat` {.blockdata} ili čak `najbolji rezultat` {.blockdata} svojoj igrici? Projekt "Uhvati točke" će ti pomoći.
+Možeš li dodati varijable `životi` {.blockdata}, `rezultat` {.blockdata} ili čak `najbolji rezultat` {.blockdata} svojoj igrici? Projekt "Uhvati točke" će ti pomoći ako naiđeš na problem.
 
 ## Spremi promjene u projektu.{ .save }
 
@@ -208,22 +210,23 @@ Napravimo šišmiša koji baca naranče na svemirski brod.
 
 ## Zadatci { .check }
 
-+ Dodaj lika šišmiša koji će se `kretati` {.blockmotion} vrhom pozornice `zauvijek` {.blockcontrol}. Ne zaboravi provjeriti kôd. 
++ Dodaj lika šišmiša koji će se čitavo vrijeme igre kretati lijevo-desno u gornjem dijelu pozornice. Ne zaboravi provjeriti kôd.
+	Napomena: ako se šišmiš prilikom okretanja u lijevo okrene i naglavačke, postavi stil rotacije lijevo-desno.
 
 	![screenshot](invaders-bat.png)
 
-+ Pogledaš li kostime šišmiša, vidjet ćeš da već ima dva:
++ Pogledaš li kostime šišmiša, vidjet ćeš da on već ima dva kostima:
 
 	![screenshot](invaders-bat-costume.png)
 
 	Iskoristi naredbu `sljedeći kostim` {.blocklooks} da postigneš da šišmiš maše krilima dok se pomiče.
 
-+ Iz biblioteke likova dodaj lik naranče ('Orange').
++ Iz knjižnice likova dodaj lik naranče ('Orange').
 
 	![screenshot](invaders-orange.png)
 
 
-+ Sljedeće naredbe dodaj šišmišu kako bi se svakih nekoliko sekundi dodala nova duplicirana naranča.
++ Šišmišu dodaj sljedeće naredbe kako bi se svakih nekoliko sekundi dodala nova duplicirana naranča.
 
 	```blocks
 		kada je ⚑ kliknut
@@ -234,7 +237,7 @@ Napravimo šišmiša koji baca naranče na svemirski brod.
 
 	```
 
-+ Klikni na lik naranče i dodaj sljedeće naredbe: Tako će šišmiš ispustiti duplikat naranče prema svemirskome brodu.
++ Klikni na lik naranče i dodaj sljedeće naredbe. Tako će šišmiš ispustiti duplikat naranče prema svemirskome brodu.
 
 	```blocks
 		kada je ⚑ kliknut
@@ -260,7 +263,7 @@ Napravimo šišmiša koji baca naranče na svemirski brod.
 		čekaj do <<dodiruje [Hippo1 v]?> ili <dodiruje [Orange v]?>>
 	``` 
 
-+ Testiraj svoju igricu. Što se dogodi ako te udari padajuća naranča?
++ Testiraj svoju igricu. Što se dogodi udari padajuća naranča udari u svemirski brod?
 
 ## Spremi promjene u projektu. { .save }
 
@@ -276,31 +279,32 @@ Dodajmo poruku 'Kraj igre'.
 
 	![screenshot](invaders-game-over.png)
 
-+ Na svojoj pozornici, prenesi `game over` {.blockevents} poruku taman kada igra treba završiti.
++ Pozornici dodaj naredbu koja će poslati poruku `kraj igre` {.blockevents} kada igra treba završiti, odnosno kada igrač ostane bez života.
 
 	```blocks
-		broadcast [game over v] and wait
+		pošalji [kraj igre v] i čekaj
 	```
 
-+ Dodaj ovaj kod svome 'Game Over' liku, tako da se porukaa pokaže na kraju igre:
++ Na kraju, dodaj naredbe liku 'Kraj igre', tako da se pokaže na kraju igre:
 
 	```blocks
-		when flag clicked
-		hide
+		kada je ⚑ kliknut
+		sakrij
 
-		when I receive [game over v]
-		show
+		kada primim [kraj igre v]
+		prikaži
+
 	```
 
-	Zato što si koristio naredbu `broadcast [game over] and wait` {.blockevents} na pozornici, čekati će 'Game Over' lika da se pojavi prije kraja igre.
-
-+ Testiraj igru. Koliko bodova možeš skupiti? Možeš li smisliti načine kako bi poboljšao igru ako je ovo previše lagano ili previše teško?
++ Poreni projekt i testiraj igru. Koliko bodova možeš sakupiti? Možeš li smisliti načine kako bi se igra moglaa olakšati ili otežati?
 
 ## Spremi promjene u projektu. { .save }
 
 ## Izazov: Poboljšaj igricu{.challenge}
+
 Koja poboljšanja možeš napraviti u igrici? Evo nekih ideja:
-+ Dodaj (health packs) koji se mogu skupiti kako bi igrač dobio dodatan život;
+
++ Dodaj likove koji se mogu sakupiti kako bi igrač dobio dodatan život;
 
 ![screenshot](invaders-aid.png)
 
@@ -311,7 +315,7 @@ Koja poboljšanja možeš napraviti u igrici? Evo nekih ideja:
 + Kada rezultat dođe do 100, napravi da se pojavi još neprijatelja.
 
 ```blocks
-	wait until <(score) = [100]>
+	čekaj do <(rezultat) = [100]>
 ```
 
 ## Spremi projekt. { .save }
