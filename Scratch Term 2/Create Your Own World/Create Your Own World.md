@@ -180,62 +180,62 @@ Dodajmo znakove koji će voditi igrača.
 		end
 
 	```
-+ Test out your sign, and you should see a message when the player touches it.
++ Testiraj znak i vidjet ćeš poruku kada ga igrač dotakne. 
 
 	![screenshot](world-sign-test2.png)
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
 ## Challenge: Treasure! {.challenge}
-Can you add a new treasure chest sprite, using the image 'chest.svg'. This treasure chest should be placed in room 3, and should say 'Well done!' when the player touches it.
+Možeš li dodati novi lik - škrinju s blagom. Iskoristi sliku 'chest.svg'. Škrinju postavi u treću sobu. Kada ju igrač dotakne prikaži poruku 'Bravo!'.
 
 ![screenshot](world-treasure.png)
 
-## Save your project { .save }
+## Spremi promjene u projektu{ .save }
 
-# Step 4: People { .activity }
+# Korak 4: Ljudi { .activity }
 
-Let's add other people to your world that your player can interact with.
+Dodaj druge osobe s kojima igrač može komunicirati u svoj svijet. 
 
-## Activity Checklist { .check }
+## Zadatci { .check }
 
-+ Add in a new person sprite, using the image 'person.png'.
++ Koristeći sliku 'person.png' dodaj novi lik u igru. 
 
 	![screenshot](world-person.png)
 
-+ Add in this code, so that the person talks to your player. This code is very similar to the code you added to your sign:
++ Dodaj sljedeće naredbe kako bi osoba mogla razgovarati s igračem. Primjetit ćeš da je kôd vrlo sličan kôdu za znak.
 
 	```blocks
-		when flag clicked
-		go to x: (-200) y: (0)
-		forever
-			if < touching [player v]? > then
-				say [Did you know that you can go through orange and yellow doors?]
-			else
-				say []
-			end
+		kada je ⚑ kliknut
+		idi na x:(-200) y:(0)
+		ponavljaj
+   		ako <dodiruje [player v]?> onda
+      			reci [Znaš li da možeš proći kroz narančasta i žuta vrata?]
+   		inače
+      			reci []
+   		end
 		end
 	```
 
-+ You could also allow your person to move, by using these two blocks:
++ Sljedećim naredbama omogućit ćeš osobi da se kreće: 
 
 	```blocks
-		move (1) steps
-		if on edge, bounce
+		idi (1) koraka
+		ako si na rubu, okreni se
 	```
 
-	Your person will act differently, depending on whether you place this code inside the `forever` {.blockcontrol} loop or the `if` {.blockcontrol} block. Try both and see which you prefer.
+	Tvoja osoba ponašat će se drugačije ovisno o tome na koje mjesto postaviš prethodne naredbe - unutar petlje `ponavljaj` {.blockcontrol} ili unutar naredbe `ako je` {.blockcontrol}. Pokušaj oboje i vidi koji ti se način više sviđa. 
 
 	![screenshot](world-person-test.png)
 
-+ Have you noticed that your person flips upside-down. To stop this, click the sprite's information icon (`i`{.blockmotion}), and click the dot to fix to rotation style.
++ Primjeti da se osoba okreće naglavačke kada. Zaustavi to naredbom 'postavi stil rotacije' {.blockmotion} ili klikom na ikonu informacije (`i`{.blockmotion}) i odabirom točke. 
 
 	![screenshot](world-person-rotate.png)
 
-## Challenge: Improving your person {.challenge}
-Can you add code to your new person, so that they only appear in room 1? Make sure you test out your new code!
+## Izazov: Poboljšaj svoju osobu {.challenge}
+Možeš li svojoj novoj osobi dodati naredbe kojima će se ona pojavljivati samo u prvoj sobi? Ne zaboravi isprobati svoj novi kôd! 
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
 + You can also add in patrolling enemies, who end the game if the player touches them. Add in a new enemy sprite, and change the rotation style, just like you did with the 'person' sprite.
 
