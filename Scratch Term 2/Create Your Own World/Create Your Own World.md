@@ -237,27 +237,27 @@ Možeš li svojoj novoj osobi dodati naredbe kojima će se ona pojavljivati samo
 
 ## Spremi promjene u projektu { .save }
 
-+ You can also add in patrolling enemies, who end the game if the player touches them. Add in a new enemy sprite, and change the rotation style, just like you did with the 'person' sprite.
++ Možeš dodati i patrolirajuće neprijatelje koji završavaju igru kada ih igrač dotakne. Dodaj novi lik neprijatelja i promijeni stil rotacije, kao i za prethodnog lika osobe. 
 
-+ Add code to your enemy, so that they only appear in room 2.
++ Neprijatelju dodaj naredbe kojima ćeš osigurati da se on pojavljuje samo u drugoj sobi.
 
-+ You'll also need to add code to move the enemy, and to end the game if the enemy touches the player. It's easier to do this in separate code blocks. Here's how your enemy code should look:
++ Također trebaš dodati naredbe kojima ćeš omogućiti neprijatelju da se kreće, te da igra završi ako ga igrač dotakne. Lakše ćeš to napraviti u odvojenim blokovima naredbi. Ovako treba izgledati neprijateljev blok naredbi:
 
 	![screenshot](world-enemy-code.png)
 
-+ Test out your enemy, to make sure that:
-	+ It's only visible in room 2;
-	+ It patrols the room;
-	+ The game ends if the player touches it.
++ Testiraj neprijatelja da se uvjeriš da:
+	+ Je vidljiv samo u sobi 2
+	+ Patrolira sobom;
+	+ Igra završava ako ga igrač dotakne. 
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
-## Challenge: More enemies {.challenge}
-Can you create another enemy in room 3, that patrols up and down through the gap in the wall?
+## Izazov: Više neprijatelja {.challenge}
+Možeš li kreirati nnovog eprijatelja u sobi 3 koji patrolira gore i dolje kroz prazninu u zidu? 
 
 ![screenshot](world-enemy2.png)
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
 # Step 5: Collecting coins { .activity }
 
