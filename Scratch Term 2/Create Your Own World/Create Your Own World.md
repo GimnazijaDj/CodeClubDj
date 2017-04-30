@@ -259,101 +259,101 @@ Možeš li kreirati nnovog eprijatelja u sobi 3 koji patrolira gore i dolje kroz
 
 ## Spremi promjene u projektu { .save }
 
-# Step 5: Collecting coins { .activity }
+# Korak 5: Sakupljanje novčića { .activity }
 
-## Activity Checklist { .check }
+## Zadatci { .check }
 
-+ Add a new variable valled `coins` {.blockdata} to your project.
++ Dodaj novu varijablu u projekt i nazovi ju `novčići` {.blockdata}.
 
-+ Add a new 'coin' sprite to your project.
++ Dodaj lik novčića ('coin').
 
 ![screenshot](world-coins.png)
 
-+ Add code to your coin, so that it only appears in room 1.
++ Dodaj naredbe liku novčića  kojima ćeš omogućiti da se on pojavljuje samo u sobi 1. 
 
-+ Add code to your coin sprite, to add 1 to your `coins` {.blockdata} once they've been picked up:
++ Zatim dodaj naredbe kojima ćeš povećavati vrijednost varijable `novčić`{.blockdata} za 1 kada igrač pokupi novčić:
 
 	```blocks
-		when flag clicked
-		wait until <touching [player v]?>
-		change [coins v] by (1)
-		stop [other scripts in sprite v]
-		hide
+		kada je ⚑ kliknut
+		čekaj do <dodiruje [player v]?>
+		promijeni [novčić v] za (1)
+		zaustavi [ostale skripte lika v]
+		sakrij
 	```
 
-	The code `stop other scripts in sprite` {.blockcontrol} is needed so that the coin stops being displayed in room 1 once it's been collected.
+	Naredba `zaustavi ostale skripte lika `{.blockcontrol} osigurava da se novčić ne više prikazuje ako je pokupljen. 
 
-+ You'll also need to add code to set your `coins` {.blockdata} variable to 0 at the start of your game.
++ Ne zaboravi dodati naredbu kojom ćeš na početku igre postaviti vrijednost varijable `novčić` {.blockdata} na 0.
 
-+ Test your project - collecting your coins should change your score to 1.
++ Isprobaj projekt - kada pokupiš novčić rezultat bi se trebao promijeniti na 1. 
 
-## Challenge: More coins {.challenge}
-Can you add more coins to your game? They can be in different rooms, and some coins could even be guarded by patroling enemies.
+## Izazov: Više novčića {.challenge}
+Možeš li dodati više novčića u igru? Neka budu u različitim sobama, a neke od njih mogu i čuvati patrolirajući neprijatelji. 
 
-# Step 6: Doors and keys { .activity }
+# Korak 6: Vrata i ključevi { .activity }
 
-## Activity Checklist { .check }
+## Zadatci { .check }
 
-+ Create a new sprite from your 'key-blue.svg' image. Switch your stage to backdrop 3, and place the key somewhere difficult to reach!
++ Iz mape sa slikama učitaj novog lika - 'key-blue.svg'. Prebaci se na treću pozadinu i postavi ključ negdje gdje će ga biti teško dosegnuti. 
 
  	![screenshot](world-key.png)
 
-+ Make sure that your key is only visible in room 3.
++ Osiguraj da ključ bude vidljiv samo u sobi 3. 
 
-+ Create a new list variable called `inventory` {.blockdata}. This will be where you store all of the items your player collects.
++ Kreiraj novu listu. Nazovi je `inventar` {.blockdata}. U nju će se spremati sve što igrač pokupi. 
 
-+ The code for collecting the key is very similar to the code for collecting coins. The difference is that you add the key to your inventory.
-
-	```blocks
-		when flag clicked
-		wait until <touching [player v]?>
-		add [blue key] to [inventory v]
-		stop [other scripts in sprite v]
-		hide
-	```
-
-+ Test out your key, to see if you can collect it, and add it to your inventory. Remember to add code to your stage to empty your inventory at the start.
++ Kôd za skupljanje ključa je sličan kôdu kojim smo prikupljali novčiće. Razlika je samo u tome što će se ključ dodavati u inventar. 
 
 	```blocks
-		delete (all v) of [inventory v]
+		kada je ⚑ kliknut
+		čekaj do <dodiruje [player v]?>
+		dodaj [blue key] u [inventar v]
+		zaustavi [ostale skripte lika v]
+		sakrij
 	```
 
-+ Create a new sprite from your 'door-blue.png' image, and place your blue door across the gap in the two walls.
++ Isprobaj projekt i provjeri možeš li pokupiti ključ i nalazi li se on u inventaru. Ne zaboravi na pozornicu dodati naredbe kojima ćeš isprazniti inventar na početku.  
+
+	```blocks
+		obriši (sve v) iz [inventar v]
+	```
+
++ Iz mape sa slikama učitaj novi lik. Iskoristi sliku 'door-blue.png'. Plava vrata postavi u prazninu između dva zida.  
 
 	![screenshot](world-door.png)
 
-+ Add code to your door, so that it is only visible in room 3.
++ Liku vrata dodaj naredbe tako da bude vidljiv samo u sobi 3. 
 
-+ You'll need to hide your blue door to allow your player to pass once you have the blue key in your inventory.
++Trebaš sakriti plava vrata i dopustiti igraču prolaz ako se plavi ključ nalazi u inventaru. 
 
 	```blocks
-		when flag clicked
-		wait until <[inventory v] contains [blue key]>
-		stop [other scripts in sprite v]
-		hide
+		kada je ⚑ kliknut
+		čekaj do <[iinventar v] sadrži [blue key]>
+		zaustavi [ostale skripte lika v]
+		sakrij
 	```
 
-+ Test out your project, and see if you can collect the blue key to open the door!
++ Isprobaj projekt i provjeri možeš li pokupiti plavi ključ i otvoriti vrata. 
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
-## Challenge: Create your own world {.challenge}
-You can now continue creating your own world. Here are some ideas:
+## Izazov: Napravi svoj svijet {.challenge}
+Sada možeš nastaviti kreirati svoj svijet. Evo nekoliko ideja: 
 
-+ Change the setting of your game, and your game graphics;
-+ Add sound and music to your game;
-+ Add more people, enemies, signs and coins;
-+ Add red and yellow doors, that need their own keys to open them;
-+ Add more rooms to your world;
-+ Add other useful items to your game;
++ Promijeni postavke igre i grafiku;
++ Dodaj zvukove i glazbu;
++ Dodaj više ljudi, neprijatelja, znakova i novčića;
++ Dodaj crvena i žuta vrata koja će trebati ključeve za otvaranje;
++ Dodaj više soba;
++ Dodaj više korisnih stvari;
 
-+ Use coins to get information from other people;
++ Iskoristi novčiće da dobiješ informacije od ljudi;
 
 	![screenshot](world-bribe.png)
 
-+ You could even add north and south doors, so that the player can move between rooms in all 4 directions. For example, if you had 9 rooms, you could think of them as being in a 3x3 grid. You can then add 3 to the room number to move down 1 level.
++ Možeš čak dodati južna i sjeverna vrata kako bi se igrač mogao kretati između soba u sva četiri smjera. Na primjer, ako imaš devet soba možeš razmišljati o njima kao da se nalaze u rešetki 3x3. You could even add north and south doors, so that the player can move between rooms in all 4 directions. For example, if you had 9 rooms, you could think of them as being in a 3x3 grid. You can then add 3 to the room number to move down 1 level.
 
 	![screenshot](world-north-south.png)
 
-## Save your project { .save }
+## Spremi projekt { .save }
 
