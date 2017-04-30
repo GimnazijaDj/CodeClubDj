@@ -35,7 +35,7 @@ Napravimo svemirski brod koji će braniti Zemlju!
 + Dodaj naredbe kojima ćeš pomicati svemirski brod u lijevo kada se pritisne lijeva strelica na tipkovnici:
 
 	```blocks
-		when flag clicked
+		kada je ⚑ kliknut
 		ponavljaj
    		ako <tipka [strelica lijevo v] pritisnuta?> onda
       			promijeni x za (-4)
