@@ -1,183 +1,184 @@
 ---
-title: Create Your Own World
+title: Kreiraj vlastiti svijet
 level: Scratch 2
-language: en-GB
+language: hr-HR
 stylesheet: scratch
 embeds: "*.png"
 materials: ["Club Leader Resources/*","Project Resources/*"]
 ...
 
-# Introduction { .intro }
+# Uvod{ .intro }
 
-In this project you'll learn how to create your own open world adventure game.
+U ovom projektu naučit ćeš napraviti vlastitu igricu avanture. 
 
 <div class="scratch-preview">
   <iframe allowtransparency="true" width="485" height="402" src="http://scratch.mit.edu/projects/embed/34248822/?autostart=false" frameborder="0"></iframe>
   <img src="world-final.png">
 </div>
 
-# Step 1: Coding your player { .activity }
+# Step 1: Izrada igrača { .activity }
 
-Let's start by creating a player that can move around your world.
+Krenimo kreirajući igrača koji se može kretati po tvom svijetu. 
 
-## Activity Checklist { .check }
+## Zadatci { .check }
 
-+ Start a new Scratch project, and delete the cat sprite so that your project is empty. You can find the online Scratch editor at <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
++ Otvori novi Scratch projekt i obriši lik mačke tako da dobiješ prazan projekt. Online Scratch nalazi se na adresi <a href="http://jumpto.cc/scratch-new">jumpto.cc/scratch-new</a>.
 
-+ For this project, you should have a 'Project Resources' folder, containing all of the images you'll need. Make sure that you can find this folder, and ask your club leader if you can't find it.
++ Za ovaj projekt trebat će ti mapa 'Project Resources' koja sadrži sve slike koje će ti trebati. Pristup mapi omogućit će ti voditelj radionice. 
 
 	![screenshot](world-resources.png)
 
-+ Add the image 'room1.png' as a new stage backdrop, and the image 'player.png' as a new sprite. If you don't have these images you can draw them yourself! Here's how your project should look:
++ Dodaj sliku 'room1.png' za novu pozadinu pozornice i sliku 'player.png' za novog lika. Ukoliko nemaš pristup slikama, slobodno nacrtaj svoje! Ovako bi projekt trebao izgledati:  
 
 	![screenshot](world-player.png)
 
-+ Let's use the arrow keys to move the player around. When the player presses the up arrow, you want the player to move up, by changing its y coordinate. Add this code to the player sprite:
++ Za kretanje igrača koristit će se strelice. Kada igrač pritisne strelicu gore, lik se treba kretati prema gore. To ćeš postići mijenjanjem koordinate y. Liku igrača dodaj sljedeće naredbe: 
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [up arrow v] pressed? > then
-				change y by (2)
-			end
+		kada je ⚑ kliknut
+		ponavljaj
+   			ako <tipka [strelica gore v] pritisnuta?> onda
+      				promijeni y za (2)
+   			end
 		end
 	```
 
-+ Test out your player by clicking the flag and then holding down the up arrow. Does your player move up?
++ Provjeri naredbe tako što ćeš kliknuti na zastavicu, a zatim drži pritisnutu strelicu gore. Pomiče li se igrač prema gore? 
 
 	![screenshot](world-up.png)
 
-+ To move the player to the left, you need to add another `if` {.blockcontrol} block to your player, which changes the x coordinate:
++ Za pomicanje igrača u lijevo trebaš dodati još jednu `ako je` {.blockcontrol} naredbu koja će mijenjati x koordinatu. 
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [up arrow v] pressed? > then
-				change y by (2)
-			end
-			if <key [left arrow v] pressed? > then
-				change x by (-2)
-			end
+		kada je ⚑ kliknut
+		ponavljaj
+   		ako <tipka [strelica gore v] pritisnuta?> onda
+      			promijeni y za (2)
+   		end
+   		ako <tipka [strelica lijevo v] pritisnuta?> onda
+      			promijeni x za (-2)
+   		end
 		end
+
 	```
 
-## Challenge: Moving in all four directions {.challenge}
-Can you add more code to your player, so that they can move up, down, left and right. Use the code you already have to help you!
+## Izazov: pomicanje u sva četiri smjera {.challenge}
+Možeš li dodati naredbe kojima ćeš svog igrača pomicati u sva četiri smjera: gore, dolje, lijevo i desno? Iskoristi prethodne naredbe! 
 
-## Save your project { .save }
+## Spremi projekt { .save }
 
-+ Test out your player again, and you'll see they have the ability to walk through the light grey walls.
++ Pokreni projekt. Uočit ćeš da se igrač može kretati i kroz svijetlosive zidove. 
 
 	![screenshot](world-walls.png)
 
-+ To fix this, you need to move the player, but then move them back if they're touching a light grey wall. Here's the code you'll need:
++ Da to popraviš, morati ćeš igrača vratiti natrag kada dotakne zid. Ovdje su naredbe koje ti trebaju za to: 
 
 	```blocks
-		when flag clicked
-		forever
-			if <key [up arrow v] pressed? > then
-				change y by (2)
-				if < touching color [#BABABA]? > then
-					change y by (-2)
-				end
-			end
+		kada je ⚑ kliknut
+		ponavljaj
+   		ako <tipka [strelica gore v] pritisnuta?> onda
+      			promijeni y za (2)
+      			ako <dodiruje boju [#BABABA]?> onda
+         			promijeni y za (-2)
+      			end
+   		end
 		end
 	```
 
-	Notice that the new `if`{.blockcontrol}`touching color`{.blocksensing} block is _inside_ the `if`{.blockcontrol}`key [up arrow]`{.blocksensing} block.
+	Primijeti da se nova `ako je`{.blockcontrol} `dodiruje boju`{.blocksensing} naredba nalazi _unutar_ naredbe  `ako je`{.blockcontrol} `tipka [strelica gore] pritisnuta`{.blocksensing}.
 
-+ Test this new code by moving below the wall - you shouldn't be able to move up into it.
-
++ Testiraj nove naredbe pomičući se kroz zid - sada to ne bi trebalo biti moguće.
 	![screenshot](world-walls-test.png)
 
-+ Let's do the same for the left arrow, moving back if the player is touching a wall. This is how your player code should look so far:
++ Napravi to i za lijevu strelicu - vrati natrag igrača ako dotakne zid. Kôd za lik igrača sada bi trebao izgledati ovako: 
 
 	![screenshot](world-wall-code.png)
 
-## Challenge: Fixing your player's movement {.challenge}
-Add code to your player so that you can't walk through walls in any direction. Use the code you already have to help you!
+## Izazov: Popravljanje pokreta igrača {.challenge}
+Dodaj naredbe kojima ćeš onemogućiti igrača da prolazi kroz zid u bilo kojem smjeru. Prethodni kôd ti može pomoći. 
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
-# Step 2: Coding your world { .activity }
+# Korak 2: Programiraj svoj svijet { .activity }
 
-Let's allow the player to walk through doors into other rooms!
+Dopustimo igraču da prođe kroz vrata u drugu sobu. 
 
-## Activity Checklist { .check }
+## Zadatci { .check }
 
-+ Add 2 more backdrops to your stage ('room2.png' and 'room3.png'), so that you have 3 backdrops in total. Make sure that they are in the right order - this will help you later.
++ Dodaj još dvije pozadine na pozornicu ('room2.png' i 'room3.png'), tako da ukupno imaš tri pozadine. Provjeri jesu li u ispravnom redoslijedu - to će ti koristiti kasnije.  
 
 	![screenshot](world-backdrops.png)
 
-+ You'll need a new variable called `room` {.blockdata}, to keep track of what room the player is in.
++ Trebat će ti nova varijabla `soba` {.blockdata} koja će pratiti u kojoj sobi se igrač nalazi.  
 
 	![screenshot](world-room.png)
 
-+ When the player touches the orange door in the first room, the next backdrop should be displayed, and the player should move back to the left side of the stage. Here's the code you'll need - it should go inside the player's `forever` {.blockcontrol} loop:
++ Kada igrač dotakne narančasta vrata u prvoj sobi, treba se prikazati sljedeća pozadina i igrač bi se trebao vratiti na lijevu stranu pozornice. Ovdje su naredbe koje će ti trebati. Postavi ih unutar petlje `ponavljaj` {.blockcontrol}:
 
 	```blocks
-		if < touching color [#F2A24A] > then
-			switch backdrop to [next backdrop v]
-			go to x: (-200) y: (0)
-			change [room v] by (1)
+		ako <dodiruje boju [#F2A24A]?> onda
+   			promijeni pozadinu na [sljedeća pozadina v]
+   			idi na x:(-200) y:(0)
+   			promijeni [room v] za (1)
 		end
 	```
 
-+ Add this code to the _start_ of your player code (before the `forever` {.blockcontrol} loop) to make sure that everything is reset when the flag is clicked:
++ Sljedeće naredbe dodaj na  _početak_ bloka naredbi lika igrača (prije petlje `ponavljaj` {.blockcontrol} loop) da se osiguraš da će se sve vratiti na početnu poziciju kada se klikne zastavica. 
 
 	```blocks
-		set [room v] to (1)
-		go to x: (-200) y: (0)
-		switch backdrop to [room1 v]
+		postavi [room v] na (1)
+		idi na x:(-200) y:(0)
+		promijeni pozadinu na [room1 v]
 	```
 
-+ Click the flag and move your player over the orange door. Does your player move to the next screen? Does the `room` {.blockdata} variable change to 2?
++ Klikni na zastavicu i pomiči igrača kroz narančasta vrata. Prelazi li igrač na novi ekran? Mijenja li se vrijednost varijable `soba` {.blockdata} na 2?
 
 	![screenshot](world-room-test.png)
 
-## Challenge: Moving to the previous room {.challenge}
-Can you make your player move to the previous room when they touch a yellow door? Remember that this code will be _very_ similar to the code you've already added for moving to the next room.
+## Izazov: Vraćanje u prethodnu sobu {.challenge}
+Možeš li napraviti da se igrač vrati u prethodnu sobu kada prođe kroz žuta vrata? Upamti da će taj kôd biti _vrlo_ sličan kôdu kojim igrač prelazi u sljedeću sobu. 
 
-## Save your project { .save }
+## Spremi promjene u projektu { .save }
 
-# Step 3: Signs { .activity }
+# Korak 3: Znakovi { .activity }
 
-Let's add signs to your world, to guide your player on their journey.
+Dodajmo znakove koji će voditi igrača.
 
-## Activity Checklist { .check }
+## Zadatci { .check }
 
-+ Upload the image 'sign.svg' as a new sprite, and rename the sprite 'welcome sign'.
++ Dodaj novi lik iz datoteke - 'sign.svg'. Preimenuj lika u 'znak dobrodošlice'.
 
 	![screenshot](world-sign.png)
 
-+ This sign will only be visible in room 1, so let's add some code to the sign to make sure that this happens:
++ Taj znak treba biti vidljiv jedino u prvoj sobi. Da to osiguraš, dodaj mu sljedeće naredbe:
 
 	```blocks
-		when flag clicked
-		forever
-			if < (room) = [1] > then
-				show
-			else
-				hide
-			end
+		kada je ⚑ kliknut
+		ponavljaj
+   		ako <(room) = [1]> onda
+      			prikaži
+   		inače
+      			sakrij
+   		end
 		end
 	```
 
-+ Test your sign by moving between rooms. Your sign should only be visible in room 1.
++ Provjeri kôd pomicanjem između soba. Znak bi trebao biti vidljiv samo u prvoj sobi. 
 
 	![screenshot](world-sign-test.png)
 
-+ A sign isn't much good if it doesn't say anything! Let's add some more code (in another separate block) to display a message if the sign is touching the player:
++ Znak nije dobar ako ništa ne kaže! Dodajmo naredbe (u novom, odvojenom bloku) koje će prikazati poruku ako igrač dodirne znak: 
 
 	```blocks
-		when flag clicked
-		forever
-			if < touching [player v]? > then
-				say [Welcome! Can you get to the treasure?]
-			else
-				say []
-			end
+		kada je ⚑ kliknut
+		ponavljaj
+   		ako <dodiruje [player v]?> onda
+      			reci [Pozdrav! Možeš li doći do blaga?]
+   		inače
+      			reci []
+   		end
 		end
+
 	```
 + Test out your sign, and you should see a message when the player touches it.
 
