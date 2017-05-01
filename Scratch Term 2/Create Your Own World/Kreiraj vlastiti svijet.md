@@ -18,7 +18,7 @@ U ovom projektu naučit ćeš napraviti vlastitu igricu avanture.
 
 # Step 1: Izrada igrača { .activity }
 
-Krenimo kreirajući igrača koji se može kretati po tvom svijetu. 
+Krenimo kreirajući igrača koji će se kretati po tvom svijetu. 
 
 ## Zadatci { .check }
 
@@ -28,11 +28,11 @@ Krenimo kreirajući igrača koji se može kretati po tvom svijetu.
 
 	![screenshot](world-resources.png)
 
-+ Dodaj sliku 'room1.png' za novu pozadinu pozornice i sliku 'player.png' za novog lika. Ukoliko nemaš pristup slikama, slobodno nacrtaj svoje! Ovako bi projekt trebao izgledati:  
++ Dodaj sliku 'room1.png' za novu pozadinu pozornice i sliku 'player.png' za novog lika. Ukoliko nemaš pristup slikama, slobodno nacrtaj svoje! Ovako bi projekt sada trebao izgledati:  
 
 	![screenshot](world-player.png)
 
-+ Za kretanje igrača koristit će se strelice. Kada igrač pritisne strelicu gore, lik se treba kretati prema gore. To ćeš postići mijenjanjem koordinate y. Liku igrača dodaj sljedeće naredbe: 
++ Za kretanje igrača koristit će se tipke strelica na tipkovnici. Kada igrač pritisne strelicu gore, lik se treba kretati prema gore. To ćeš postići mijenjanjem koordinate y. Liku igrača dodaj sljedeće naredbe: 
 
 	```blocks
 		kada je ⚑ kliknut
@@ -67,7 +67,7 @@ Možeš li dodati naredbe kojima ćeš svog igrača pomicati u sva četiri smjer
 
 ## Spremi projekt { .save }
 
-+ Pokreni projekt. Uočit ćeš da se igrač može kretati i kroz svijetlosive zidove. 
++ Pokreni projekt. Uočit ćeš da se igrač može kretati i kroz zidove. 
 
 	![screenshot](world-walls.png)
 
@@ -85,7 +85,7 @@ Možeš li dodati naredbe kojima ćeš svog igrača pomicati u sva četiri smjer
 		end
 	```
 
-	Primijeti da se nova `ako je`{.blockcontrol} `dodiruje boju`{.blocksensing} naredba nalazi _unutar_ naredbe  `ako je`{.blockcontrol} `tipka [strelica gore] pritisnuta`{.blocksensing}.
+	Primijeti da se nova naredba `ako`{.blockcontrol} `dodiruje boju`{.blocksensing} nalazi _unutar_ naredbe  `ako`{.blockcontrol} `tipka [strelica gore] pritisnuta`{.blocksensing}.
 
 + Testiraj nove naredbe pomičući se kroz zid - sada to ne bi trebalo biti moguće.
 	![screenshot](world-walls-test.png)
@@ -146,7 +146,7 @@ Dodajmo znakove koji će voditi igrača.
 
 ## Zadatci { .check }
 
-+ Dodaj novi lik iz datoteke - 'sign.svg'. Preimenuj lika u 'znak dobrodošlice'.
++ Dodaj novi lik iz datoteke - 'sign.svg' i prilagodi mu veličinu. Preimenuj lika u 'znak dobrodošlice'.
 
 	![screenshot](world-sign.png)
 
@@ -186,16 +186,16 @@ Dodajmo znakove koji će voditi igrača.
 
 ## Spremi promjene u projektu { .save }
 
-## Challenge: Treasure! {.challenge}
+## Izazov: Blago! {.challenge}
 Možeš li dodati novi lik - škrinju s blagom. Iskoristi sliku 'chest.svg'. Škrinju postavi u treću sobu. Kada ju igrač dotakne prikaži poruku 'Bravo!'.
 
 ![screenshot](world-treasure.png)
 
 ## Spremi promjene u projektu{ .save }
 
-# Korak 4: Ljudi { .activity }
+# Korak 4: Nove osobe { .activity }
 
-Dodaj druge osobe s kojima igrač može komunicirati u svoj svijet. 
+Dodaj u svoj svijet druge osobe s kojima igrač može komunicirati tijekom igre. 
 
 ## Zadatci { .check }
 
@@ -203,7 +203,7 @@ Dodaj druge osobe s kojima igrač može komunicirati u svoj svijet.
 
 	![screenshot](world-person.png)
 
-+ Dodaj sljedeće naredbe kako bi osoba mogla razgovarati s igračem. Primjetit ćeš da je kôd vrlo sličan kôdu za znak.
++ Liku osobe dodaj sljedeće naredbe kako bi mogao razgovarati s igračem. Primjetit ćeš da je kôd vrlo sličan kôdu za znak.
 
 	```blocks
 		kada je ⚑ kliknut
@@ -228,7 +228,7 @@ Dodaj druge osobe s kojima igrač može komunicirati u svoj svijet.
 
 	![screenshot](world-person-test.png)
 
-+ Primjeti da se osoba okreće naglavačke kada. Zaustavi to naredbom 'postavi stil rotacije' {.blockmotion} ili klikom na ikonu informacije (`i`{.blockmotion}) i odabirom točke. 
++ Primjeti da se osoba okreće naglavačke kada se okrene. Zaustavi to naredbom 'postavi stil rotacije' {.blockmotion} ili klikom na ikonu informacije (`i`{.blockmotion}) i odabirom točke. 
 
 	![screenshot](world-person-rotate.png)
 
@@ -253,7 +253,7 @@ Možeš li svojoj novoj osobi dodati naredbe kojima će se ona pojavljivati samo
 ## Spremi promjene u projektu { .save }
 
 ## Izazov: Više neprijatelja {.challenge}
-Možeš li kreirati nnovog eprijatelja u sobi 3 koji patrolira gore i dolje kroz prazninu u zidu? 
+Možeš li kreirati novog neprijatelja u sobi 3 koji patrolira gore i dolje kroz prazninu u zidu? 
 
 ![screenshot](world-enemy2.png)
 
