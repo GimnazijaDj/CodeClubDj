@@ -111,7 +111,7 @@ Dodavanjem gravitacije i omogućavanjem skakanja napravit ćemo da igrač bude j
 
 	![screenshot](dodge-gravity-drag.png)
 
-+ Gravitacija ne bi trebala pomicati lik kroz platformu ili stup! Dodaj naredbu `ako je` {.blockcontrol} u kôd tako da gravitacija djeluje samo kada je lik u zraku. Kôd za gravitaciju sada treba izgledati ovako: 
++ Gravitacija ne bi trebala pomicati lik kroz platformu ili stup! Dodaj naredbu `ako` {.blockcontrol} u kôd tako da gravitacija djeluje samo kada je lik u zraku. Kôd za gravitaciju sada treba izgledati ovako: 
 
 	```blocks
 		kada je ⚑ kliknut
