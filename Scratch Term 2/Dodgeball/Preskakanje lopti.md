@@ -164,7 +164,7 @@ Tvoj lik sada je sposoban skočiti svaki puta kada je pritisnuta razmaknica, ča
 
 ## Spremi promjene u projektu { .save }
 
-# Step 3: Dodavanje lopti { .activity .new-page}
+# Korak 3: Dodavanje lopti { .activity .new-page}
 
 Sada kada smo dovršili kretanje lika, dodajmo lopte koje treba izbjegavati. 
 
