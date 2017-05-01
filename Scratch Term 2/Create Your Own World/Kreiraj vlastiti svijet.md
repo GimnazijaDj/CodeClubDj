@@ -119,7 +119,7 @@ Dopustimo igraču da prođe kroz vrata u drugu sobu.
 		ako <dodiruje boju [#F2A24A]?> onda
    			promijeni pozadinu na [sljedeća pozadina v]
    			idi na x:(-200) y:(0)
-   			promijeni [room v] za (1)
+   			promijeni [soba v] za (1)
 		end
 	```
 
@@ -246,14 +246,14 @@ Možeš li svojoj novoj osobi dodati naredbe kojima će se ona pojavljivati samo
 	![screenshot](world-enemy-code.png)
 
 + Testiraj neprijatelja da se uvjeriš da:
-	+ Je vidljiv samo u sobi 2
+	+ Je vidljiv samo u drugoj sobi;
 	+ Patrolira sobom;
 	+ Igra završava ako ga igrač dotakne. 
 
 ## Spremi promjene u projektu { .save }
 
 ## Izazov: Više neprijatelja {.challenge}
-Možeš li kreirati novog neprijatelja u sobi 3 koji patrolira gore i dolje kroz prazninu u zidu? 
+Možeš li kreirati novog neprijatelja u trećoj sobi koji patrolira gore i dolje kroz prazninu u zidu? 
 
 ![screenshot](world-enemy2.png)
 
@@ -263,13 +263,13 @@ Možeš li kreirati novog neprijatelja u sobi 3 koji patrolira gore i dolje kroz
 
 ## Zadatci { .check }
 
-+ Dodaj novu varijablu u projekt i nazovi ju `novčići` {.blockdata}.
++ Dodaj novu varijablu u projekt i nazovi ju `novčić` {.blockdata}.
 
-+ Dodaj lik novčića ('coin').
++ Dodaj lik novčića ('coin') i prilagodi njegovu veličinu igri.
 
 ![screenshot](world-coins.png)
 
-+ Dodaj naredbe liku novčića  kojima ćeš omogućiti da se on pojavljuje samo u sobi 1. 
++ Liku novčića dodaj naredbe kojima ćeš omogućiti da se on pojavljuje samo u prvoj sobi. 
 
 + Zatim dodaj naredbe kojima ćeš povećavati vrijednost varijable `novčić`{.blockdata} za 1 kada igrač pokupi novčić:
 
@@ -318,13 +318,13 @@ Možeš li dodati više novčića u igru? Neka budu u različitim sobama, a neke
 		obriši (sve v) iz [inventar v]
 	```
 
-+ Iz mape sa slikama učitaj novi lik. Iskoristi sliku 'door-blue.png'. Plava vrata postavi u prazninu između dva zida.  
++ Iz mape sa slikama učitaj novi lik. Iskoristi sliku 'door-blue.png'. Plava vrata postavi na treću pozadinu, u prazninu između dva zida.  
 
 	![screenshot](world-door.png)
 
-+ Liku vrata dodaj naredbe tako da bude vidljiv samo u sobi 3. 
++ Liku vrata dodaj naredbe tako da bude vidljiv samo u trećoj sobi. 
 
-+Trebaš sakriti plava vrata i dopustiti igraču prolaz ako se plavi ključ nalazi u inventaru. 
++ Ako se plavi ključ nalazi u inventaru sakrij plava vrata sakrij i dopusti igraču prolaz:
 
 	```blocks
 		kada je ⚑ kliknut
@@ -351,7 +351,7 @@ Sada možeš nastaviti kreirati svoj svijet. Evo nekoliko ideja:
 
 	![screenshot](world-bribe.png)
 
-+ Možeš čak dodati južna i sjeverna vrata kako bi se igrač mogao kretati između soba u sva četiri smjera. Na primjer, ako imaš devet soba možeš razmišljati o njima kao da se nalaze u rešetki 3x3. You could even add north and south doors, so that the player can move between rooms in all 4 directions. For example, if you had 9 rooms, you could think of them as being in a 3x3 grid. You can then add 3 to the room number to move down 1 level.
++ Možeš čak dodati južna i sjeverna vrata kako bi se igrač mogao kretati između soba u sva četiri smjera. Na primjer, imaš li devet soba možeš razmišljati o njima kao da se nalaze u rešetci 3x3.  Za spuštanje u nivo ispod možeš broj sobe uvećati za 3. 
 
 	![screenshot](world-north-south.png)
 
