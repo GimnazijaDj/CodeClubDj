@@ -192,7 +192,7 @@ Spremimo najbolji rezltat kako bi igrači vidjeli kako im ide.
 
 	![screenshot](dots-custom-2.png)
 
-+ Sada dodaj sljedeće naredbe bloku naredbi `Provjeri najbolji rezultat` {.blockmoreblocks} kako bi se trenutni `rezultat` {.blockdata} spremio kao kao `najbolji rezultat` {.blockdata} `ako je` {.blockcontrol} je to najbolji rezultat do sada:
++ Sada dodaj sljedeće naredbe bloku naredbi `Provjeri najbolji rezultat` {.blockmoreblocks} kako bi se trenutni `rezultat` {.blockdata} spremio kao kao `najbolji rezultat` {.blockdata} `ako` {.blockcontrol} je to najbolji rezultat do sada:
 
 	```blocks
 		definiraj [Provjeri najbolji rezultat]
