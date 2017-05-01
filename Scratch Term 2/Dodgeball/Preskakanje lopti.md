@@ -54,7 +54,7 @@ Krenimo kreiranjem lika koji se može kretati lijevo i desno i penjati po prepre
 
 	![screenshot](dodge-walking.png)
 
-+ Za pomicanje lika u lijevo potrebno je unutar petlje `ponavljaj` {.blockcontrol} dodati još jednu naredbu `ako je` {.blockcontrol}.  
++ Za pomicanje lika u lijevo potrebno je unutar petlje `ponavljaj` {.blockcontrol} dodati još jednu naredbu `ako` {.blockcontrol}.  
 + Pokreni program i provjeri radi li ispravno. Okreće li se možda igrač naopako kada skreće lijevo?  Ako da, na početak programa dodaj blok 
 
 	```blocks
@@ -182,7 +182,7 @@ Sada kada smo dovršili kretanje lika, dodajmo lopte koje treba izbjegavati.
 
 	![screenshot](dodge-ball-motion.png)
 
-	One će svake tri sekunde kreirati klona lopte koji će se kretati gornjom platformom. 
+	One će svake tri sekunde kreirati duplikat lopte koji će se kretati gornjom platformom. 
 
 + Klikni na zastavicu i provjeri radi li.
 
