@@ -1,5 +1,5 @@
 ---
-title: Memory
+title: Igra pamćenja
 level: Scratch 2
 language: hr-HR
 stylesheet: scratch
@@ -7,7 +7,7 @@ embeds: "*.png"
 materials: ["Club Leader Resources/*"]
 ...
 
-## Community Contributed Project { .challenge .pdf-hidden }
+## Projekt doprinosa zajednice { .challenge .pdf-hidden }
 Ovaj projekt kreirli su Erik i njegova kćer Ruth. Želite li sudjelovati svojim projektom  [kontaktirajte nas na GitHubu](https://github.com/CodeClub).
 
 # Uvod { .intro }
