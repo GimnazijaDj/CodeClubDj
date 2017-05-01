@@ -1,26 +1,26 @@
 ---
-title: Create Your Own World — Notes for Club Leaders
-language: en-GB
+title: Kreiraj vlastiti svijet — bilješke za volontere
+language: hr-HR
 embeds: "*.png"
 ...
 
-#Introduction:
-In this project, children will learn how to make their own open-world game, making use of all Scratch concepts and skills that have been learnt in previous projects.
+#Uvod:
+U ovom projektu djeca će izraditi svoju igru avanture, primjenjujući da sada savladane vještine i koncepte programiranja. 
 
-#Resources
-For this project, Scratch 2 should be used. Scratch 2 can either be used online at [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) or can be downloaded from [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) and used offline.
+#Izvori
+Za ovaj projekt koristte Scratch 2. Može se koristiti online na adresi [jumpto.cc/scratch-on](http://jumpto.cc/scratch-on) ili se preuzeti s [jumpto.cc/scratch-off](http://jumpto.cc/scratch-off) i koristiti offline.
 
-You can find a completed version of this project <a href="http://scratch.mit.edu/projects/34248822/#editor">online</a>, or it can be downloaded by clicking the 'Download Project Materials' link for this project, which contains:
+Završenu inačicu projekta možete pronaći <a href="http://scratch.mit.edu/projects/34248822/#editor">online</a>ili preuzeti preko linka 'Download Project Materials' za vaj projekt. Ona sadrži datoteku:
 
 + CreateYourOwnWorld.sb2
 
-There is also a version of this project with the external resources pre-loaded. This is available online at [jumpto.cc/world-resources](http://jumpto.cc/world-resources), or in the downloadable project materials, which contains:
+Također postoji inačica projekta s već učitanim vanjskim izvorima. Online inačica dostupna je na adresi [jumpto.cc/world-resources](http://jumpto.cc/world-resources), a također se nalazi i materijalima za projekt koji se mogu preuzeti. Radi se o datoteci: 
 
 + CreateYourOwnWorldResources.sb2 
 
-This link also includes a 'Project Resources' folder, which contains images that children will need to complete this project. Make sure that each child has access to a copy of these resources.
+Link za preuzimanje materijala također sadrži i mapu 'Project Resources'. U njoj se nalaze slike koje će djeci trebati da završe projekt. Osigurajte svakom djetetu pristup do tih materijala.  
 
-Project resources:
+Materijali sadrže sljedeće datoteke: 
 + player.png;
 + room1/2/3.png;
 + sign.svg;
@@ -32,14 +32,14 @@ Project resources:
 + key-blue.png.
 
 
-#Learning Objectives
-+ This project consolidates learning of all programming skills learnt.
+#Ciljevi učenja
++ Ovim projektom usavršavaju se do sada stečene vještine programiranja
 
-#Challenges
-+ "Moving in all four directions" - adding up, down, left and right player controls;
-+ "Fixing your player's movement" - not allowing the player to move through walls;
-+ "Moving to the previous room" - move back 1 room if touching a yellow door;
-+ "Treasure!" - consolidation of adding objects to the world;
-+ "Improving your person" - consolidation of adding objects to the world;
-+ "More enemies" - adding deadly moving objects;
-+ "Create your own world" - open-ended consolidation task.
+#Izazovi
++ "Kretanje u sva četiri smjera" - dodavanje naredbi za kretanje u smjerovima: gore, dolje, lijevo i desno
++ "Popravljanje kretanja igrača" - sprječavanje igrača da prolazi kroz zidove 
++ "Vraćanje u prethodnu sobu" - vraćanje u sobu 1 kada se dotaknu žuta vrata
++ "Blago!" - učvršćivanje vještina dodavanja objekata u svijet;
++ "Poboljšavanje osobe" - učvršćivanje vještina dodavanja objekata u svijet;
++ "Više neprijatelja" - dodavanje smrtonosnih objekata koji se kreću;
++ "Kreiraj svoj svijet" - otvoreni zadatak za utvrđivanje prethodno savladanih postupaka.
