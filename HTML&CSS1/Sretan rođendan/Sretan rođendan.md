@@ -9,7 +9,7 @@ stylesheet: web
 
 # Uvod { .intro}
 
-U ovom projektu upoznat ćeš HTML i CSS tako što ćeš napraviti svoju rođendansku čestitku.
+U ovom projektu upoznat ćemo se s HTML-om i CSS-om tako što ćemo izraditi rođendansku čestitku.
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/html/e996dc0380?outputOnly=true&start=result" width="600" height="450" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -23,14 +23,14 @@ HTML je  __HyperText Markup Language__, a njime se koristimo za izradu web stran
 
 ## Zadatci { .check}
 
-+ Za pisanje HTML kôda koristit ćemo web stranicu imena Trinket. Ona se nalazi na adresi: <a href="http://jumpto.cc/web-intro" target="_blank">jumpto.cc/web-intro</a>. Radiš li ovo direktno na internetu, možeš koristiti ugrađenu verziju Trinketa koja se nalazi ispod ovog teksta.
++ Za pisanje HTML kôda u ovim projektima koristit ćemo online sučelje imena Trinket. Ono se nalazi na adresi: <a href="http://jumpto.cc/web-intro" target="_blank">jumpto.cc/web-intro</a>. Također je moguće koristiti ugrađenu verziju Trinketa koja se nalazi ispod ovog teksta.
 
 <div class="trinket">
 	<iframe src="https://trinket.io/embed/html/850a678202" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 	</iframe>
 </div>
 
-+ Kôd koji vidite s lijeve strane Trinket sučelja je HTML. S desne strane prikazana je web stranica - rezultat HTML koda s lijeve strane.
++ Kôd koji se naazi s lijeve strane Trinket sučelja je HTML. S desne strane prikazana je web stranica - rezultat HTML koda s lijeve strane.
 
 	HTML koristi oznake (tags) za izradu web stranica. Vidiš li HTML u osmom redu kôda?
 
@@ -54,12 +54,12 @@ HTML je  __HyperText Markup Language__, a njime se koristimo za izradu web stran
 
 	![screenshot](birthday-head-body.png)
 
-+ Napravi promjenu jednoga paragrafa teksta u HTML-u (lijevo). Klikni 'Run' i trebala bi se vidjeti promjena na web stranici (desno)!
++ Napravi promjenu jednog odlomka u HTML-u (lijevo). Klikni 'Run' i trebala bi se vidjeti promjena na web stranici (desno)!
 	Ako je uključena mogućnost Autorun, promjene na stranici će se prikazati odmah. 
 
 	![screenshot](birthday-edit-html.png)
 
-+ U slučaju pogreške promjene je moguće poništiti naredbom 'Reset' do koje se dolazi pomoću gumba s izbornicima (menu). Probaj!
++ U slučaju pogreške promjene je moguće poništiti naredbom 'Reset' do koje se dolazi pomoću gumba s izbornicima (menu). Pokušaj!
 
 	![screenshot](birthday-reset.png)
 
@@ -67,7 +67,7 @@ HTML je  __HyperText Markup Language__, a njime se koristimo za izradu web stran
 
 __Za spremanje projekata nije se potrebno registrirati na Trinket stranici!__ 
 
-Ako nemaš Trinket račun, klikni na strelicu prema dolje i odaberi naredbu 'Link'. Dobit ćeš link koji možeš spremiti i vratiti se na njega kasnije. Taj postupak je potrebno ponoviti kod svake promjene, jer se link mjenja!
+Ako nemaš Trinket račun, klikni na strelicu prema dolje i odaberi naredbu 'Link'. Dobit ćeš link koji možeš spremiti i vratiti se na njega kasnije. Taj postupak je potrebno ponoviti kod svake promjene jer se link mjenja.
 
 ![screenshot](birthday-link.png)
 
@@ -76,7 +76,7 @@ Imaš li Trinket račun, najlakši način za spremanje promjena je pomoću gumba
 ![screenshot](birthday-remix.png)
 
 ##Izazov: Dodaj još jedan odlomak {.challenge}
-Možeš li, ispod dva postojeća, dodati i treći odlomak web stranici? Ne zaboravi da paragraf počinje oznakom `<p>`, a završava oznakom `</p>`.
+Možeš li, ispod dva postojeća, dodati i treći odlomak web stranici? Ne zaboravi da odlomak počinje oznakom `<p>`, a završava oznakom `</p>`.
 
 Ovako sada treba izgledati tvoja stranica:
 
@@ -114,7 +114,7 @@ CSS znači __Cascading Style Sheets__. To je jezik kojim se koristimo za dizajn 
 
 ## Spremi promjene u projektu {.save}
 
-##Izazov: Dodaj više stila {.challenge}
+##Izazov: Dodaj više stilova {.challenge}
 Možeš li napraviti da tekst u odlomcima bude narančaste boje? Ili sivu pozadinu?
 
 ![screenshot](birthday-more-style.png)
@@ -148,9 +148,9 @@ Ne brini ako ne razumiješ cijeli kôd. Ova rođendanska čestitka izgleda dosad
 
 	![screenshot](birthday-card-sun.png)
 
-	Možeš koristiti bilo koju riječ od: `boy`, `diamond`, `dinosaur`, `flowers`, `girl`, `rainbow`, `robot`, `spaceship`, `sun`, `tea`, ili `trophy`.
+	Možeš koristiti bilo koju riječ od sljedećih: `boy`, `diamond`, `dinosaur`, `flowers`, `girl`, `rainbow`, `robot`, `spaceship`, `sun`, `tea`, ili `trophy`.
 
-+ Možeš mjenjati i CSS datoteku čestitke. Klikni na karticu “style.css”. Počinje sa stilovima za vanjski dio čestitke (`outside`). Promjeni boju pozadine u `svjetlozelenu`.
++ Možeš mijenjati i CSS datoteku čestitke. Klikni na karticu “style.css”. Počinje sa stilovima za vanjski dio čestitke (`outside`). Promjeni boju pozadine u `svijetlozelenu`.
 
 	![screenshot](birthday-card-outside.png)
 
@@ -158,7 +158,7 @@ Ne brini ako ne razumiješ cijeli kôd. Ova rođendanska čestitka izgleda dosad
 
 	![screenshot](birthday-card-size.png)	
 
-+ Možeš mjenjati i font. Idi na red 24 i promjeni `font-family` u `Comic Sans MS` i veličinu fonta na `16pt`.
++ Možeš mijenjati i font. Idi u 24. red i promjeni `font-family` u `Comic Sans MS` i veličinu fonta na `16pt`.
 
 	![screenshot](birthday-card-font.png)
 
