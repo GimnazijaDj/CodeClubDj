@@ -9,7 +9,7 @@ stylesheet: web
 
 # Uvod { .intro}
 
-U ovom projektu naučit ćeš vas kako napraviti internet stranicu za pričanje priče, vica ili pjesme.
+U ovom projektu naučit ćeš napraviti internet stranicu za pričanje priče, vica ili pjesme.
 ![screenshot](story-final.png)
 
 # Korak 1: Odluči što ćeš pisati { .activity}
@@ -23,11 +23,11 @@ Prije nego što započneš s pisanjem kôda odluči o čemu ćeš pisati.
 	+ Izmišljena priča;
 	+ Nešto što se dogodilo tebi ili nekome koga poznaješ.
 
-	Osim priče to može biti: Vic, pjesma ili bilo što drugo što ti padne na pamet.
+	Osim priče to može biti vic, pjesma ili bilo što drugo što ti padne na pamet.
 
 # Korak 2: Uređivanje priče { .activity}
 
-Započnimo sa uređivanjem HTML sadržaja i CSS stila naše stranice.
+Započnimo s uređivanjem HTML sadržaja i CSS stila naše stranice.
 
 ## Zadatci { .check}
 
@@ -51,7 +51,7 @@ Započnimo sa uređivanjem HTML sadržaja i CSS stila naše stranice.
 	+ `<div>` je skraćeno od __division__ (pregrada). Koristi se za grupiranje elemenata. 
 	+ `<p>` je __paragraph__ (odlomak) teksta.
 
-##Izazov: Napravi neke izmjene {.challenge}
+##Izazov: Napravi nekoliko izmjena {.challenge}
 Uredi HTML i CSS kôd tako da prilagodiš svoju stranicu.
 
 ![screenshot](story-changes.png)
@@ -86,7 +86,7 @@ Dodajmo drugi dio priče.
 
 + Za dodavanje slike u HTML dokument potrebno je, unutar navodnika, dodati __izvor (source)__ slike. Pronađimo sliku koju ćemo dodati priči.
 
-	Slijedi link <a href="http://jumpto.cc/web-images" target="_blank">jumpto.cc/web-images</a>, i pronađi sliku koju želiš uključiti u svoju priču.
+	Slijedi link <a href="http://jumpto.cc/web-images" target="_blank">jumpto.cc/web-images</a> i pronađi sliku koju želiš uključiti u svoju priču.
 
 + Pritisni desnim klikom miša na sliku, a zatim odaberi naredbu 'Kopiraj lokaciju slike (Copy image URL)'. URL je adresa slike.
 
@@ -97,7 +97,7 @@ Dodajmo drugi dio priče.
 	![screenshot](story-image.png)
 	
 
-+__Imaš li Trinket račun__ na stranicu možeš dodavati i vlastite slike. 
++ __Imaš li Trinket račun__ na stranicu možeš dodavati i vlastite slike. 
 
 + Klikni na ikonu za dodavanje slike koja se nalazi u gornjem desnom kutu trinket sučelja za unos kôda. Klikni na gumb 'Upload'.
 
@@ -115,7 +115,7 @@ Dodajmo drugi dio priče.
 
 ## Spremi promjene u projektu {.save}
 
-##Izazov: Natavi! {.challenge}
+##Izazov: Nastavi! {.challenge}
 Iskoristi naučeno u ovom projektu i završi svoju priču. Pogledaj primjer:
 
 ![screenshot](story-final.png)
