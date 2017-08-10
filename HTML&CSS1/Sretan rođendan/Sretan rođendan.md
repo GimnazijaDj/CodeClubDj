@@ -35,7 +35,7 @@ HTML je  __HyperText Markup Language__, a njime se koristimo za izradu web stran
 	HTML koristi oznake (tags) za izradu web stranica. Vidiš li HTML u osmom redu kôda?
 
 	```
-	<p>Pozdrav. Moje ime je Marko.</p>
+	<p>Pozdrav. Moje ime je Ivan.</p>
 	```
 
 	`<p>` je primjer oznake, skraćeno od paragraph (odlomak). Odlomak započinje oznakom `<p>` i završava oznakom `</p>`.
