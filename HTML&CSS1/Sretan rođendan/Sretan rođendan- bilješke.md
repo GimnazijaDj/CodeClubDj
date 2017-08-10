@@ -1,31 +1,29 @@
 ---
 title: Sretan rođendan — bilješke za volontere
-language: en-GB
+language: hr-HR
 embeds: "*.png"
 materials: [""]
 ...
 
 #Uvod:
-U ovom projektu, djeca će biti upoznata s HTML oznakama i CSS svojstima. Oni će također urediti oznake i svojstva da bi napravili vlastitu uređenu čestitku dobrodošlice.
+U ovom projektu djeca će se upoznati s HTML oznakama i CSS svojstima. Također će urediti oznake i svojstva da bi napravili čestitku.
 
 #Online izvori
 
-Preporučujemo vam korištenje [trinket](https://trinket.io/)  da bi napisali HTML i CSS online. Ovaj projekt sadrži sljedeće trinkete:
+Za pisanje HTML i CSS kôda preporučujemo korištenje oline sučelja [trinket](https://trinket.io/). Ovaj projekt sadrži sljedeće trinkete:
 
 + ['Intro to HTML and CSS' starting point](https://trinket.io/html/850a678202)
 + ['Birthday Card' starting point  -- jumpto.cc/web-card](http://jumpto.cc/web-card)
 
-Djeca se također mogu poslužiti ovim praznim trinketom [(jumpto.cc/trinket-blank)](http://jumpto.cc/trinket-blank)  da bi napisali vlastiti HTML i CSS, 
-ili pak mogu koristiti predložak [(jumpto.cc/trinket-template)](http://jumpto.cc/trinket-template).
+Za pisanje kôda djeca se mogu poslužiti praznim dokumentom: [(jumpto.cc/trinket-blank)](http://jumpto.cc/trinket-blank) ili  koristiti predložak [(jumpto.cc/trinket-template)](http://jumpto.cc/trinket-template).
 
 Također postoji trinket koji sadrži uzorak odgovora na izazove:
 
 + ['Birthday Card' Finished](https://trinket.io/html/e996dc0380)
 
 #Offline izvori
-Ovaj projekt može biti završen offline [completed offline](../html-css.html) ako želite. Možeš pristupiti projektnim izvorima klikom na 'Download Project Materials'
-poveznicu ovoga projekta. Ovaj link sadrži 'Project Resources' mapu, koja sadrži izvore koje djeca trebati da bi završili projekt offline.
-Pobrini se da svako djete ima pristup kopiji ovih izvora. Ova mapa sadrži sljedeće dokumente:
+Ovaj projekt moguće je izraditi i [offline](../html-css.html). Potrebne datoteke je moguće preuzeti klikom na poveznicu projekta 'Download Project Materials'. Tu se nalazi mapa 'Project Resources', koja sadrži datoteke potrebne za izradu projekta offline.
+Pobrinite se da svako djete ima pristup kopiji sljedećih datoteka: 
 
 + Intro.html
 + Template/template.html
@@ -35,7 +33,7 @@ Pobrini se da svako djete ima pristup kopiji ovih izvora. Ova mapa sadrži sljed
 + Birthday Card/script.js
 + Birthday Card/10 x .png images
 
-Možeš naći završenu verziju izazova ovoga projekta u 'Club Leader Resources' mapi, koja sadrži:
+Gotova verzija izazova ovoga projekta nalazi se u mapi 'Club Leader Resources' mapi, koja sadrži datoteke:
 
 + BirthdayCardFinished.html
 + style.css
@@ -44,9 +42,9 @@ Možeš naći završenu verziju izazova ovoga projekta u 'Club Leader Resources'
 + dinosaur.png
 
 #Ciljevi učenja
-+ Ovaj projekt predstavlja HTML oznake i CSS svojstva, i dozvoljava uređenje sadržaja i dizajna.
++ Ovaj projekt predstavlja uvod u HTML oznake i CSS svojstva te uređenje sadržaja i dizajna.
 
 #Izazovi
-+ "Dodaj još jedan paragraf" - dodavanje HTML oznake dokumentu;
-+ "Dodaj više stila" - uređivanje CSS stilova;
-+ "Stvori vlastitu čestitku" - uređivanje HTML i CSS da bi stvorio čestitku.
++ "Dodaj još jedan odlomak" - dodavanje HTML oznake dokumentu;
++ "Dodaj više stilova" - uređivanje CSS stilova;
++ "Napravi svoju čestitku" - uređivanje HTML i CSS kôda i izrada čestitke..
