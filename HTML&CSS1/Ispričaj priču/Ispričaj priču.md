@@ -9,113 +9,115 @@ stylesheet: web
 
 # Uvod { .intro}
 
-U ovom projektu, naučit ćemo vas kako napraviti svoju vlastitu internet stranicu za pričanje priče, vica, pjesme.
+U ovom projektu naučit ćeš vas kako napraviti internet stranicu za pričanje priče, vica ili pjesme.
 ![screenshot](story-final.png)
 
-# Korak 1: Odluči što pisati { .activity}
+# Korak 1: Odluči što ćeš pisati { .activity}
 
-Prije nego što započneš s programiranjem, moraš odlučiti što pisati.
+Prije nego što započneš s pisanjem kôda odluči o čemu ćeš pisati.
 
-## Provjera aktivnosti{ .check}
+## Zadatci { .check}
 
 + Razmisli o priči koju želiš ispričati. To može biti:
 	+ Poznata priča;
-	+ Priča koju si izmislio;
+	+ Izmišljena priča;
 	+ Nešto što se dogodilo tebi ili nekome koga poznaješ.
 
-	Osim piče to može biti: Vic, pjesma, što god ti padne na pamet.
+	Osim priče to može biti: Vic, pjesma ili bilo što drugo što ti padne na pamet.
 
 # Korak 2: Uređivanje priče { .activity}
 
 Započnimo sa uređivanjem HTML sadržaja i CSS stila naše stranice.
 
-## Provjera aktivnosti { .check}
+## Zadatci { .check}
 
-+ Open this trinket: <a href="http://jumpto.cc/web-story" target="_blank">jumpto.cc/web-story</a>. Ako čitaš ovo na internetu, možeš se koristiti i drugim linkom ponuđenim ispod.
-
++ Otvori Trinket sučelje klikom na poveznicu <a href="http://jumpto.cc/web-story" target="_blank">jumpto.cc/web-story</a>. Možeš koristiti i prozor koji se nalazi ispod ovog teksta. 
 <div class="trinket">
 	<iframe src="https://trinket.io/embed/html/8083cfebb3" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 	</iframe>
 </div>
 
-+ Možda se sjećate iz projekta 'Sretan rođendan' da se sadržaj internetske stranice piše u `<body>` HTML dokumenta.
++ Vjerojatno se sjećaš iz projekta 'Sretan rođendan' da se sadržaj internetske stranice piše u tijelo ,`<body>`, HTML dokumenta.
 
-	Idi do 7 reda u kodu, tu bi trebao naći sadržaj svoje internet stranice, koji je unutar `<body>` i `</body>` oznaka.
+	Dio za sadržaj na našoj web stranici počinje u sedmom redu kôda. Nalazi se unutar oznaka `<body>` i `</body>`.
 
 	![screenshot](story-html.png)
 
-+ Možete li reći koje oznake se koriste za kreiranje različitih dijelova stranice?
++ Možeš li pronaći oznake koje se koriste za kreiranje različitih dijelova stranice?
 
 	![screenshot](story-elements.png)
 
-	+ `<h1>` je  __heading(naslov)__. Možeš koristiti brojeve od 1 do 6 za promjenu veličine naslova;
-	+ `<div>` je skraćeno od __division(pregrada)__, i to je način grupiranja stvari zajedno. U ovoj internetskoj stranici, koristit ćeš je da je grupiraš zajedno.
-	+ `<p>` je __paragraph(paragraf)__ teksta.
+	+ `<h1>` je  __heading__ (naslov). Za promjenu veličine naslova koriste se brojevi od 1 do 6;
+	+ `<div>` je skraćeno od __division__ (pregrada). Koristi se za grupiranje elemenata. 
+	+ `<p>` je __paragraph__ (odlomak) teksta.
 
 ##Izazov: Napravi neke izmjene {.challenge}
-Uredi HTML i CSS kod da prilagodiš svoju internetsku stranicu.
+Uredi HTML i CSS kôd tako da prilagodiš svoju stranicu.
 
 ![screenshot](story-changes.png)
 
-Možeš mijenjati boje koristeći internetsku stranicu, i možeš također koristiti fontove kao <span style="font-family: Arial;">Arial</span>, <span style="font-family: Comic Sans MS;">Comic Sans MS</span>, <span style="font-family: Impact;">Impact</span> and <span style="font-family: Tahoma;">Tahoma</span>.
+Možeš mijenjati boje ili vrstu slova. Na primjer, <span style="font-family: Arial;">Arial</span>, <span style="font-family: Comic Sans MS;">Comic Sans MS</span>, <span style="font-family: Impact;">Impact</span> and <span style="font-family: Tahoma;">Tahoma</span>.
 
-Ako trebaš više pomoći, možeš koristiti projekt 'Sretan rođendan' da ti pomogne.
+Trebaš li pomoć, iskoristi projekt 'Sretan rođendan'.
 
-## Spasi svoj projekt {.save}
+## Spremi promjene u projektu {.save}
 
 # Korak 3: Pričanje priče { .activity}
 
 Dodajmo drugi dio priče.
 
-## Provjera aktivnosti { .check}
+## Zadatci { .check}
 
-+ Idi na redak 17 koda, i dodaj drugi komplet od `<div>` and `</div>` početka i kraja oznaka. Ovo će stvoriti novu datoteku za slijedeći dio tvoje priče.
++ Idi u 17. red kôda i dodaj drugi komplet oznaka `<div>` i `</div>`. To će stvoriti novi odjeljak za slijedeći dio tvoje priče.
 
 	![screenshot](story-div.png)
 
-+ Dodaj paragraf teksta unutar svoje nove `<div>` oznake.
++ Unutar nove `<div>` oznake dodaj odlomak teksta.
 
 	![screenshot](story-paragraph.png)
 
-+ Napokon, možeš dodati sliku u svoju datoteku, dodavanjem ovog koda unutar svoje `<div>` oznake:
++ Na kraju dodaj i sliku. Za dodavanje slike unutar oznake `<div>` koristiti oznaku `<img>`: 
 
 	```
 	<img src="">
 	```
 
-	Primjeti da `<img>` oznake su malo drukčije od drugih oznaka, jer one nemaju krajnu oznaku.
+	Primjeti da su `<img>` oznake drugačije od drugih oznaka: nemaju završnu oznaku.
 
-+ Za HTML slike, trebaš dodati __source(izvor)__ slike, unutar govorne oznake. Pronađimo sliku koju ćemo dodati tvojoj priči.
++ Za dodavanje slike u HTML dokument potrebno je, unutar navodnika, dodati __izvor (source)__ slike. Pronađimo sliku koju ćemo dodati priči.
 
-	Idi do <a href="http://jumpto.cc/web-images" target="_blank">jumpto.cc/web-images</a>, i pronađi sliku koju želiš uključiti u svoju priču.
+	Slijedi link <a href="http://jumpto.cc/web-images" target="_blank">jumpto.cc/web-images</a>, i pronađi sliku koju želiš uključiti u svoju priču.
 
-+ Pritisni desnim klikom miša na sliku, i pritisni 'Copy image URL(Kopiraj sliku URL)'. URL je adresa slike.
++ Pritisni desnim klikom miša na sliku, a zatim odaberi naredbu 'Kopiraj lokaciju slike (Copy image URL)'. URL je adresa slike.
 
 	![screenshot](story-url.png)
 
-+ Zalijepi URL između govornih oznaka u svojoj `<img>` oznaki. Trebao bi vidjeti pojavljivanje svoje slike!
++ Zalijepi URL između navodnika unutar oznake `<img>`. Na stranici bi se sada trebala pojaviti odabrana slika. 
 
 	![screenshot](story-image.png)
+	
 
-+ __If you have Trinket account(Ako imaš Trinket račun)__, možeš također zapamtiti svoju sliku na svoju internetsku stranicu! Da napraviš to, pritisni ikonu slike na vrhu svojeg trinketa i pritisni 'upload(zapamti)'.
++__Imaš li Trinket račun__ na stranicu možeš dodavati i vlastite slike. 
+
++ Klikni na ikonu za dodavanje slike koja se nalazi u gornjem desnom kutu trinket sučelja za unos kôda. Klikni na gumb 'Upload'.
 
 	![screenshot](story-upload.png)
 
-+ Pronađi svoju sliku na monitoru, i povuci je unutar svog trinketa.
++ Pronađi sliku na računalu i povuci je na mjesto predviđeno za to.
 
 	![screenshot](story-drag.png)
 
-+ Onda možeš samo dodati ime svoje nove slike između govornih oznaka u svom `<img>` oznaci, kao ovo:
++ Sada možeš samo promijeniti ime slike koje se nalazi između navodnika unutar oznake `<img>`:
 
 	```
 	<img src="buildings.png">
 	```
 
-## Zapamti svoj projekt {.save}
+## Spremi promjene u projektu {.save}
 
-##Challenge: Keep going! {.challenge}
-Koristi ono što si naučio u ovom projektu da žavršiš govrenje svoje priče! Ovdje je primjer:
+##Izazov: Natavi! {.challenge}
+Iskoristi naučeno u ovom projektu i završi svoju priču. Pogledaj primjer:
 
 ![screenshot](story-final.png)
 
-## Zapamti projekt {.save}
+## Spremi projekt {.save}
