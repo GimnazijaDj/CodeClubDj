@@ -42,7 +42,7 @@ Gotova verzija izazova ovoga projekta nalazi se u mapi 'Club Leader Resources' m
 + dinosaur.png
 
 #Ciljevi učenja
-+ Ovaj projekt predstavlja uvod u HTML oznake i CSS svojstva te uređenje sadržaja i dizajna.
++ Ovaj projekt predstavlja uvod u HTML oznake i CSS svojstva, te uređenja sadržaja i dizajna.
 
 #Izazovi
 + "Dodaj još jedan odlomak" - dodavanje HTML oznake dokumentu;
