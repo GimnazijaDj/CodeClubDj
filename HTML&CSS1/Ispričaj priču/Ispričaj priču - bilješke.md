@@ -1,27 +1,28 @@
 ---
-title: Ispričaj priču — Bilješke za Club Leaders
+title: Ispričaj priču — Bilješke za volontere
 language: hr-HR
 embeds: "*.png"
 materials: [""]
 ...
 
 #Uvod: 
-U ovom projektu, djeca će imati mogućnost napisati vlastiti HTML. Napravit će svoju vlastitu priču , dodavati slike i opise svojoj stranici koja će izgledati kao strip.
+U ovom projektu djeca će napisati vlastiti HTML kôd. Napravit će svoju priču, dodavati slike i opise svojoj stranici koja će izgledati kao strip.
 
 #Online resursi
 
-Preporučamo korištenje [trinket](https://trinket.io/) za pisanje HTML & CSS online. Projekt sadrži sljedeće trinkete:
+Za pisanje HTML i CSS kôda preporučujemo korištenje oline sučelja [trinket](https://trinket.io/). Ovaj projekt sadrži sljedeće 'trinkete':
 
-+ ['Ispričaj priču' početna točka -- jumpto.cc/web-story](http://jumpto.cc/web-story)
++ ['Tell a Story' starting point -- jumpto.cc/web-story](http://jumpto.cc/web-story)
 
-Djeci može koristiti i ovaj prazni trinket [(jumpto.cc/trinket-blank)](http://jumpto.cc/trinket-blank) za pisanje vlastitog HTML & CSS, a mogu koristiti i ovaj predložak trinketa [(jumpto.cc/trinket-template)](http://jumpto.cc/trinket-template).
+Za pisanje kôda djeca se mogu poslužiti praznim dokumentom [(jumpto.cc/trinket-blank)](http://jumpto.cc/trinket-blank) ili  koristiti predložak [(jumpto.cc/trinket-template)](http://jumpto.cc/trinket-template).
 
-Postoji trinket koji sadrži primjer rješenja zadataka:
+Postoji trinket koji sadrži primjer rješenja izazova:
 
-+ ['Ispričaj priču' Finished](https://trinket.io/html/c8afdef912)
++ ['Tell a Story' Finished](https://trinket.io/html/c8afdef912)
 
 #Offline resursi
-Projekt može biti [potpuno offline](../html-css.html) ako želite. Možeš pristupiti resursima projekta pritiskom na 'Download Project Materials' link.Link sadrži 'Project Resources' mapu, koja sadrži resurse koji će djeci biti potrebni za završavanje projekta offline. Pobrinite se da svako dijete ima pristup tim resursima. Mapa uključuje sljedeće:
+Ovaj projekt moguće je izraditi i [offline](../html-css.html). Potrebne datoteke je moguće preuzeti klikom na poveznicu projekta 'Download Project Materials'. Tu se nalazi mapa 'Project Resources', koja sadrži datoteke potrebne za izradu projekta offline.
+Pobrinite se da svako djete ima pristup kopiji sljedećih datoteka: 
 
 + Template/Template.html
 + Template/style.css
@@ -30,7 +31,7 @@ Projekt može biti [potpuno offline](../html-css.html) ako želite. Možeš pris
 + Tell a Story/buildings.png
 + Tell a Story/sun.png
 
-Također možeš pronaći gotovu verziju ovog zadatka u 'Club Leader Resources' mapi, koja sadrži:
+Gotova verzija izazova ovoga projekta nalazi se u mapi 'Club Leader Resources' mapi koja sadrži datoteke:
 
 + StoryFinished.html
 + style.css
@@ -38,19 +39,19 @@ Također možeš pronaći gotovu verziju ovog zadatka u 'Club Leader Resources' 
 + girl.png
 
 #Ciljevi učenja
-+ Pisanje HTML:
++ Pisanje HTML kôda:
 	+ `<div>` označavanje i grupiranje elemenata
 	+ `<img>` URL slike;
 	+ `<h1>` - `<h6>` naslovi.
 
 #Izazovi
-+ "Napravi neke promjene" - uređivanje HTML sadržaja i CSS stila;
-+ "Samo naprijed!" - primjeni oznake i stilove da završiš svoju priču.
++ "Napravi nekoliko promjena" - uređivanje HTML sadržaja i CSS stila;
++ "Nastavi!" - primjena oznaka i stilova za završetak priče.
 
 #Korištenje ovog projekta offline
-+ Ako djeca rade ovaj projekt offline, slike koje žele koristiti morat će staviti u istu mapu kao i`Story.html` datoteku.
++ Ako djeca rade ovaj projekt offline slike koje žele koristiti trebaju spremiti u mapu u kojoj se nalazi datoteka`Story.html`.
 
-	Onda mogu samo unijeti ime slike u `<img>` oznaku:
+	Onda mogu samo upisati ime slike unutar navodnika u oznaci `<img>`:
 
 	```
 		<img src="house.png" />
